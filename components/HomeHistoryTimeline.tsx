@@ -68,7 +68,7 @@ export function HomeHistoryTimeline() {
   }
 
   return (
-    <section className="home-history-paper relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section className="home-history-paper relative overflow-hidden px-4 py-16 sm:px-6 md:py-20 lg:px-8 lg:py-28">
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="font-serif text-2xl font-black uppercase tracking-[0.02em] text-zinc-950 sm:text-3xl">
@@ -77,13 +77,13 @@ export function HomeHistoryTimeline() {
           <div className="mx-auto mt-3 h-0.5 w-40 bg-red-800" />
         </div>
 
-        <div className="mx-auto mt-9 max-w-4xl overflow-x-auto pb-3">
-          <div className="relative mx-auto flex min-w-[620px] items-start justify-between px-4 pt-1">
-            <div className="absolute left-12 right-12 top-[38px] h-px bg-zinc-500/60" />
+        <div className="mx-auto mt-8 w-full max-w-4xl pb-3">
+          <div className="relative mx-auto grid w-full grid-cols-3 items-start px-2 pt-1 sm:px-6 md:px-10">
+            <div className="absolute left-[17%] right-[17%] top-[36px] h-px bg-zinc-500/60 sm:left-[18%] sm:right-[18%]" />
             <div
-              className="absolute left-12 top-[38px] h-px bg-red-800 transition-all duration-500"
+              className="absolute left-[17%] top-[36px] h-px bg-red-800 transition-all duration-500 sm:left-[18%]"
               style={{
-                width: `calc((100% - 6rem) * ${activeIndex / (historyPeriods.length - 1)})`,
+                width: `calc(66% * ${activeIndex / (historyPeriods.length - 1)})`,
               }}
             />
 
@@ -95,11 +95,11 @@ export function HomeHistoryTimeline() {
                   key={item.period}
                   type="button"
                   onClick={() => selectPeriod(index)}
-                  className="group relative z-10 flex w-40 flex-col items-center text-center"
+                  className="group relative z-10 flex min-w-0 flex-col items-center text-center"
                 >
                   <span
                     className={[
-                      "text-sm font-black transition-colors",
+                      "text-[11px] font-black transition-colors sm:text-sm",
                       active
                         ? "text-red-800"
                         : "text-zinc-700 group-hover:text-red-800",
@@ -130,7 +130,7 @@ export function HomeHistoryTimeline() {
               : "history-slide-from-left",
           ].join(" ")}
         >
-          <h3 className="mx-auto max-w-4xl font-serif text-lg font-black uppercase leading-8 text-zinc-950 md:text-xl md:leading-9">
+          <h3 className="mx-auto max-w-4xl font-serif text-base font-black uppercase leading-7 text-zinc-950 sm:text-lg md:text-xl md:leading-9">
             {activePeriod.title}
           </h3>
           <p className="mx-auto mt-4 max-w-3xl text-sm font-semibold leading-7 text-zinc-700 md:text-base">
@@ -143,21 +143,21 @@ export function HomeHistoryTimeline() {
             Tìm hiểu thêm
           </Link>
 
-          <div className="relative mx-auto mt-8 max-w-[860px] px-11 sm:px-14">
+          <div className="relative mx-auto mt-8 w-full max-w-[860px] px-8 sm:px-12 md:px-14">
             <button
               type="button"
               aria-label="Giai đoạn trước"
               onClick={goToPrevious}
-              className="absolute left-0 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-red-800 text-white shadow-lg transition hover:scale-105 hover:bg-red-900 sm:h-11 sm:w-11"
+              className="absolute left-0 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-red-800 text-white shadow-lg transition hover:scale-105 hover:bg-red-900 sm:h-10 sm:w-10 md:h-11 md:w-11"
             >
               <span aria-hidden="true" className="text-3xl leading-none">
                 ‹
               </span>
             </button>
 
-            <div className="relative aspect-[16/7] min-h-[250px] overflow-hidden rounded-lg border border-red-900/10 bg-zinc-200 shadow-xl shadow-zinc-900/10">
+            <div className="relative mx-auto aspect-[4/3] w-full max-w-[820px] overflow-hidden rounded-lg border border-red-900/10 bg-zinc-200 shadow-xl shadow-zinc-900/10 sm:aspect-[16/9] md:aspect-[16/7]">
               {failedImages[activePeriod.image] ? (
-                <div className="flex h-full min-h-[250px] items-center justify-center bg-[linear-gradient(135deg,#d7d2c3,#f3ead0)] px-6 text-center text-sm font-semibold uppercase tracking-[0.08em] text-zinc-600">
+                <div className="flex h-full items-center justify-center bg-[linear-gradient(135deg,#d7d2c3,#f3ead0)] px-6 text-center text-sm font-semibold uppercase tracking-[0.08em] text-zinc-600">
                   Ảnh lịch sử đang chờ cập nhật
                 </div>
               ) : (
@@ -181,7 +181,7 @@ export function HomeHistoryTimeline() {
               type="button"
               aria-label="Giai đoạn tiếp theo"
               onClick={goToNext}
-              className="absolute right-0 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-red-800 text-white shadow-lg transition hover:scale-105 hover:bg-red-900 sm:h-11 sm:w-11"
+              className="absolute right-0 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-red-800 text-white shadow-lg transition hover:scale-105 hover:bg-red-900 sm:h-10 sm:w-10 md:h-11 md:w-11"
             >
               <span aria-hidden="true" className="text-3xl leading-none">
                 ›

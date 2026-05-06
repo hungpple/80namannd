@@ -27,8 +27,8 @@ const headerNavItems: HeaderNavItem[] = [
     external: true,
   },
   {
-    label: "Chặng đường lịch sử",
-    lines: ["Chặng đường", "lịch sử"],
+    label: "Chuyên đề 80 năm ANND",
+    lines: ["Chuyên đề", "80 năm ANND"],
     href: "/chang-duong-lich-su",
   },
   {
@@ -130,9 +130,9 @@ export function Navbar() {
 
   return (
     <header className={headerClass}>
-      {!isHome ? (
+      {/* {!isHome ? (
         <div className="h-1 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-200" />
-      ) : null}
+      ) : null} */}
 
       <nav className="mx-auto flex min-h-[56px] max-w-[1840px] items-center justify-between gap-2 px-4 py-1.5 sm:px-6 lg:min-h-[64px] lg:px-8">
         <Link
@@ -167,17 +167,17 @@ export function Navbar() {
 
           <span
             className={[
-              "min-w-0 font-serif leading-tight",
+              "min-w-[190px] font-serif leading-tight sm:min-w-[230px] lg:min-w-0",
               isHome ? "text-red-800" : "text-white",
             ].join(" ")}
           >
             <span className="block text-[10px] font-black uppercase tracking-[0.08em] sm:text-[11px] lg:text-xs">
               Bộ Công an
             </span>
-            <span className="hidden text-[11px] font-black uppercase tracking-[0.04em] sm:block lg:text-base">
+            <span className="block text-[10px] font-black uppercase tracking-[0.03em] sm:text-[11px] lg:text-base">
               Truyền thống, thành tựu
             </span>
-            <span className="block max-w-[170px] text-[11px] font-black uppercase tracking-[0.04em] sm:max-w-none lg:text-base">
+            <span className="block whitespace-nowrap text-[10px] font-black uppercase tracking-[0.03em] sm:text-[11px] lg:text-base">
               An ninh nhân dân Việt Nam
             </span>
           </span>
