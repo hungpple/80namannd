@@ -137,7 +137,7 @@ export function HomeHistoryTimeline() {
             {activePeriod.description}
           </p>
           <Link
-            href="/chang-duong-lich-su"
+            href="/chien-cong-noi-bat"
             className="mt-4 inline-flex text-sm font-bold text-red-800 underline decoration-red-800/40 underline-offset-4 transition hover:text-red-950"
           >
             Tìm hiểu thêm

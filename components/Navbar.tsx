@@ -29,8 +29,13 @@ const headerNavItems: HeaderNavItem[] = [
   {
     label: "Chuyên đề 80 năm ANND",
     lines: ["Chuyên đề", "80 năm ANND"],
-    href: "/chang-duong-lich-su",
+    href: "/chuyen-de-80-nam-annd",
   },
+  // {
+  //   label: "Chặng đường lịch sử",
+  //   lines: ["Chặng đường", "lịch sử"],
+  //   href: "/chang-duong-lich-su",
+  // },
   {
     label: "Các chiến công nổi bật",
     lines: ["Các chiến công", "nổi bật"],
@@ -126,14 +131,10 @@ export function Navbar() {
     : "dong-son-bg sticky top-0 z-50 border-b border-yellow-300/30 text-white shadow-lg shadow-red-950/20";
 
   const navItemBase =
-    "group relative inline-flex min-h-10 items-center justify-center rounded-md px-1.5 text-center text-[10px] font-black uppercase leading-4 tracking-[0.01em] transition";
+    "group relative inline-flex min-h-10 items-center justify-center rounded-md px-1.5 text-center text-[10px] font-black uppercase leading-4 transition";
 
   return (
     <header className={headerClass}>
-      {/* {!isHome ? (
-        <div className="h-1 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-200" />
-      ) : null} */}
-
       <nav className="mx-auto flex min-h-[56px] max-w-[1840px] items-center justify-between gap-2 px-4 py-1.5 sm:px-6 lg:min-h-[64px] lg:px-8">
         <Link
           href="/"
@@ -143,9 +144,7 @@ export function Navbar() {
           ].join(" ")}
           onClick={() => setIsOpen(false)}
         >
-          <span
-            className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full lg:h-12 lg:w-12"
-          >
+          <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full lg:h-12 lg:w-12">
             {logoAvailable ? (
               <Image
                 src="/images/Vietnam_People's_Public_Security_Emblem.png"
@@ -157,9 +156,7 @@ export function Navbar() {
                 onError={() => setLogoAvailable(false)}
               />
             ) : (
-              <span
-                className="text-sm font-black text-red-800 lg:text-base"
-              >
+              <span className="text-sm font-black text-red-800 lg:text-base">
                 80
               </span>
             )}
@@ -171,19 +168,19 @@ export function Navbar() {
               isHome ? "text-red-800" : "text-white",
             ].join(" ")}
           >
-            <span className="block text-[10px] font-black uppercase tracking-[0.08em] sm:text-[11px] lg:text-xs">
+            <span className="block text-[10px] font-black uppercase sm:text-[11px] lg:text-xs">
               Bộ Công an
             </span>
-            <span className="block text-[10px] font-black uppercase tracking-[0.03em] sm:text-[11px] lg:text-base">
+            <span className="block text-[10px] font-black uppercase sm:text-[11px] lg:text-base">
               Truyền thống, thành tựu
             </span>
-            <span className="block whitespace-nowrap text-[10px] font-black uppercase tracking-[0.03em] sm:text-[11px] lg:text-base">
+            <span className="block whitespace-nowrap text-[10px] font-black uppercase sm:text-[11px] lg:text-base">
               An ninh nhân dân Việt Nam
             </span>
           </span>
         </Link>
 
-        <div className="hidden flex-1 items-center justify-end gap-1 min-[1180px]:flex">
+        <div className="hidden flex-1 items-center justify-end gap-1 min-[1320px]:flex">
           {headerNavItems.map((item) => {
             const active =
               !item.external && isInternalActive(pathname, item.href);
@@ -264,34 +261,13 @@ export function Navbar() {
             </label>
           ) : null}
 
-          {/* <button
-            type="button"
-            aria-label="Mở tìm kiếm"
-            onClick={() => setSearchOpen((value) => !value)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-red-800 text-white shadow-md shadow-red-950/15 transition hover:scale-105 hover:bg-red-900 focus:outline-none focus:ring-4 focus:ring-red-200"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2.3"
-            >
-              <circle cx="11" cy="11" r="7" />
-              <path d="m16.5 16.5 4 4" />
-            </svg>
-          </button> */}
-
           <button
             type="button"
             aria-label="Mở menu điều hướng"
             aria-expanded={isOpen}
             onClick={() => setIsOpen((value) => !value)}
             className={[
-              "inline-flex h-9 w-9 items-center justify-center rounded-md border transition min-[1180px]:hidden",
+              "inline-flex h-9 w-9 items-center justify-center rounded-md border transition min-[1320px]:hidden",
               isHome
                 ? "border-red-200 bg-white/80 hover:bg-red-50"
                 : "border-yellow-300/50 bg-red-800 hover:bg-red-700",
@@ -325,7 +301,7 @@ export function Navbar() {
       {isOpen ? (
         <div
           className={[
-            "border-t px-4 pb-4 pt-2 shadow-xl min-[1180px]:hidden",
+            "border-t px-4 pb-4 pt-2 shadow-xl min-[1320px]:hidden",
             isHome
               ? "border-red-100 bg-white/95 text-red-950 backdrop-blur"
               : "dong-son-bg relative border-yellow-300/30 text-white",

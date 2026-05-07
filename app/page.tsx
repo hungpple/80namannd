@@ -1,10 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
-import { AchievementCard } from "@/components/AchievementCard";
 import { HeroSection } from "@/components/HeroSection";
+import { HomeFeaturedAchievements } from "@/components/HomeFeaturedAchievements";
 import { HomeHistoryTimeline } from "@/components/HomeHistoryTimeline";
-import { PlaceholderVisual } from "@/components/PlaceholderVisual";
 import { SectionHeader } from "@/components/SectionHeader";
-import { achievements } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -28,11 +27,7 @@ export default function Home() {
               Xem danh sách
             </Link>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {achievements.slice(0, 3).map((item) => (
-              <AchievementCard key={item.title} item={item} />
-            ))}
-          </div>
+          <HomeFeaturedAchievements />
         </div>
       </section>
 
@@ -51,11 +46,24 @@ export default function Home() {
               Trò chuyện với Chatbot AI
             </Link>
           </div>
-          <PlaceholderVisual
-            label="Không gian hỏi đáp hiện đại"
-            eyebrow="Module AI placeholder"
-            className="min-h-[360px]"
-          />
+          <div className="relative isolate min-h-[360px] overflow-hidden rounded-lg border border-red-100 bg-red-950 shadow-sm shadow-red-950/10">
+            <Image
+              src="/images/chatbot-ui.JPG"
+              alt="Giao diện Chatbot AI"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-red-950/70 via-red-950/10 to-transparent" />
+            <div className="relative flex h-full min-h-inherit flex-col justify-end p-6 text-white">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-yellow-100">
+                Module AI
+              </p>
+              <p className="mt-2 max-w-xs text-xl font-bold leading-7">
+                Không gian hỏi đáp hiện đại
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

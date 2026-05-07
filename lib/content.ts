@@ -26,8 +26,8 @@ export const navItems = [
     external: true,
   },
   {
-    label: "Chặng đường lịch sử",
-    href: "/chang-duong-lich-su",
+    label: "Chuyên đề 80 năm ANND",
+    href: "/chuyen-de-80-nam-annd",
     external: false,
   },
   {
