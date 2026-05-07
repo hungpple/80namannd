@@ -8,7 +8,7 @@ export function ArticleHero({ introParagraphs }: ArticleHeroProps) {
   return (
     <section
       id="loi-mo-dau"
-      className="relative isolate overflow-hidden bg-red-950 px-4 py-14 text-white sm:px-6 lg:px-8 lg:py-16"
+      className="relative isolate flex min-h-[calc(100dvh-56px)] items-center overflow-hidden bg-red-950 px-4 py-14 text-white sm:px-6 lg:min-h-[calc(100dvh-64px)] lg:px-8 lg:py-16"
     >
       <Image
         src="/images/hero/hero-1.jpg"

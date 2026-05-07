@@ -52,7 +52,7 @@ export function Footer() {
 
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.14em] text-yellow-200">
-            Thông tin mẫu
+            Liên hệ
           </p>
           <div className="mt-4 space-y-3 text-sm leading-7 text-white">
             <p>Đơn vị quản trị: Placeholder</p>

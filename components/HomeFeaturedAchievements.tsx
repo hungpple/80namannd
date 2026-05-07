@@ -7,14 +7,15 @@ import {
 
 const homeFeaturedAchievementIds = [6, 37, 56] as const;
 
-const homeFeaturedAchievements = homeFeaturedAchievementIds
+function isDefined<T>(value: T | undefined): value is T {
+  return typeof value !== "undefined";
+}
+
+const homeFeaturedAchievements: AchievementCardItem[] = homeFeaturedAchievementIds
   .map((id) =>
     featuredAchievementCards.find((achievement) => achievement.id === id),
   )
-  .filter(
-    (achievement): achievement is AchievementCardItem =>
-      typeof achievement !== "undefined",
-  );
+  .filter(isDefined);
 
 function getPeriodLabel(period: AchievementCardItem["period"]) {
   if (period === "1975-nay") {
