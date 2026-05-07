@@ -1,11 +1,16 @@
 import type {
   ArticleBlock,
   ArticleData,
+  ArticleHeadingBlock,
   ArticleImageBlock,
   ArticlePartBlock,
   ArticleParagraphBlock,
 } from "@/data/chuyenDe80NamAnnd";
 import { ArticleContent } from "@/components/article/ArticleContent";
+import {
+  ArticleTableOfContents,
+  type TocPart,
+} from "@/components/article/ArticleTableOfContents";
 import { ScrollReveal } from "@/components/article/ScrollReveal";
 
 type ArticleSection = {
@@ -16,11 +21,11 @@ type ArticleSection = {
 
 const sectionQuotes: Record<string, string> = {
   "phan-i":
-    "Trong dòng chảy hào hùng của lịch sử dân tộc Việt Nam, lực lượng An ninh nhân dân luôn giữ vai trò đặc biệt quan trọng trong sự nghiệp bảo vệ Đảng, bảo vệ Nhà nước, bảo vệ chế độ xã hội chủ nghĩa và cuộc sống bình yên của Nhân dân.",
+    "\u0022Trong dòng chảy hào hùng của lịch sử dân tộc Việt Nam, lực lượng An ninh nhân dân luôn giữ vai trò đặc biệt quan trọng trong sự nghiệp bảo vệ Đảng, bảo vệ Nhà nước, bảo vệ chế độ xã hội chủ nghĩa và cuộc sống bình yên của Nhân dân.\u0022",
   "phan-ii":
-    "Trải qua các thời kỳ cách mạng, các thế hệ cán bộ, chiến sĩ luôn tuyệt đối trung thành với Đảng, kiên cường, mưu trí, không quản ngại hy sinh, gian khổ, gắn bó máu thịt với Nhân dân.",
+    "\u0022Trải qua các thời kỳ cách mạng, các thế hệ cán bộ, chiến sĩ luôn tuyệt đối trung thành với Đảng, kiên cường, mưu trí, không quản ngại hy sinh, gian khổ, gắn bó máu thịt với Nhân dân.\u0022",
   "phan-iii":
-    "Nhân dân không chỉ là đối tượng được bảo vệ mà còn là nền tảng, là “gốc” của thế trận an ninh nhân dân, là nhân tố quyết định đến sự vững mạnh của nền an ninh quốc gia trong mọi tình huống.",
+    "\u0022Nhân dân không chỉ là đối tượng được bảo vệ mà còn là nền tảng, là “gốc” của thế trận an ninh nhân dân, là nhân tố quyết định đến sự vững mạnh của nền an ninh quốc gia trong mọi tình huống.\u0022",
 };
 
 function isDecorativeChapterImage(
@@ -80,15 +85,58 @@ function splitArticle(blocks: ArticleBlock[]) {
   return { introParagraphs, sections };
 }
 
+function isLevelTwoHeading(block: ArticleBlock): block is ArticleHeadingBlock {
+  return block.type === "heading" && block.level === 2;
+}
+
+function isConclusionHeading(block: ArticleBlock): block is ArticleHeadingBlock {
+  return isLevelTwoHeading(block) && block.id === "ket-luan";
+}
+
+function buildTableOfContents(sections: ArticleSection[]): TocPart[] {
+  const items = sections.map((section) => ({
+    id: section.part.id,
+    label: section.part.label,
+    title: section.part.title,
+    children: section.blocks
+      .filter(
+        (block): block is ArticleHeadingBlock =>
+          isLevelTwoHeading(block) && !isConclusionHeading(block),
+      )
+      .map((heading) => ({
+        id: heading.id,
+        title: heading.text,
+        level: heading.level,
+      })),
+  }));
+
+  const conclusionHeading = sections
+    .flatMap((section) => section.blocks)
+    .find(isConclusionHeading);
+
+  if (conclusionHeading) {
+    items.push({
+      id: conclusionHeading.id,
+      label: "Kết luận",
+      title: conclusionHeading.text,
+      children: [],
+    });
+  }
+
+  return items;
+}
+
 type ArticleLayoutProps = {
   article: ArticleData;
 };
 
 export function ArticleLayout({ article }: ArticleLayoutProps) {
   const { sections } = splitArticle(article.blocks);
+  const tocItems = buildTableOfContents(sections);
 
   return (
     <>
+      <ArticleTableOfContents items={tocItems} />
       <ArticleJumpButtons />
       {sections.map((section) => (
         <ArticleSectionView key={section.part.id} section={section} />

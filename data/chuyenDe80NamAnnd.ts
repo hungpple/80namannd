@@ -15,6 +15,7 @@ export type ArticleHeadingBlock = {
 export type ArticleParagraphBlock = {
   type: "paragraph";
   text: string;
+  className?: string;
 };
 
 export type ArticleImageBlock = {
@@ -107,15 +108,15 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Cuối thế kỷ XIX, triều đình nhà Nguyễn để đất nước rơi vào tay thực dân Pháp. Dưới ách thống trị của thực dân Pháp, các tầng lớp, giai cấp trong xã hội Việt Nam không chỉ bị bóc lột về kinh tế mà còn chịu nỗi nhục của người dân mất nước. Mâu thuẫn giữa toàn thể dân tộc Việt Nam với thực dân Pháp và phản động tay sai ngày càng sâu sắc. Độc lập, tự do là khát vọng của cả dân tộc Việt Nam. Nhiệm vụ cứu nước được đặt ra vô cùng cấp thiết. Các phong trào yêu nước, chống thực dân Pháp của nhân dân Việt Nam đã diễn ra sôi nổi, mạnh mẽ, quyết liệt. Cuối thế kỷ XIX, phong trào Cần vương (1885 - 1896) - một phong trào đấu tranh vũ trang dưới ngọn cờ phong kiến diễn ra trong suốt 1 thập kỷ. Sang đầu thế kỷ XX, các phong trào yêu nước tiếp thu hệ tư tưởng dân chủ tư sản xuất hiện. Lịch sử dân tộc chứng kiến những nỗ lực không mệt mỏi của cácNhun sĩ phu yêu nước như Phan Bội Châu, Phan Châu Trinh... Các tiền bối đã vượt qua hạn chế về nguồn gốc xuất thân (cNhưnghế độ phong kiến), tiếp thu tư tưởng mới, gắn cứu nước với cứu dân. Tuy nhiên, cho đến những năm 20 của thế kỷ XX, các phong trào đấu tranh chống thực dân Pháp đều thất bại. Nguyên nhân chính là do thiếu giai cấp lãnh đạo tiên tiến, thiếu khả năng tổ chức, thiếu đường lối đấu tranh đúng đắn. Phong trào yêu nước ở Việt Nam rơi vào tình trạng khủng hoảng “đen tối như không có đường ra”."
+                       "text":  "Cuối thế kỷ XIX, triều đình nhà Nguyễn để đất nước rơi vào tay thực dân Pháp. Dưới ách thống trị của thực dân Pháp, các tầng lớp, giai cấp trong xã hội Việt Nam không chỉ bị bóc lột về kinh tế mà còn chịu nỗi nhục của người dân mất nước. Mâu thuẫn giữa toàn thể dân tộc Việt Nam với thực dân Pháp và phản động tay sai ngày càng sâu sắc. Độc lập, tự do là khát vọng của cả dân tộc Việt Nam. Nhiệm vụ cứu nước được đặt ra vô cùng cấp thiết. Các phong trào yêu nước, chống thực dân Pháp của nhân dân Việt Nam đã diễn ra sôi nổi, mạnh mẽ, quyết liệt. Cuối thế kỷ XIX, phong trào Cần vương (1885 - 1896) - một phong trào đấu tranh vũ trang dưới ngọn cờ phong kiến diễn ra trong suốt 1 thập kỷ. Sang đầu thế kỷ XX, các phong trào yêu nước tiếp thu hệ tư tưởng dân chủ tư sản xuất hiện. Lịch sử dân tộc chứng kiến những nỗ lực không mệt mỏi của cácNhun sĩ phu yêu nước như Phan Bội Châu, Phan Châu Trinh... Các tiền bối đã vượt qua hạn chế về nguồn gốc xuất thân (chế độ phong kiến), tiếp thu tư tưởng mới, gắn cứu nước với cứu dân. Tuy nhiên, cho đến những năm 20 của thế kỷ XX, các phong trào đấu tranh chống thực dân Pháp đều thất bại. Nguyên nhân chính là do thiếu giai cấp lãnh đạo tiên tiến, thiếu khả năng tổ chức, thiếu đường lối đấu tranh đúng đắn. Phong trào yêu nước ở Việt Nam rơi vào tình trạng khủng hoảng “đen tối như không có đường ra”."
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-03.jpg",
                        "width":  1052,
                        "height":  709,
-                       "alt":  "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930.Nguồn: TTXVN.",
-                       "caption":  "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930.Nguồn: TTXVN.",
+                       "alt":  "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930. Nguồn: TTXVN.",
+                       "caption":  "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930. Nguồn: TTXVN.",
                        "note":  null
                    },
                    {
@@ -131,56 +132,56 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-04.png",
                        "width":  641,
                        "height":  344,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-05.png",
-                       "width":  1125,
-                       "height":  702,
                        "alt":  "Phong trò Xô viết Nghệ - Tĩnh (1930 – 1931). Ảnh: Tranh sơn dầu",
-                       "caption":  "Phong trò Xô viết Nghệ - Tĩnh (1930 – 1931). Ảnh: Tranh sơn dầu",
-                       "note":  null
+                       "caption":  "Phong trào Xô viết Nghệ - Tĩnh (1930 – 1931). Ảnh: Tranh sơn dầu",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
                        "text":  "Tiêu biểu cho cao trào cách mạng giai đoạn này là phong trào Xô viết Nghệ - Tĩnh (1930 - 1931). Đây là cuộc đấu tranh cách mạng mạnh mẽ của công nhân và nông dân hai tỉnh Nghệ An và Hà Tĩnh dưới sự lãnh đạo trực tiếp của Đảng. Trong phong trào này, quần chúng nhân dân đã nổi dậy đấu tranh chống lại chính quyền thực dân phong kiến, thành lập các chính quyền cách mạng ở nhiều địa phương, thực hiện nhiều chính sách tiến bộ như giảm sưu thuế, chia ruộng đất cho nông dân nghèo, xây dựng đời sống mới cho nhân dân lao động. Mặc dù phong trào bị thực dân Pháp đàn áp khốc liệt và tạm thời thất bại, nhưng Xô viết Nghệ - Tĩnh đã trở thành minh chứng sinh động cho sức mạnh to lớn của quần chúng nhân dân khi được tổ chức và lãnh đạo đúng đắn, đồng thời khẳng định vai trò lãnh đạo của Đảng đối với cách mạng Việt Nam."
                    },
                    {
-                       "type":  "paragraph",
-                       "text":  "Phong trào dân chủ từ 1936 đến 1939 phát triển mạnh mẽ và tổ chức dưới sự lãnh đạo của Đảng. Ảnh: Tư liệu.Phong trào dân chủ từ 1936 đến 1939 phát triển mạnh mẽ và tổ chức dưới sự lãnh đạo của Đảng. Ảnh: Tư liệu.Sau giai đoạn đấu tranh quyết liệt đầu những năm 1930, phong trào cách mạng tiếp tục phát triển trong điều kiện mới. Từ năm 1936 đến năm 1939, trước những biến chuyển của tình hình thế giới và trong nước, Đảng đã kịp thời điều chỉnh chiến lược và phương pháp đấu tranh, phát động phong trào dân chủ rộng lớn trong cả nước. Phong trào này hướng tới mục tiêu chống phát xít, chống chiến tranh, đòi các quyền tự do dân chủ, cải thiện đời sống cho nhân dân. Hàng loạt cuộc vận động chính trị, các cuộc mít tinh, biểu tình và đấu tranh nghị trường đã diễn ra sôi nổi, thu hút đông đảo quần chúng tham gia. Phong trào dân chủ không chỉ góp phần nâng cao nhận thức chính trị của nhân dân mà còn mở rộng lực lượng cách mạng, tạo tiền đề quan trọng cho những bước phát triển tiếp theo của phong trào giải phóng dân tộc."
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-05.png",
+                       "width":  600,
+                       "height":  300,
+                       "alt":  "Phong trào dân chủ từ 1936 đến 1939 phát triển mạnh mẽ và tổ chức dưới sự lãnh đạo của Đảng. Ảnh: Tư liệu.",
+                       "caption":  "Phong trào dân chủ từ 1936 đến 1939 phát triển mạnh mẽ và tổ chức dưới sự lãnh đạo của Đảng. Ảnh: Tư liệu.",
+                       "note":  null
                    },
                    {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-06.jpg",
-                       "width":  480,
-                       "height":  480,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                       "type":  "paragraph",
+                       "text":  "Sau giai đoạn đấu tranh quyết liệt đầu những năm 1930, phong trào cách mạng tiếp tục phát triển trong điều kiện mới. Từ năm 1936 đến năm 1939, trước những biến chuyển của tình hình thế giới và trong nước, Đảng đã kịp thời điều chỉnh chiến lược và phương pháp đấu tranh, phát động phong trào dân chủ rộng lớn trong cả nước. Phong trào này hướng tới mục tiêu chống phát xít, chống chiến tranh, đòi các quyền tự do dân chủ, cải thiện đời sống cho nhân dân. Hàng loạt cuộc vận động chính trị, các cuộc mít tinh, biểu tình và đấu tranh nghị trường đã diễn ra sôi nổi, thu hút đông đảo quần chúng tham gia. Phong trào dân chủ không chỉ góp phần nâng cao nhận thức chính trị của nhân dân mà còn mở rộng lực lượng cách mạng, tạo tiền đề quan trọng cho những bước phát triển tiếp theo của phong trào giải phóng dân tộc."
                    },
                    {
                        "type":  "paragraph",
                        "text":  "Trong bối cảnh Chiến tranh thế giới thứ hai bùng nổ và ngày càng lan rộng trên phạm vi toàn cầu, tình hình chính trị – xã hội tại Đông Dương nói chung và Việt Nam nói riêng đã có những biến động sâu sắc. Cuộc chiến tranh giữa các cường quốc đế quốc không chỉ làm thay đổi cục diện thế giới mà còn tác động trực tiếp đến các nước thuộc địa, trong đó có Việt Nam. Thực dân Pháp vốn đang nắm quyền cai trị tại Đông Dương ngày càng suy yếu trước sức ép của chiến tranh và những biến động quốc tế. Trong bối cảnh đó, các thế lực phát xít, đặc biệt là Nhật Bản, đã tìm cách mở rộng ảnh hưởng và chiếm đóng nhiều khu vực ở châu Á nhằm phục vụ cho tham vọng bành trướng của mình."
                    },
-                   {
+                    {
                        "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-07.jpg",
-                       "width":  1023,
-                       "height":  783,
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-06.jpg",
+                       "width":  600,
+                       "height":  600,
                        "alt":  "Các đơn vị quân đội Nhật vào Lạng Sơn, tháng 9-1940. Ảnh: Tư liệu.",
                        "caption":  "Các đơn vị quân đội Nhật vào Lạng Sơn, tháng 9-1940. Ảnh: Tư liệu.",
-                       "note":  null
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
                        "text":  "Năm 1940, phát xít Nhật tiến quân vào Đông Dương và buộc chính quyền thực dân Pháp tại đây phải chấp nhận cho quân đội Nhật đóng quân và sử dụng Đông Dương làm căn cứ quân sự phục vụ chiến tranh. Từ thời điểm đó, nhân dân Việt Nam rơi vào tình cảnh đặc biệt đau thương khi phải chịu sự áp bức, bóc lột của hai thế lực thống trị cùng lúc: một bên là thực dân Pháp với bộ máy cai trị lâu đời, một bên là phát xít Nhật với chính sách vơ vét tàn bạo nhằm phục vụ cho chiến tranh. Tình cảnh này thường được nhân dân gọi là “một cổ hai tròng”, phản ánh rõ sự chồng chất của hai ách thống trị ngoại bang trên đất nước Việt Nam."
-                   },
+                    },
+                    {
+                        "type":  "image",
+                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-07.jpg",
+                        "width":  1023,
+                        "height":  783,
+                        "alt":  "Nạn đói năm 1945. Ảnh: Tư liệu.",
+                        "caption":  "Nạn đói năm 1945. Ảnh: Tư liệu.",
+                        "note":  null
+                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Nạn đói năm 1945. Ảnh: Tư liệu.Nạn đói năm 1945. Ảnh: Tư liệu.Dưới sự thống trị của cả thực dân Pháp và phát xít Nhật, nền kinh tế vốn đã lạc hậu và lệ thuộc của Việt Nam lại càng bị khai thác đến kiệt quệ. Thực dân Pháp tiếp tục duy trì hệ thống sưu cao thuế nặng và bóc lột tàn nhẫn đối với nhân dân lao động, trong khi phát xít Nhật tiến hành vơ vét lương thực, nguyên liệu và nhân lực để phục vụ cho guồng máy chiến tranh của mình. Nhiều diện tích đất trồng lúa của nông dân bị buộc phải chuyển sang trồng cây công nghiệp như đay và bông để cung cấp nguyên liệu cho Nhật. Hệ thống vận tải và lương thực bị kiểm soát chặt chẽ, khiến việc lưu thông hàng hóa trở nên khó khăn, đời sống nhân dân ngày càng lâm vào cảnh thiếu thốn."
+                       "text":  "Dưới sự thống trị của cả thực dân Pháp và phát xít Nhật, nền kinh tế vốn đã lạc hậu và lệ thuộc của Việt Nam lại càng bị khai thác đến kiệt quệ. Thực dân Pháp tiếp tục duy trì hệ thống sưu cao thuế nặng và bóc lột tàn nhẫn đối với nhân dân lao động, trong khi phát xít Nhật tiến hành vơ vét lương thực, nguyên liệu và nhân lực để phục vụ cho guồng máy chiến tranh của mình. Nhiều diện tích đất trồng lúa của nông dân bị buộc phải chuyển sang trồng cây công nghiệp như đay và bông để cung cấp nguyên liệu cho Nhật. Hệ thống vận tải và lương thực bị kiểm soát chặt chẽ, khiến việc lưu thông hàng hóa trở nên khó khăn, đời sống nhân dân ngày càng lâm vào cảnh thiếu thốn."
                    },
                    {
                        "type":  "paragraph",
@@ -199,13 +200,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-08.jpg",
                        "width":  480,
                        "height":  480,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Toàn quyền Đông Dương Đờ Cu đón tướng Nhật sau ngày Nhật đảo chính Pháp.",
+                       "caption":  "Toàn quyền Đông Dương Đờ Cu đón tướng Nhật sau ngày Nhật đảo chính Pháp.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Toàn quyền Đông Dương Đờ Cu đón tướng Nhật sau ngày Nhật đảo chính PhápToàn quyền Đông Dương Đờ Cu đón tướng Nhật sau ngày Nhật đảo chính PhápNgày 9 tháng 3 năm 1945, phát xít Nhật bất ngờ tiến hành cuộc Đảo chính Nhật – Pháp tại Đông Dương năm 1945, lật đổ hoàn toàn bộ máy thống trị của thực dân Pháp vốn đã tồn tại ở Đông Dương suốt nhiều thập kỷ. Chỉ trong một thời gian rất ngắn, toàn bộ hệ thống chính quyền của thực dân Pháp bị tan rã, nhiều quan chức và binh lính Pháp bị bắt giữ hoặc buộc phải đầu hàng. Sau cuộc đảo chính này, phát xít Nhật độc chiếm Đông Dương và dựng lên một chính quyền bù nhìn nhằm phục vụ cho mục đích thống trị và khai thác của mình. Tuy nhiên, do đang ở giai đoạn suy yếu của chiến tranh, chính quyền Nhật tại Đông Dương không đủ khả năng kiểm soát chặt chẽ tình hình như trước. Bộ máy cai trị trở nên rệu rã, quyền lực thực tế ở nhiều địa phương bị suy giảm nghiêm trọng."
+                       "text":  "Ngày 9 tháng 3 năm 1945, phát xít Nhật bất ngờ tiến hành cuộc Đảo chính Nhật – Pháp tại Đông Dương năm 1945, lật đổ hoàn toàn bộ máy thống trị của thực dân Pháp vốn đã tồn tại ở Đông Dương suốt nhiều thập kỷ. Chỉ trong một thời gian rất ngắn, toàn bộ hệ thống chính quyền của thực dân Pháp bị tan rã, nhiều quan chức và binh lính Pháp bị bắt giữ hoặc buộc phải đầu hàng. Sau cuộc đảo chính này, phát xít Nhật độc chiếm Đông Dương và dựng lên một chính quyền bù nhìn nhằm phục vụ cho mục đích thống trị và khai thác của mình. Tuy nhiên, do đang ở giai đoạn suy yếu của chiến tranh, chính quyền Nhật tại Đông Dương không đủ khả năng kiểm soát chặt chẽ tình hình như trước. Bộ máy cai trị trở nên rệu rã, quyền lực thực tế ở nhiều địa phương bị suy giảm nghiêm trọng."
                    },
                    {
                        "type":  "paragraph",
@@ -224,21 +225,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-09.jpg",
                        "width":  900,
                        "height":  600,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Chỉ trong vòng 15 ngày cuối tháng 8/1945, cuộc tổng khởi nghĩa đã giành thắng lợi hoàn toàn, chính quyền trong cả nước về tay nhân dân."
-                   },
-                   {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-10.jpg",
-                       "width":  800,
-                       "height":  527,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Chỉ trong vòng 15 ngày cuối tháng 8/1945, cuộc tổng khởi nghĩa đã giành thắng lợi hoàn toàn, chính quyền trong cả nước về tay nhân dân.",
+                       "caption":  "Chỉ trong vòng 15 ngày cuối tháng 8/1945, cuộc tổng khởi nghĩa đã giành thắng lợi hoàn toàn, chính quyền trong cả nước về tay nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -246,8 +234,17 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Chỉ trong một thời gian ngắn của tháng Tám năm 1945, dưới sự lãnh đạo sáng suốt của Đảng Cộng sản Đông Dương và Hồ Chí Minh, cuộc Cách mạng Tháng Tám năm 1945 đã diễn ra với khí thế sôi nổi và lan rộng khắp cả nước. Từ các thành thị lớn đến nông thôn, từ miền xuôi đến miền ngược, hàng triệu quần chúng nhân dân đã đồng loạt đứng lên tham gia khởi nghĩa, giành chính quyền về tay mình. Trong bầu không khí cách mạng dâng cao, các cuộc biểu tình, mít tinh và nổi dậy của quần chúng diễn ra liên tiếp, làm cho bộ máy chính quyền tay sai của phát xít Nhật nhanh chóng sụp đổ."
                    },
                    {
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-10.jpg",
+                       "width":  800,
+                       "height":  527,
+                       "alt":  "Nhân dân tham gia mít tinh và biểu tình tại quảng trường Nhà hát Lớn. Ảnh: Tư liệu.",
+                       "caption":  "Nhân dân tham gia mít tinh và biểu tình tại quảng trường Nhà hát Lớn. Ảnh: Tư liệu.",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                   },
+                   {
                        "type":  "paragraph",
-                       "text":  "Nhân dân tham gia mít tinh và biểu tình tại quảng trường Nhà hát Lớn.Ảnh: Tư liệu. Nhân dân tham gia mít tinh và biểu tình tại quảng trường Nhà hát Lớn.Ảnh: Tư liệu. Tại Hà Nội, ngày 19 tháng 8 năm 1945, hàng chục vạn nhân dân đã xuống đường tham gia mít tinh và biểu tình tại quảng trường Nhà hát Lớn, sau đó tiến hành chiếm giữ các cơ quan quan trọng của chính quyền cũ, đánh dấu thắng lợi của cuộc khởi nghĩa ở thủ đô. Sự kiện này có ý nghĩa đặc biệt quan trọng, cổ vũ mạnh mẽ phong trào cách mạng trên phạm vi toàn quốc. Ngay sau đó, phong trào khởi nghĩa tiếp tục lan rộng và giành thắng lợi ở nhiều địa phương khác. Tại Huế, trung tâm của triều đình phong kiến nhà Nguyễn, nhân dân và lực lượng cách mạng đã giành chính quyền vào ngày 23/8/1945, buộc triều đình phong kiến phải tuyên bố thoái vị, chấm dứt hàng nghìn năm chế độ quân chủ ở Việt Nam. Tiếp đó, ngày 25/ 8/1945, chính quyền cách mạng cũng được thiết lập tại Sài Gòn và nhiều tỉnh thành khác ở Nam Bộ. Chỉ trong vòng nửa tháng, chính quyền cách mạng đã được thành lập ở hầu khắp các địa phương trên cả nước, đánh dấu thắng lợi trọn vẹn của cuộc tổng khởi nghĩa."
+                       "text":  "Tại Hà Nội, ngày 19 tháng 8 năm 1945, hàng chục vạn nhân dân đã xuống đường tham gia mít tinh và biểu tình tại quảng trường Nhà hát Lớn, sau đó tiến hành chiếm giữ các cơ quan quan trọng của chính quyền cũ, đánh dấu thắng lợi của cuộc khởi nghĩa ở thủ đô. Sự kiện này có ý nghĩa đặc biệt quan trọng, cổ vũ mạnh mẽ phong trào cách mạng trên phạm vi toàn quốc. Ngay sau đó, phong trào khởi nghĩa tiếp tục lan rộng và giành thắng lợi ở nhiều địa phương khác. Tại Huế, trung tâm của triều đình phong kiến nhà Nguyễn, nhân dân và lực lượng cách mạng đã giành chính quyền vào ngày 23/8/1945, buộc triều đình phong kiến phải tuyên bố thoái vị, chấm dứt hàng nghìn năm chế độ quân chủ ở Việt Nam. Tiếp đó, ngày 25/ 8/1945, chính quyền cách mạng cũng được thiết lập tại Sài Gòn và nhiều tỉnh thành khác ở Nam Bộ. Chỉ trong vòng nửa tháng, chính quyền cách mạng đã được thành lập ở hầu khắp các địa phương trên cả nước, đánh dấu thắng lợi trọn vẹn của cuộc tổng khởi nghĩa."
                    },
                    {
                        "type":  "image",
@@ -275,23 +272,17 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-12.jpg",
                        "width":  940,
                        "height":  389,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đội Tự vệ đỏ ở Hòa Quân, Đông Sở, Nghệ An trong cao trào Xô viết Nghệ - Tĩnh năm 1930.",
+                       "caption":  "Đội Tự vệ đỏ ở Hòa Quân, Đông Sở, Nghệ An trong cao trào Xô viết Nghệ - Tĩnh năm 1930.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "doi-tu-ve-do-o-hoa-quan-dong-so-nghe-an-trong-cao-trao-xo-viet-nghe-tinh",
-                       "text":  "Đội Tự vệ đỏ ở Hòa Quân, Đông Sở, Nghệ An trong cao trào Xô viết Nghệ - Tĩnh năm 1930"
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-13.jpg",
                        "width":  507,
                        "height":  651,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Sắc lệnh số 23/SL, hợp nhất các lực lượng cảnh sát và liêm phóng thành Việt Nam Công an vụ, đặt dưới quyền quản lý của Bộ Nội vụ. Ảnh: Tư liệu.",
+                       "caption":  "Sắc lệnh số 23/SL, hợp nhất các lực lượng cảnh sát và liêm phóng thành Việt Nam Công an vụ, đặt dưới quyền quản lý của Bộ Nội vụ. Ảnh: Tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -300,20 +291,16 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Sắc lệnh số 23/SL, hợp nhất các lực lượng cảnh sát và liêm phóng thành Việt Nam Công an vụ, đặt dưới quyền quản lý của Bộ Nội vụ Ảnh: Tư liệu. Sắc lệnh số 23/SL, hợp nhất các lực lượng cảnh sát và liêm phóng thành Việt Nam Công an vụ, đặt dưới quyền quản lý của Bộ Nội vụ Ảnh: Tư liệu. Lực lượng Công an cách mạng phát triển bền vững, không chỉ cần có các tổ chức sơ khai ở ba miền mà còn cần có một cơ sở pháp lý, một mô hình tổ chức thống nhất trên phạm vi cả nước. Thực tiễn đấu tranh cuối năm 1945 và đầu năm 1946 cho thấy, nếu không sớm thống nhất về tổ chức, chỉ huy và chức năng nhiệm vụ, thì lực lượng sẽ khó đáp ứng yêu cầu bảo vệ chính quyền cách mạng trong bối cảnh tình hình ngày càng phức tạp. Trên cơ sở đó, ngày 21/2/1946, Chủ tịch Hồ Chí Minh ký Sắc lệnh số 23/SL, hợp nhất các lực lượng cảnh sát và liêm phóng thành Việt Nam Công an vụ, đặt dưới quyền quản lý của Bộ Nội vụ. Đây là một bước ngoặt có ý nghĩa rất quan trọng, bởi từ đây lực lượng Công an cách mạng được xác lập thành một tổ chức thống nhất về mặt tên gọi và hệ thống quản lý ở cấp trung ương."
+                       "text":  "Lực lượng Công an cách mạng phát triển bền vững, không chỉ cần có các tổ chức sơ khai ở ba miền mà còn cần có một cơ sở pháp lý, một mô hình tổ chức thống nhất trên phạm vi cả nước. Thực tiễn đấu tranh cuối năm 1945 và đầu năm 1946 cho thấy, nếu không sớm thống nhất về tổ chức, chỉ huy và chức năng nhiệm vụ, thì lực lượng sẽ khó đáp ứng yêu cầu bảo vệ chính quyền cách mạng trong bối cảnh tình hình ngày càng phức tạp. Trên cơ sở đó, ngày 21/2/1946, Chủ tịch Hồ Chí Minh ký Sắc lệnh số 23/SL, hợp nhất các lực lượng cảnh sát và liêm phóng thành Việt Nam Công an vụ, đặt dưới quyền quản lý của Bộ Nội vụ. Đây là một bước ngoặt có ý nghĩa rất quan trọng, bởi từ đây lực lượng Công an cách mạng được xác lập thành một tổ chức thống nhất về mặt tên gọi và hệ thống quản lý ở cấp trung ương."
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-14.jpg",
                        "width":  876,
                        "height":  614,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Ảnh: Nghị định số 121-NgĐ ngày 18/4/1946 của Bộ Nội Vụ.",
+                       "caption":  "Ảnh: Nghị định số 121-NgĐ ngày 18/4/1946 của Bộ Nội Vụ.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Ảnh: Nghị định số 121-NgĐ ngày 18/4/1946 của Bộ Nội Vụ."
                    },
                    {
                        "type":  "paragraph",
@@ -332,13 +319,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-15.jpg",
                        "width":  940,
                        "height":  469,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Lực lượng Liêm phóng và Cảnh sát tự vệ Bắc Bộ bảo vệ lễ Tuyên ngôn độc lập tại Quảng trường Ba Đình ngày 2/9/1945. Ảnh tư liệu.",
+                       "caption":  "Lực lượng Liêm phóng và Cảnh sát tự vệ Bắc Bộ bảo vệ lễ Tuyên ngôn độc lập tại Quảng trường Ba Đình ngày 2/9/1945. Ảnh tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Lực lượng Liêm phóng và Cảnh sát tự vệ Bắc Bộ bảo vệ lễ Tuyên ngôn độc lập tại Quảng trường Ba Đình ngày 2/9/1945. Ảnh tư liệu"
                    },
                    {
                        "type":  "paragraph",
@@ -367,13 +350,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-16.jpg",
                        "width":  800,
                        "height":  566,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Hưởng ứng lời kêu gọi của Chủ tịch Hồ Chí Minh, người dân trong cả nước đã tích cực góp gạo cứu đói cho đồng bào. Ảnh: Tư liệu.",
+                       "caption":  "Hưởng ứng lời kêu gọi của Chủ tịch Hồ Chí Minh, người dân trong cả nước đã tích cực góp gạo cứu đói cho đồng bào. Ảnh: Tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Hưởng ứng lời kêu gọi của Chủ tịch Hồ Chí Minh, người dân trong cả nước đã tích cực góp gạo cứu đói cho đồng bào. Ảnh: Tư liệu. Hưởng ứng lời kêu gọi của Chủ tịch Hồ Chí Minh, người dân trong cả nước đã tích cực góp gạo cứu đói cho đồng bào. Ảnh: Tư liệu. Sự kiện lịch sử ngày 2/9/1945 đã chính thức khai sinh ra nhà nước Việt Nam Dân chủ Cộng hòa, nhà nước công nông đầu tiên ở khu vực Đông Nam Á. Đây là nhà nước của nhân dân, do nhân dân và vì nhân dân, được xây dựng trên nền tảng của khối đại đoàn kết toàn dân tộc và lý tưởng độc lập dân tộc gắn liền với chủ nghĩa xã hội. Sự ra đời của nước Việt Nam Dân chủ Cộng hòa không chỉ có ý nghĩa to lớn đối với lịch sử dân tộc Việt Nam mà còn cổ vũ mạnh mẽ phong trào đấu tranh giải phóng dân tộc ở nhiều quốc gia thuộc địa trên thế giới."
+                       "text":  "Sự kiện lịch sử ngày 2/9/1945 đã chính thức khai sinh ra nhà nước Việt Nam Dân chủ Cộng hòa, nhà nước công nông đầu tiên ở khu vực Đông Nam Á. Đây là nhà nước của nhân dân, do nhân dân và vì nhân dân, được xây dựng trên nền tảng của khối đại đoàn kết toàn dân tộc và lý tưởng độc lập dân tộc gắn liền với chủ nghĩa xã hội. Sự ra đời của nước Việt Nam Dân chủ Cộng hòa không chỉ có ý nghĩa to lớn đối với lịch sử dân tộc Việt Nam mà còn cổ vũ mạnh mẽ phong trào đấu tranh giải phóng dân tộc ở nhiều quốc gia thuộc địa trên thế giới."
                    },
                    {
                        "type":  "paragraph",
@@ -384,13 +367,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-17.jpg",
                        "width":  800,
                        "height":  438,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Kỳ họp thứ nhất Quốc hội khóa I của nước Việt Nam Dân chủ Cộng hòa diễn ra ngày 2/3/1946 tại Nhà hát Lớn Hà Nội. (Ảnh tư liệu).",
+                       "caption":  "Kỳ họp thứ nhất Quốc hội khóa I của nước Việt Nam Dân chủ Cộng hòa diễn ra ngày 2/3/1946 tại Nhà hát Lớn Hà Nội. (Ảnh tư liệu).",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Kỳ họp thứ nhất Quốc hội khóa I của nước Việt Nam Dân chủ Cộng hòa diễn ra ngày 2/3/1946 tại Nhà hát Lớn Hà Nội. (Ảnh tư liệu)"
                    },
                    {
                        "type":  "paragraph",
@@ -405,13 +384,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-18.jpg",
                        "width":  888,
                        "height":  539,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Lực lượng cảnh sát hộ tống đoàn xe chở Chủ tịch Hồ Chí Minh và các thành viên chính phủ lâm thời tiến vào Quảng trường Ba Đình. Ảnh: Tư liệu.",
+                       "caption":  "Lực lượng cảnh sát hộ tống đoàn xe chở Chủ tịch Hồ Chí Minh và các thành viên chính phủ lâm thời tiến vào Quảng trường Ba Đình. Ảnh: Tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Lực lượng cảnh sát hộ tống đoàn xe chở Chủ tịch Hồ Chí Minh và các thành viên chính phủ lâm thời tiến vào Quảng trường Ba Đình. Ảnh: Tư liệu. Lực lượng cảnh sát hộ tống đoàn xe chở Chủ tịch Hồ Chí Minh và các thành viên chính phủ lâm thời tiến vào Quảng trường Ba Đình. Ảnh: Tư liệu. Lực lượng Liêm phóng Bắc Bộ và Trinh sát Trung Bộ đã cùng các ngành, đoàn thể cứu quốc vạch trần âm mưu của phản động tay sai, nghiêm khắc lên án những hành động bắt cóc, tống tiền, giết người của chúng ở Hà Nội và các nơi khác. Đồng thời sử dụng các biện pháp quản lý công khai, trinh sát bí mật, kịp thời ngăn chặn, bắt một số cầm đầu đảng phái phản động, tay sai của Pháp, như: Nguyễn Xuân Chữ, cầm đầu bù nhìn trong “Ủy ban Chính trị”; Cung Đình Vận, Tuần phủ Thái Nguyên; Nguyễn Thế Nghiệp, Nguyễn Ngọc Sơn, thủ lĩnh Quốc dân đảng và Đại Việt quốc gia. Ngày 20/11/1945, lực lượng Liêm phóng Kiến An, có sự hỗ trợ của Cảnh sát xung phong Hải Phòng, đã trấn áp phản động Việt Nam Quốc dân đảng ở nhà Bảo Hương, bắt 43 tên, thu 24 súng, đập tan âm mưu gây bạo loạn. Cuối năm 1945, Liêm phóng Bắc Bộ ngăn chặn kịp thời hoạt động phá hoại của Quốc dân đảng ở Ngân hàng Đông Dương."
+                       "text":  "Lực lượng Liêm phóng Bắc Bộ và Trinh sát Trung Bộ đã cùng các ngành, đoàn thể cứu quốc vạch trần âm mưu của phản động tay sai, nghiêm khắc lên án những hành động bắt cóc, tống tiền, giết người của chúng ở Hà Nội và các nơi khác. Đồng thời sử dụng các biện pháp quản lý công khai, trinh sát bí mật, kịp thời ngăn chặn, bắt một số cầm đầu đảng phái phản động, tay sai của Pháp, như: Nguyễn Xuân Chữ, cầm đầu bù nhìn trong “Ủy ban Chính trị”; Cung Đình Vận, Tuần phủ Thái Nguyên; Nguyễn Thế Nghiệp, Nguyễn Ngọc Sơn, thủ lĩnh Quốc dân đảng và Đại Việt quốc gia. Ngày 20/11/1945, lực lượng Liêm phóng Kiến An, có sự hỗ trợ của Cảnh sát xung phong Hải Phòng, đã trấn áp phản động Việt Nam Quốc dân đảng ở nhà Bảo Hương, bắt 43 tên, thu 24 súng, đập tan âm mưu gây bạo loạn. Cuối năm 1945, Liêm phóng Bắc Bộ ngăn chặn kịp thời hoạt động phá hoại của Quốc dân đảng ở Ngân hàng Đông Dương."
                    },
                    {
                        "type":  "image",
@@ -443,24 +422,18 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-20.jpg",
                        "width":  500,
                        "height":  262,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Trụ sở Quốc dân đảng ở số 7 phố Ôn Như Hầu (nay là phố Nguyễn Gia Thiều, Hà Nội), nơi ta tìm thấy 6 xác người bị chúng thủ tiêu và nhiều dụng cụ tra tấn khác. Ảnh: Tư liệu.",
+                       "caption":  "Trụ sở Quốc dân đảng ở số 7 phố Ôn Như Hầu (nay là phố Nguyễn Gia Thiều, Hà Nội), nơi ta tìm thấy 6 xác người bị chúng thủ tiêu và nhiều dụng cụ tra tấn khác. Ảnh: Tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Trụ sở Quốc dân đảng ở số 7 phố Ôn Như Hầu (nay là phố Nguyễn Gia Thiều, Hà Nội), nơi ta tìm thấy 6 xác người bị chúng thủ tiêu"
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "và nhiều dụng cụ tra tấn khác. Ảnh: Tư liệu"
                    },
                    {
                        "type":  "paragraph",
                        "text":  "Trong những ngày đầu lập quốc, khi Hà Nội còn chìm trong không khí căng thẳng của năm 1946, lực lượng An ninh nhân dân, với tinh thần thép và bản lĩnh kiên cường, bất ngờ phong tỏa số 7 phố Ôn Như Hầu, nay là phố Nguyễn Gia Thiều. Chỉ trong vài giờ, lực lượng An ninh nhân dân triệt phá thành công âm mưu đảo chính của các đảng phái phản động với sự hậu thuẫn từ các thế lực thù địch, đế quốc bên ngoài, nhằm lật đổ chính quyền cách mạng non trẻ do Chủ tịch Hồ Chí Minh dẫn dắt. Hơn 300 đối tượng bị bắt giữ, hàng chục súng ngắn, lựu đạn, hàng trăm truyền đơn kêu gọi lật đổ chính quyền, cùng tài liệu mật liên kết với quân Tưởng và thực dân Pháp bị thu giữ. Những bằng chứng tội ác như dụng cụ tra tấn và bảy xác chết chôn sau sân nhà được phơi bày, hé lộ sự tàn bạo của những kẻ phản bội khát vọng độc lập dân tộc. Chiến thắng ấy là cột mốc vàng son trong lịch sử lực lượng An ninh nhân dân, minh chứng rực rỡ cho bản lĩnh, trí tuệ, và lòng trung thành tuyệt đối với Tổ quốc và dân tộc Việt Nam trong thời khắc hiểm nghèo. Hơn bảy thập kỷ trôi qua, khi Việt Nam vươn mình mạnh mẽ giữa cơn lốc địa chính trị toàn cầu, di sản 12/7/1946 vẫn tỏa sáng, soi đường cho công cuộc bảo vệ an ninh quốc gia và xây dựng đất nước hùng cường."
                    },
                    {
-                       "type":  "paragraph",
+                       "type":  "heading",
+                       "level":  4,
+                       "id":  "boi-canh-lich-su-vu-an-on-nhu-hau",
                        "text":  "Bối cảnh lịch sử của vụ án Ôn Như Hầu"
                    },
                    {
@@ -472,8 +445,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-21.jpg",
                        "width":  1000,
                        "height":  667,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Trụ sở của Việt Nam Quốc dân đảng tại nhà số 132 Bùi Thị Xuân. Ảnh: Tư liệu.",
+                       "caption":  "Trụ sở của Việt Nam Quốc dân đảng tại nhà số 132 Bùi Thị Xuân. Ảnh: Tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -482,37 +455,33 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Trụ sở của Việt Nam Quốc dân đảng tại nhà số 132 Bùi Thị Xuân. Ảnh: Tư liệu.Trụ sở của Việt Nam Quốc dân đảng tại nhà số 132 Bùi Thị Xuân. Ảnh: Tư liệu.Nhưng chính quyền cách mạng non trẻ đối mặt với muôn vàn thử thách, tựa như ngọn đèn trước gió. Ở miền Bắc, quân Tưởng uy hiếp trực tiếp, ép buộc Việt Minh nhượng bộ, chia sẻ quyền lực với các đảng phái phản động như Việt Nam Quốc dân Đảng (Việt Quốc) và Đồng Minh Hội (Việt Cách). Các đảng phái này, được Tưởng hậu thuẫn về tài chính và vũ khí, âm mưu lật đổ chính quyền cách mạng, lập ra một chính phủ thân ngoại bang. Ở miền Nam, 23/9/1945, quân Pháp, được quân Anh - Ấn hỗ trợ, dùng vũ lực lật đổ chính quyền Việt Minh tại Sài Gòn, mở đầu cho cuộc tái xâm lược tàn bạo. Giữa muôn vàn khó khăn, nhân dân Hà Nội vẫn một lòng hướng về Bác Hồ và Việt Minh, tụ họp đông đảo tại các cuộc mít-tinh, giương cao cờ đỏ sao vàng, thể hiện niềm tin mãnh liệt vào chính quyền cách mạng. Sự đoàn kết ấy là nền tảng vững chắc cho những chiến thắng lịch sử, trong đó có vụ án Ôn Như Hầu."
-                   },
-                   {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-22.jpg",
-                       "width":  441,
-                       "height":  345,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                       "text":  "Nhưng chính quyền cách mạng non trẻ đối mặt với muôn vàn thử thách, tựa như ngọn đèn trước gió. Ở miền Bắc, quân Tưởng uy hiếp trực tiếp, ép buộc Việt Minh nhượng bộ, chia sẻ quyền lực với các đảng phái phản động như Việt Nam Quốc dân Đảng (Việt Quốc) và Đồng Minh Hội (Việt Cách). Các đảng phái này, được Tưởng hậu thuẫn về tài chính và vũ khí, âm mưu lật đổ chính quyền cách mạng, lập ra một chính phủ thân ngoại bang. Ở miền Nam, 23/9/1945, quân Pháp, được quân Anh - Ấn hỗ trợ, dùng vũ lực lật đổ chính quyền Việt Minh tại Sài Gòn, mở đầu cho cuộc tái xâm lược tàn bạo. Giữa muôn vàn khó khăn, nhân dân Hà Nội vẫn một lòng hướng về Bác Hồ và Việt Minh, tụ họp đông đảo tại các cuộc mít-tinh, giương cao cờ đỏ sao vàng, thể hiện niềm tin mãnh liệt vào chính quyền cách mạng. Sự đoàn kết ấy là nền tảng vững chắc cho những chiến thắng lịch sử, trong đó có vụ án Ôn Như Hầu."
                    },
                    {
                        "type":  "paragraph",
                        "text":  "Trong “Bình Ngô Đại cáo”, Anh hùng dân tộc Nguyễn Trãi đã có câu: “Tuy mạnh yếu từng lúc khác nhau, song hào kiệt đời nào cũng có”. Thật vậy, khi vận mệnh dân tộc tựa như “ngàn cân treo sợi tóc”, Hồ Chủ tịch đã thể hiện bản lĩnh ngoại giao phi thường. Quyết định ký Hiệp định Sơ bộ 6/3/1946 với Pháp, dù gây tranh cãi, là một nước cờ táo bạo để loại bỏ quân Tưởng - mối đe dọa trực tiếp hơn - đồng thời kéo dài thời gian chuẩn bị cho cuộc kháng chiến lâu dài. Quyết định này đòi hỏi sự đánh đổi lớn lao, khi Bác Hồ đối mặt với những lời vu khống từ các đảng phái phản động, cáo buộc Người “bán nước”!? Trong một khoảnh khắc kịch tính, 7/3/1946, trước 100.000 đồng bào Hà Nội, một quả lựu đạn nổ ngay trên bục tam cấp trước khi Hồ Chủ tịch bước tới micro. Với sự kiên định, Người khẳng định: “Tôi thà chết chứ quyết không bán nước”. Lời tuyên bố ấy lay động lòng dân, củng cố niềm tin mãnh liệt vào chính quyền cách mạng, dập tan những luận điệu xuyên tạc."
                    },
+                    {
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-22.jpg",
+                       "width":  441,
+                       "height":  345,
+                       "alt":  "Nhà số 7 tại phố Ôn Như Hầu. Ảnh: Tư liệu.",
+                       "caption":  "Nhà số 7 tại phố Ôn Như Hầu. Ảnh: Tư liệu.",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                   },
                    {
                        "type":  "paragraph",
-                       "text":  "Nhà số 7 tại phố Ôn Như Hầu. Ảnh: Tư liệu Nhà số 7 tại phố Ôn Như Hầu. Ảnh: Tư liệu Chính trong bối cảnh rối ren ấy, âm mưu đảo chính tại số 7 phố Ôn Như Hầu bùng nổ như một mối đe dọa trực tiếp. Âm mưu này, được chuẩn bị từ cuối 1945, do các thế lực phản động, được quân Tưởng hậu thuẫn và phối hợp ngầm với thực dân Pháp, dự định lợi dụng 14/7/1946, ngày Quốc khánh Pháp, để ném lựu đạn vào quân Pháp đang diễu binh tại Hà Nội, tạo cớ cho Pháp tấn công các cơ quan trung ương, bắt giữ lãnh đạo Việt Minh, và dựng lên một chính phủ thân ngoại bang. Âm mưu này không chỉ nhằm lật đổ chính quyền mà còn là sự thách thức trắng trợn đối với khát vọng độc lập của dân tộc. Dưới sự chỉ đạo của quyền Chủ tịch nước Huỳnh Thúc Kháng và Bộ trưởng Nội vụ Võ Nguyên Giáp, lực lượng An ninh nhân dân, dù mới thành lập với nguồn lực hạn chế, đã thể hiện năng lực tình báo và phản gián xuất sắc. Bộ trưởng Võ Nguyên Giáp, với sự quyết đoán và tầm nhìn chiến lược, trực tiếp chỉ đạo chuyên án, đảm bảo hành động nhanh gọn, chính xác. Qua nhiều tháng theo dõi sát sao, lực lượng An ninh nhân dân, với sự nhạy bén và cảnh giác cách mạng, thu thập được những chứng cứ xác thực, từ danh sách đối tượng đến các kế hoạch chi tiết."
+                       "text":  "Chính trong bối cảnh rối ren ấy, âm mưu đảo chính tại số 7 phố Ôn Như Hầu bùng nổ như một mối đe dọa trực tiếp. Âm mưu này, được chuẩn bị từ cuối 1945, do các thế lực phản động, được quân Tưởng hậu thuẫn và phối hợp ngầm với thực dân Pháp, dự định lợi dụng 14/7/1946, ngày Quốc khánh Pháp, để ném lựu đạn vào quân Pháp đang diễu binh tại Hà Nội, tạo cớ cho Pháp tấn công các cơ quan trung ương, bắt giữ lãnh đạo Việt Minh, và dựng lên một chính phủ thân ngoại bang. Âm mưu này không chỉ nhằm lật đổ chính quyền mà còn là sự thách thức trắng trợn đối với khát vọng độc lập của dân tộc. Dưới sự chỉ đạo của quyền Chủ tịch nước Huỳnh Thúc Kháng và Bộ trưởng Nội vụ Võ Nguyên Giáp, lực lượng An ninh nhân dân, dù mới thành lập với nguồn lực hạn chế, đã thể hiện năng lực tình báo và phản gián xuất sắc. Bộ trưởng Võ Nguyên Giáp, với sự quyết đoán và tầm nhìn chiến lược, trực tiếp chỉ đạo chuyên án, đảm bảo hành động nhanh gọn, chính xác. Qua nhiều tháng theo dõi sát sao, lực lượng An ninh nhân dân, với sự nhạy bén và cảnh giác cách mạng, thu thập được những chứng cứ xác thực, từ danh sách đối tượng đến các kế hoạch chi tiết."
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-23.jpg",
                        "width":  470,
                        "height":  306,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Ảnh: Tư liệu.",
+                       "caption":  "Đội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Ảnh: Tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Đội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Ảnh: Tư liệu."
                    },
                    {
                        "type":  "paragraph",
@@ -520,7 +489,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "di-san-lich-su-doi-voi-an-ninh-quoc-gia-trong-thoi-dai-moi",
                        "text":  "Di sản lịch sử đối với an ninh quốc gia trong thời đại mới"
                    },
@@ -533,13 +502,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-24.png",
                        "width":  760,
                        "height":  511,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Mệnh lệnh sự vụ liên quan vụ án “Ôn Như Hầu”. (Ảnh tư liệu)",
+                       "caption":  "Mệnh lệnh sự vụ liên quan vụ án “Ôn Như Hầu”. (Ảnh tư liệu)",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Mệnh lệnh sự vụ liên quan vụ án “Ôn Như Hầu”. (Ảnh tư liệu)"
                    },
                    {
                        "type":  "paragraph",
@@ -550,13 +515,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-25.jpg",
                        "width":  700,
                        "height":  253,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Ảnh: Tư liệu",
+                       "caption":  "Ảnh: Tư liệu",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Ảnh: Tư liệu"
                    },
                    {
                        "type":  "paragraph",
@@ -585,15 +546,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-26.jpg",
                        "width":  900,
                        "height":  600,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Khối nữ học viên An ninh nhân dân.",
+                       "caption":  "Khối nữ học viên An ninh nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "khoi-nu-hoc-vien-an-ninh-nhan-dan",
-                       "text":  "Khối nữ học viên An ninh nhân dân"
                    },
                    {
                        "type":  "paragraph",
@@ -608,8 +563,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-27.jpg",
                        "width":  1156,
                        "height":  735,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Lực lượng An ninh nhân dân diễu binh.",
+                       "caption":  "Lực lượng An ninh nhân dân diễu binh.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -629,15 +584,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-28.jpg",
                        "width":  777,
                        "height":  518,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Khối nam Sỹ quan An ninh nhân dân trong lễ diễu binh A50.",
+                       "caption":  "Khối nam Sỹ quan An ninh nhân dân trong lễ diễu binh A50.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "khoi-nam-sy-quan-an-ninh-nhan-dan-trong-le-dieu-binh-a50",
-                       "text":  "Khối nam Sỹ quan An ninh nhân dân trong lễ diễu binh A50"
                    },
                    {
                        "type":  "paragraph",
@@ -660,13 +609,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-29.jpg",
                        "width":  1177,
                        "height":  785,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Khối Sỹ quan An ninh nhân dân. Ảnh: VOV.",
+                       "caption":  "Khối Sỹ quan An ninh nhân dân. Ảnh: VOV.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Khối Sỹ quan An ninh nhân dân. Ảnh: VOV Khối Sỹ quan An ninh nhân dân. Ảnh: VOV Trải qua nhiều giai đoạn lịch sử của đất nước, lực lượng An ninh nhân dân đã không ngừng trưởng thành, vượt qua nhiều thử thách khắc nghiệt để hoàn thành sứ mệnh bảo vệ Đảng, Nhà nước và Nhân dân. Chính vì vậy, việc xác định Ngày truyền thống không chỉ đơn thuần là một dấu mốc kỷ niệm, mà còn là phương thức quan trọng để giáo dục truyền thống, giúp các thế hệ cán bộ, chiến sĩ hiểu rõ hơn về quá trình hình thành, chiến đấu và phát triển của lực lượng. Qua đó, mỗi cán bộ, chiến sĩ càng thêm trân trọng những hy sinh, đóng góp của các thế hệ đi trước, đồng thời nhận thức rõ hơn trách nhiệm của mình trong việc tiếp nối và phát huy truyền thống vẻ vang đó."
+                       "text":  "Trải qua nhiều giai đoạn lịch sử của đất nước, lực lượng An ninh nhân dân đã không ngừng trưởng thành, vượt qua nhiều thử thách khắc nghiệt để hoàn thành sứ mệnh bảo vệ Đảng, Nhà nước và Nhân dân. Chính vì vậy, việc xác định Ngày truyền thống không chỉ đơn thuần là một dấu mốc kỷ niệm, mà còn là phương thức quan trọng để giáo dục truyền thống, giúp các thế hệ cán bộ, chiến sĩ hiểu rõ hơn về quá trình hình thành, chiến đấu và phát triển của lực lượng. Qua đó, mỗi cán bộ, chiến sĩ càng thêm trân trọng những hy sinh, đóng góp của các thế hệ đi trước, đồng thời nhận thức rõ hơn trách nhiệm của mình trong việc tiếp nối và phát huy truyền thống vẻ vang đó."
                    },
                    {
                        "type":  "paragraph",
@@ -685,15 +634,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-30.jpg",
                        "width":  1868,
                        "height":  1246,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Khối sỹ quan nam An ninh nhân dân.",
+                       "caption":  "Khối sỹ quan nam An ninh nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "khoi-sy-quan-nam-an-ninh-nhan-dan",
-                       "text":  "Khối sỹ quan nam An ninh nhân dân"
                    },
                    {
                        "type":  "paragraph",
@@ -718,8 +661,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-31.png",
                        "width":  1359,
                        "height":  1813,
-                       "alt":  "Lực lượng An ninh nhân dân được tặng thưởng Huân chương Sao Vàng, năm 1996. Ảnh: Bộ Công anLễ đón nhận Huân chương Hồ Chí Minh của Tổng cục An ninh nhân dân, tháng 8/1985. Ảnh: Bộ Công an",
-                       "caption":  "Lực lượng An ninh nhân dân được tặng thưởng Huân chương Sao Vàng, năm 1996. Ảnh: Bộ Công anLễ đón nhận Huân chương Hồ Chí Minh của Tổng cục An ninh nhân dân, tháng 8/1985. Ảnh: Bộ Công an",
+                       "alt":  "Lực lượng An ninh nhân dân được tặng thưởng Huân chương Sao Vàng, năm 1996. Ảnh: Bộ Công an.",
+                       "caption":  "Lực lượng An ninh nhân dân được tặng thưởng Huân chương Sao Vàng, năm 1996. Ảnh: Bộ Công an.",
                        "note":  null
                    },
                    {
@@ -727,8 +670,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-32.png",
                        "width":  1652,
                        "height":  2204,
-                       "alt":  "Lực lượng An ninh nhân dân được tặng thưởng Huân chương Sao Vàng, năm 1996. Ảnh: Bộ Công anLễ đón nhận Huân chương Hồ Chí Minh của Tổng cục An ninh nhân dân, tháng 8/1985. Ảnh: Bộ Công an",
-                       "caption":  "Lực lượng An ninh nhân dân được tặng thưởng Huân chương Sao Vàng, năm 1996. Ảnh: Bộ Công anLễ đón nhận Huân chương Hồ Chí Minh của Tổng cục An ninh nhân dân, tháng 8/1985. Ảnh: Bộ Công an",
+                       "alt":  "Lễ đón nhận Huân chương Hồ Chí Minh của Tổng cục An ninh nhân dân, tháng 8/1985. Ảnh: Bộ Công an",
+                       "caption":  "Lễ đón nhận Huân chương Hồ Chí Minh của Tổng cục An ninh nhân dân, tháng 8/1985. Ảnh: Bộ Công an",
                        "note":  null
                    },
                    {
@@ -740,8 +683,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-33.png",
                        "width":  1226,
                        "height":  1636,
-                       "alt":  "Lực lượng An ninh nhân dân được tuyên dương An hùng lực lượng vũ trang nhân dân, ngày 12/7/2001. Ảnh: Bộ Công anTiểu ban Bảo vệ Chính trị thuộc Ban An ninh TW Cục miền Nam được tuyên dương Anh hùng LLVTND, ngày 9/8/2005.",
-                       "caption":  "Lực lượng An ninh nhân dân được tuyên dương An hùng lực lượng vũ trang nhân dân, ngày 12/7/2001. Ảnh: Bộ Công anTiểu ban Bảo vệ Chính trị thuộc Ban An ninh TW Cục miền Nam được tuyên dương Anh hùng LLVTND, ngày 9/8/2005.",
+                       "alt":  "Lực lượng An ninh nhân dân được tuyên dương An hùng lực lượng vũ trang nhân dân, ngày 12/7/2001. Ảnh: Bộ Công an.",
+                       "caption":  "Lực lượng An ninh nhân dân được tuyên dương An hùng lực lượng vũ trang nhân dân, ngày 12/7/2001. Ảnh: Bộ Công an.",
                        "note":  null
                    },
                    {
@@ -749,8 +692,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-34.png",
                        "width":  1182,
                        "height":  1577,
-                       "alt":  "Lực lượng An ninh nhân dân được tuyên dương An hùng lực lượng vũ trang nhân dân, ngày 12/7/2001. Ảnh: Bộ Công anTiểu ban Bảo vệ Chính trị thuộc Ban An ninh TW Cục miền Nam được tuyên dương Anh hùng LLVTND, ngày 9/8/2005.",
-                       "caption":  "Lực lượng An ninh nhân dân được tuyên dương An hùng lực lượng vũ trang nhân dân, ngày 12/7/2001. Ảnh: Bộ Công anTiểu ban Bảo vệ Chính trị thuộc Ban An ninh TW Cục miền Nam được tuyên dương Anh hùng LLVTND, ngày 9/8/2005.",
+                       "alt":  "Tiểu ban Bảo vệ Chính trị thuộc Ban An ninh TW Cục miền Nam được tuyên dương Anh hùng LLVTND, ngày 9/8/2005.",
+                       "caption":  "Tiểu ban Bảo vệ Chính trị thuộc Ban An ninh TW Cục miền Nam được tuyên dương Anh hùng LLVTND, ngày 9/8/2005.",
                        "note":  null
                    },
                    {
@@ -762,8 +705,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-35.png",
                        "width":  1256,
                        "height":  1676,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Tổng cục An ninh được tặng thưởng Huân chương Sao Vàng, ngày 12/7/2006. Ảnh: Bộ Công an.",
+                       "caption":  "Tổng cục An ninh được tặng thưởng Huân chương Sao Vàng, ngày 12/7/2006. Ảnh: Bộ Công an.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -771,8 +714,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-36.png",
                        "width":  1260,
                        "height":  1680,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Tổng cục An ninh được tuyên dương Anh hùng LLVTND, ngày 12/7/2016.",
+                       "caption":  "Tổng cục An ninh được tuyên dương Anh hùng LLVTND, ngày 12/7/2016.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -780,8 +723,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-37.jpg",
                        "width":  777,
                        "height":  550,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Thủ tướng Nguyễn Tấn Dũng gắn Huân chương Sao Vàng lên lá cờ truyền thống của Học viện An ninh nhân dân.Ảnh: Chinhphu.vn.",
+                       "caption":  "Thủ tướng Nguyễn Tấn Dũng gắn Huân chương Sao Vàng lên lá cờ truyền thống của Học viện An ninh nhân dân.Ảnh: Chinhphu.vn.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -789,21 +732,20 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-38.jpg",
                        "width":  1209,
                        "height":  829,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Tổng Bí thư Tô Lâm gắn Huân chương Hồ Chí Minh lên Lá cờ truyền thống của lực lượng Tình báo CAND. Ảnh: Công an nhân dân.",
+                       "caption":  "Tổng Bí thư Tô Lâm gắn Huân chương Hồ Chí Minh lên Lá cờ truyền thống của lực lượng Tình báo CAND. Ảnh: Công an nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Tổng cục An ninh được tặng thưởng Huân chương Sao Vàng, ngày 12/7/2006. Ảnh: Bộ Công anTổng cục An ninh được tuyên dương Anh hùng LLVTND, ngày 12/7/2016Thủ tướng Nguyễn Tấn Dũng gắn Huân chương Sao Vàng lên lá cờ truyền thống của Học viện An ninh nhân dân.Ảnh: Chinhphu.vnTổng Bí thư Tô Lâm gắn Huân chương Hồ Chí Minh lên Lá cờ truyền thống của lực lượng Tình báo CAND.Ảnh: Công an nhân dân"
-                   },
+                   
+
+
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-39.jpg",
                        "width":  1404,
                        "height":  938,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Thừa ủy quyền, Bộ trưởng Lương Tam Quang gắn và trao Huân chương Bảo vệ Tổ quốc hạng Nhất tặng Cục Viễn thông và Cơ yếu. Ảnh: Công an nhân dân.",
+                       "caption":  "Thừa ủy quyền, Bộ trưởng Lương Tam Quang gắn và trao Huân chương Bảo vệ Tổ quốc hạng Nhất tặng Cục Viễn thông và Cơ yếu. Ảnh: Công an nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -811,25 +753,15 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-40.jpg",
                        "width":  1244,
                        "height":  884,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Tổng Bí thư, Chủ tịch nước Tô Lâm trao danh hiệu Anh hùng lực lượng vũ trang nhân dân tặng Văn phòng Bộ Công an.Ảnh: Công an nhân dân.",
+                       "caption":  "Tổng Bí thư, Chủ tịch nước Tô Lâm trao danh hiệu Anh hùng lực lượng vũ trang nhân dân tặng Văn phòng Bộ Công an.Ảnh: Công an nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Thừa ủy quyền, Bộ trưởng Lương Tam Quang gắn và trao Huân chương Bảo vệ Tổ quốc hạng Nhất tặng Cục Viễn thông và Cơ yếu. Ảnh: Công an nhân dânTổng Bí thư, Chủ tịch nước Tô Lâm trao danh hiệu Anh hùng lực lượng vũ trang nhân dân tặng Văn phòng Bộ Công an.Ảnh: Công an nhân dân"
                    },
                    {
                        "type":  "heading",
                        "level":  3,
                        "id":  "su-quan-tam-chi-dao-cua-dang-nha-nuoc-va-bo-cong-an",
-                       "text":  "SỰ QUAN TÂM CHỈ ĐẠO CỦA ĐẢNG, NHÀ NƯỚC VÀ BỘ CÔNG AN"
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "voi-luc-luong-an-ninh-nhan-dan",
-                       "text":  "VỚI LỰC LƯỢNG AN NINH NHÂN DÂN"
+                       "text":  "SỰ QUAN TÂM CHỈ ĐẠO CỦA ĐẢNG, NHÀ NƯỚC VÀ BỘ CÔNG AN VỚI LỰC LƯỢNG AN NINH NHÂN DÂN"
                    },
                    {
                        "type":  "paragraph",
@@ -840,23 +772,18 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-41.png",
                        "width":  1596,
                        "height":  2128,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Chủ tịch Hồ Chí Minh nói chuyện với học viên Công an Khóa Tổng phản công tại Chiến khu Việt Bắc, tháng 4/1950.",
+                       "caption":  "Chủ tịch Hồ Chí Minh nói chuyện với học viên Công an Khóa Tổng phản công tại Chiến khu Việt Bắc, tháng 4/1950.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "chu-tich-ho-chi-minh-noi-chuyen-voi-hoc-vien-cong-an-khoa-tong-phan-cong",
-                       "text":  "Chủ tịch Hồ Chí Minh nói chuyện với học viên Công an Khóa Tổng phản công tại Chiến khu Việt Bắc, tháng 4/1950"
-                   },
+                  
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-42.png",
                        "width":  1533,
                        "height":  2044,
-                       "alt":  "Chủ tịch Hồ Chí Minh với đồng chí Phạm Thái Bường, Trưởng ban An ninh Trung ương Cục miền Nam, năm 1969Chủ tịch Tôn Đức Thắng tiễn đoàn cán bộ An ninh chi viện chiến trường miền Nam",
-                       "caption":  "Chủ tịch Hồ Chí Minh với đồng chí Phạm Thái Bường, Trưởng ban An ninh Trung ương Cục miền Nam, năm 1969Chủ tịch Tôn Đức Thắng tiễn đoàn cán bộ An ninh chi viện chiến trường miền Nam",
+                       "alt":  "Chủ tịch Hồ Chí Minh với đồng chí Phạm Thái Bường, Trưởng ban An ninh Trung ương Cục miền Nam, năm 1969.",
+                       "caption":  "Chủ tịch Hồ Chí Minh với đồng chí Phạm Thái Bường, Trưởng ban An ninh Trung ương Cục miền Nam, năm 1969.",
                        "note":  null
                    },
                    {
@@ -864,8 +791,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-43.png",
                        "width":  1458,
                        "height":  1944,
-                       "alt":  "Chủ tịch Hồ Chí Minh với đồng chí Phạm Thái Bường, Trưởng ban An ninh Trung ương Cục miền Nam, năm 1969Chủ tịch Tôn Đức Thắng tiễn đoàn cán bộ An ninh chi viện chiến trường miền Nam",
-                       "caption":  "Chủ tịch Hồ Chí Minh với đồng chí Phạm Thái Bường, Trưởng ban An ninh Trung ương Cục miền Nam, năm 1969Chủ tịch Tôn Đức Thắng tiễn đoàn cán bộ An ninh chi viện chiến trường miền Nam",
+                       "alt":  "Chủ tịch Tôn Đức Thắng tiễn đoàn cán bộ An ninh chi viện chiến trường miền Nam.",
+                       "caption":  "Chủ tịch Tôn Đức Thắng tiễn đoàn cán bộ An ninh chi viện chiến trường miền Nam.",
                        "note":  null
                    },
                    {
@@ -873,42 +800,26 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-44.png",
                        "width":  1590,
                        "height":  2120,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đồng chí Lê Duẫn – Bí thư thứ Nhất ban Chấp hành Trung ương Đảng nói chuyện tại Hội nghị Công an toàn quốc lần thứ 17, tháng 2/1963.",
+                       "caption":  "Đồng chí Lê Duẫn – Bí thư thứ Nhất ban Chấp hành Trung ương Đảng nói chuyện tại Hội nghị Công an toàn quốc lần thứ 17, tháng 2/1963.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "dong-chi-le-duan-bi-thu-thu-nhat-ban-chap-hanh-trung-uong-dang-noi-chuye",
-                       "text":  "Đồng chí Lê Duẫn – Bí thư thứ Nhất ban Chấp hành Trung ương Đảng nói chuyện tại Hội nghị Công an toàn quốc"
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "lan-thu-17-thang-2-1963",
-                       "text":  "lần thứ 17, tháng 2/1963"
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-45.jpg",
                        "width":  692,
                        "height":  257,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Thủ tướng Chính phủ Phạm Văn Đồng phát biểu tại Hội nghị Tổng kết Phong trào Bảo vệ ANTQ 1975 - 1979 do Bộ Nội vụ tổ chức, năm 1979.",
+                       "caption":  "Thủ tướng Chính phủ Phạm Văn Đồng phát biểu tại Hội nghị Tổng kết Phong trào Bảo vệ ANTQ 1975 - 1979 do Bộ Nội vụ tổ chức, năm 1979.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Thủ tướng Chính phủ Phạm Văn Đồng phát biểu tại Hội nghị Tổng kết Phong trào Bảo vệ ANTQ 1975 - 1979 do Bộ Nội vụ tổ chức, năm 1979"
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-46.jpg",
                        "width":  859,
                        "height":  592,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đồng chí Võ Nguyên Giáp, đồng chí Nguyễn Tấn Dũng, Thứ trưởng Bộ Nội vụ và các đồng chí Lê Giản, Lê Hữu Qua, Nguyễn Tài tại buổi tọa đàm về Vụ án ở số 7 phố Ôn Như Hầu - Hà Nội, tháng 3/1995.",
+                       "caption":  "Đồng chí Võ Nguyên Giáp, đồng chí Nguyễn Tấn Dũng, Thứ trưởng Bộ Nội vụ và các đồng chí Lê Giản, Lê Hữu Qua, Nguyễn Tài tại buổi tọa đàm về Vụ án ở số 7 phố Ôn Như Hầu - Hà Nội, tháng 3/1995.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -916,21 +827,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-47.jpg",
                        "width":  882,
                        "height":  414,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Đồng chí Võ Nguyên Giáp, đồng chí Nguyễn Tấn Dũng, Thứ trưởng Bộ Nội vụ và các đồng chí Lê Giản, Lê Hữu Qua, Nguyễn Tài tại buổi tọa đàm về Vụ án ở số 7 phố Ôn Như Hầu - Hà Nội, tháng 3/1995.Hội đồng Nhà nước thông qua Pháp lệnh về lực lượng An ninh nhân dân Việt Nam, năm 1987."
-                   },
-                   {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-48.png",
-                       "width":  2568,
-                       "height":  1816,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Hội đồng Nhà nước thông qua Pháp lệnh về lực lượng An ninh nhân dân Việt Nam, năm 1987.",
+                       "caption":  "Hội đồng Nhà nước thông qua Pháp lệnh về lực lượng An ninh nhân dân Việt Nam, năm 1987.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -973,8 +871,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-50.jpg",
                        "width":  480,
                        "height":  317,
-                       "alt":  "Đội tự vệ đỏ ở Hòa Quân - Đông Sớ - Nghệ An trong cao trào Xô Viết Nghệ - Tĩnh 1930 - 1931Nguồn: Ảnh tư liệuĐội tự vệ đỏ ở Hòa Quân - Đông Sớ - Nghệ An trong cao trào Xô Viết Nghệ - Tĩnh 1930 - 1931Nguồn: Ảnh tư liệu",
-                       "caption":  "Đội tự vệ đỏ ở Hòa Quân - Đông Sớ - Nghệ An trong cao trào Xô Viết Nghệ - Tĩnh 1930 - 1931Nguồn: Ảnh tư liệuĐội tự vệ đỏ ở Hòa Quân - Đông Sớ - Nghệ An trong cao trào Xô Viết Nghệ - Tĩnh 1930 - 1931Nguồn: Ảnh tư liệu",
+                       "alt":  "Đội tự vệ đỏ ở Hòa Quân - Đông Sớ - Nghệ An trong cao trào Xô Viết Nghệ - Tĩnh 1930 - 1931Nguồn: Ảnh tư liệu.",
+                       "caption":  "Đội tự vệ đỏ ở Hòa Quân - Đông Sớ - Nghệ An trong cao trào Xô Viết Nghệ - Tĩnh 1930 - 1931Nguồn: Ảnh tư liệu.",
                        "note":  null
                    },
                    {
@@ -982,17 +880,17 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tháng 9-1939, khi Chiến tranh thế giới thứ hai bùng nổ, thực dân Pháp đẩy mạnh đàn áp phong trào cách mạng Việt Nam, hàng nghìn cán bộ, đảng viên bị bắt, tù đày, buộc Đảng ta phải rút vào hoạt động bí mật. Đầu năm 1940, Trung ương Đảng chủ trương thành lập “Ban Công tác đội” làm nhiệm vụ bảo vệ An toàn khu (ATK), bảo vệ cán bộ cao cấp của Đảng, đồng thời tổ chức giải thoát cán bộ khi bị địch bắt; lực lượng này đặt dưới sự chỉ đạo trực tiếp của Trung ương, được trang bị vũ khí và huấn luyện. Ngày 15-5-1945, Xứ ủy Bắc Kỳ thành lập “Đội Danh dự trừ gian” do Xứ ủy trực tiếp lãnh đạo, thực hiện nhiệm vụ trừ diệt bọn Việt gian đầu sỏ, kết hợp vũ trang tuyên truyền và sẵn sàng chiến đấu. Ngày 04-6-1945, Tổng bộ Việt Minh tuyên bố thành lập Khu giải phóng, gồm 6 tỉnh: Cao Bằng, Bắc Kạn, Lạng Sơn, Hà Giang, Tuyên Quang, Thái Nguyên và một số vùng phụ cận thuộc các tỉnh Bắc Giang, Vĩnh Yên, Phú Thọ, Yên Bái; đồng thời công bố 10 chính sách lớn của Việt Minh. Ngay sau đó, các tổ chức “Đội trinh sát”, “Đội hộ lương diệt ác”, lần lượt ra đời cùng với “Đội tự vệ đỏ”, “Ban Công tác đội” và “Đội danh dự trừ gian” làm nhiệm vụ thủ tiêu lực lượng của Nhật, phát hiện, trừng trị Việt gian, phần tử phản động, bảo vệ chính quyền cách mạng và góp phần thực hiện hiệu quả 10 chính sách lớn của Việt Minh."
                    },
                    {
+                       "type":  "paragraph",
+                       "text":  "Ngày 19-8-1945, cuộc Tổng khởi nghĩa giành thắng lợi ở Hà Nội, cùng với việc đập tan các cơ quan đàn áp của địch, thiết lập chính quyền cách mạng, các tổ chức đầu tiên của lực lượng CAND ra đời: ở Bắc Bộ thành lập Sở Liêm phóng, ở Trung Bộ thành lập Sở Trinh sát và ở Nam Bộ thành lập Quốc gia Tự vệ cuộc. Tuy tên gọi ở ba miền khác nhau nhưng các tổ chức đầu tiên của CAND Việt Nam đều có chung nhiệm vụ là trấn áp phản cách mạng, giữ gìn an ninh, trật tự, bảo vệ Đảng, bảo vệ chính quyền cách mạng, bảo vệ tính mạng và tài sản của Nhân dân. Trước tình thế vận mệnh dân tộc như “ngàn cân treo sợi tóc”: các thế lực ngoại xâm lần lượt kéo vào nước ta dưới danh nghĩa đồng minh vào giải giáp quân Nhật nhưng thực chất đều thực hiện dã tâm xâm lược nước ta. Các cơ quan tình báo, gián điệp nước ngoài cấu kết với các tổ chức, đảng phái phản động trong nước thành liên minh phản cách mạng nguy hiểm; đất nước vừa thoát khỏi ách đô hộ, đời sống kinh tế vô cùng khó khăn, tàn dư của chế độ cũ còn hết sức nặng nề càng làm cho tình hình xã hội trầm trọng hơn... Nhiệm vụ bảo vệ chính quyền cách mạng, bảo vệ Nhân dân vốn đã khó khăn lại càng khó khăn bội phần khi lực lượng còn quá mỏng, nghiệp vụ đánh địch còn đơn giản. Nhưng thế hệ cán bộ, chiến sĩ đầu tiên của lực lượng An ninh nhân dân đã vượt qua hoàn cảnh khó khăn, dựa vào Nhân dân; sau gần một năm kiên trì đấu tranh, đã khéo léo vận dụng pháp luật, trấn áp nhiều tổ chức phản động manh động chống chính quyền, bắt và trừng trị nhiều tay sai chỉ điểm, từng bước vô hiệu hóa hoạt động chống phá của các thế lực nội phản câu kết với giặc ngoại xâm. Kết quả đó đã góp phần từng bước đẩy lùi âm mưu của các thế lực nội phản; phá vỡ thế liên kết giữa thù trong với giặc ngoài; tạo điều kiện để Chính phủ triển khai những chính sách mới, củng cố chính quyền cơ sở, nâng cao một bước đời sống vật chất và giác ngộ chính trị cho Nhân dân."
+                   },
+                                      {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-51.jpg",
                        "width":  471,
                        "height":  604,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Mệnh lệnh sự vụ ngày 12-7-1946 của sở Công an Bắc Bộ, lệnh cho đồng chí Nguyễn Bá Hùng và Đội Trinh sát đặc biệt đến khám phá số 7 Ôn Như bắt Pha Kích Nam và bọn Quốc dân đảng. Nguồn: Ảnh tư liệu.",
+                       "caption":  "Mệnh lệnh sự vụ ngày 12-7-1946 của sở Công an Bắc Bộ, lệnh cho đồng chí Nguyễn Bá Hùng và Đội Trinh sát đặc biệt đến khám phá số 7 Ôn Như bắt Pha Kích Nam và bọn Quốc dân đảng. Nguồn: Ảnh tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Ngày 19-8-1945, cuộc Tổng khởi nghĩa giành thắng lợi ở Hà Nội, cùng với việc đập tan các cơ quan đàn áp của địch, thiết lập chính quyền cách mạng, các tổ chức đầu tiên của lực lượng CAND ra đời: ở Bắc Bộ thành lập Sở Liêm phóng, ở Trung Bộ thành lập Sở Trinh sát và ở Nam Bộ thành lập Quốc gia Tự vệ cuộc. Tuy tên gọi ở ba miền khác nhau nhưng các tổ chức đầu tiên của CAND Việt Nam đều có chung nhiệm vụ là trấn áp phản cách mạng, giữ gìn an ninh, trật tự, bảo vệ Đảng, bảo vệ chính quyền cách mạng, bảo vệ tính mạng và tài sản của Nhân dân. Trước tình thế vận mệnh dân tộc như “ngàn cân treo sợi tóc”: các thế lực ngoại xâm lần lượt kéo vào nước ta dưới danh nghĩa đồng minh vào giải giáp quân Nhật nhưng thực chất đều thực hiện dã tâm xâm lược nước ta. Các cơ quan tình báo, gián điệp nước ngoài cấu kết với các tổ chức, đảng phái phản động trong nước thành liên minh phản cách mạng nguy hiểm; đất nước vừa thoát khỏi ách đô hộ, đời sống kinh tế vô cùng khó khăn, tàn dư của chế độ cũ còn hết sức nặng nề càng làm cho tình hình xã hội trầm trọng hơn... Nhiệm vụ bảo vệ chính quyền cách mạng, bảo vệ Nhân dân vốn đã khó khăn lại càng khó khăn bội phần khi lực lượng còn quá mỏng, nghiệp vụ đánh địch còn đơn giản. Nhưng thế hệ cán bộ, chiến sĩ đầu tiên của lực lượng An ninh nhân dân đã vượt qua hoàn cảnh khó khăn, dựa vào Nhân dân; sau gần một năm kiên trì đấu tranh, đã khéo léo vận dụng pháp luật, trấn áp nhiều tổ chức phản động manh động chống chính quyền, bắt và trừng trị nhiều tay sai chỉ điểm, từng bước vô hiệu hóa hoạt động chống phá của các thế lực nội phản câu kết với giặc ngoại xâm. Kết quả đó đã góp phần từng bước đẩy lùi âm mưu của các thế lực nội phản; phá vỡ thế liên kết giữa thù trong với giặc ngoài; tạo điều kiện để Chính phủ triển khai những Mệnh lệnh sự vụ ngày 12-7-1946 của sở Công an Bắc Bộ, lệnh cho đồng chí Nguyễn Bá Hùng và Đội Trinh sát đặc biệt đến khám phá số 7 Ôn Như bắt Pha Kích Nam và bọn Quốc dân đảng. Nguồn: Ảnh tư liệuMệnh lệnh sự vụ ngày 12-7-1946 của sở Công an Bắc Bộ, lệnh cho đồng chí Nguyễn Bá Hùng và Đội Trinh sát đặc biệt đến khám phá số 7 Ôn Như bắt Pha Kích Nam và bọn Quốc dân đảng. Nguồn: Ảnh tư liệuchính sách mới, củng cố chính quyền cơ sở, nâng cao một bước đời sống vật chất và giác ngộ chính trị cho Nhân dân."
                    },
                    {
                        "type":  "paragraph",
@@ -1015,13 +913,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-52.jpg",
                        "width":  470,
                        "height":  306,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Nguồn: Ảnh tư liệu.",
+                       "caption":  "Đội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Nguồn: Ảnh tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Đội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Nguồn: Ảnh tư liệuĐội trinh sát đặc biệt, đơn vị chủ chốt trấn áp bọn phản động Quốc dân đảng ngày 12-7-1946. Nguồn: Ảnh tư liệuĐược Nhân dân ủng hộ, giúp đỡ, trong 2 ngày 12 và 13-7-1946 ta khám xét 41 điểm là trụ sở công khai và bí mật của bọn phản động, bắt hơn 300 tên, trong đó có Phan Kích Nam là Bí thư Đệ nhất khu, y còn có chân trong Quốc hội. Trong khi trấn áp, ta còn mở một cuộc triển lãm về tội ác của chúng tại số 7 phố Ôn Như Hầu, hàng vạn đồng bào ở Hà Nội đến xem, càng nhận rõ bộ mặt quốc gia giả hiệu của Quốc dân đảng. Vì thế đồng bào càng tích cực giúp đỡ, tạo ra áp lực chính trị mạnh mẽ, làm cho quân đội Pháp không dám can thiệp."
+                       "text":  "Được Nhân dân ủng hộ, giúp đỡ, trong 2 ngày 12 và 13-7-1946 ta khám xét 41 điểm là trụ sở công khai và bí mật của bọn phản động, bắt hơn 300 tên, trong đó có Phan Kích Nam là Bí thư Đệ nhất khu, y còn có chân trong Quốc hội. Trong khi trấn áp, ta còn mở một cuộc triển lãm về tội ác của chúng tại số 7 phố Ôn Như Hầu, hàng vạn đồng bào ở Hà Nội đến xem, càng nhận rõ bộ mặt quốc gia giả hiệu của Quốc dân đảng. Vì thế đồng bào càng tích cực giúp đỡ, tạo ra áp lực chính trị mạnh mẽ, làm cho quân đội Pháp không dám can thiệp."
                    },
                    {
                        "type":  "paragraph",
@@ -1040,15 +938,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-53.png",
                        "width":  480,
                        "height":  326,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đồng chí Tổng Bí thư Trường Chinh.",
+                       "caption":  "Đồng chí Tổng Bí thư Trường Chinh.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "dong-chi-tong-bi-thu-truong-chinh",
-                       "text":  "Đồng chí Tổng Bí thư Trường Chinh"
                    },
                    {
                        "type":  "paragraph",
@@ -1061,21 +953,21 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "2. LỰC LƯỢNG AN NINH NHÂN DÂN TRONG CUỘC KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP (1946 - 1954)"
                    },
                    {
+                       "type":  "paragraph",
+                       "text":  "Bước vào cuộc kháng chiến toàn quốc chống thực dân Pháp xâm lược, nhiệm vụ của lực lượng Công an là nhanh chóng di chuyển hồ sơ, tài liệu; di chuyển trại giam; bảo vệ các đồng chí lãnh đạo Đảng, Nhà nước; bảo vệ cơ quan, kho tàng; bảo vệ tính mạng và tài sản của Nhân dân; theo dõi, đuổi các đối tượng có nguy hại cho an ninh ra khỏi khu vực có thể xảy ra chiến sự; bắt, đưa đi an trí những đối tượng xét thấy nguy hại cho cuộc kháng chiến; bảo vệ bí mật quân sự, đồng thời tăng cường công tác nắm tình hình địch; giữ gìn an ninh, trật tự ở những vùng nông thôn hậu phương. Ở những nơi địch chiếm đóng, một bộ phận công an ở lại xây dựng và phát triển cơ sở để tổ chức đấu tranh chống phá chính quyền địch."
+                   },
+                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-54.jpg",
                        "width":  450,
                        "height":  578,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Sắc lệnh số 23/SL của Chủ tịch Hồ Chí Minh ngày 21/02/1946 v/v thành lập Việt Nam Công an Vụ thuộc Bộ Nội vụ. Nguồn: Trung tâm Lưu trữ quốc gia III, phông Phủ Thủ tướng, hồ sơ 02.",
+                       "caption":  "Sắc lệnh số 23/SL của Chủ tịch Hồ Chí Minh ngày 21/02/1946 v/v thành lập Việt Nam Công an Vụ thuộc Bộ Nội vụ. Nguồn: Trung tâm Lưu trữ quốc gia III, phông Phủ Thủ tướng, hồ sơ 02.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Bước vào cuộc kháng chiến toàn quốc chống thực dân Pháp xâm lược, nhiệm vụ của lực lượng Công an là nhanh chóng di chuyển hồ sơ, tài liệu; di chuyển trại giam; bảo vệ các đồng chí lãnh đạo Đảng, Nhà nước; bảo vệ cơ quan, kho tàng; bảo vệ tính mạng và tài sản của Nhân dân; theo dõi, đuổi các đối tượng có nguy hại cho an ninh ra khỏi khu vực có thể xảy ra chiến sự; bắt, đưa đi an trí những đối tượng xét thấy nguy hại cho cuộc kháng chiến; bảo vệ bí mật quân sự, đồng thời tăng cường công tác nắm tình hình địch; giữ gìn an ninh, trật tự ở những vùng nông thôn hậu phương. Ở những nơi địch chiếm đóng, một bộ phận công an ở lại xây dựng và phát triển cơ sở để tổ chức đấu tranh chống phá chính quyền địch."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Sắc lệnh số 23/SL của Chủ tịch Hồ Chí Minh ngày 21/02/1946 v/v thành lập Việt Nam Công an Vụ thuộc Bộ Nội vụ. Nguồn: Trung tâm Lưu trữ quốc gia III, phông Phủ Thủ tướng, hồ sơ 02Sắc lệnh số 23/SL của Chủ tịch Hồ Chí Minh ngày 21/02/1946 v/v thành lập Việt Nam Công an Vụ thuộc Bộ Nội vụ. Nguồn: Trung tâm Lưu trữ quốc gia III, phông Phủ Thủ tướng, hồ sơ 02Trong giai đoạn này, Chủ tịch Hồ Chí Minh ký Sắc lệnh số 23/SL, ngày 21/2/1946, hợp nhất các Sở Cảnh sát và các Sở Liêm phóng toàn quốc thành “Việt Nam Công an vụ”. Ngày 18/4/1946, thực hiện Sắc lệnh số 23/SL, Bộ Nội vụ ban hành Nghị định số 121-NV/NĐ về tổ chức Việt Nam Công an vụ, gồm ba cấp: Công an Việt Nam, Công an kỳ, Công an tỉnh. Ở Trung ương gọi là Nha Công an Việt Nam; ở ba miền Bắc, Trung, Nam gọi là Sở Công an; ở tỉnh gọi là Ty Công an. Theo đó, hệ thống ngành dọc của lực lượng Chính trị (An ninh nhân dân) gồm: tại Nha Công an và Sở Công an kỳ có Phòng Chính trị; tại Ty Công an tỉnh có Ban Chính trị. Ngày 29/01/1947, Nha Công an ra Quyết định số A00092 về tổ chức và chương trình hoạt động của bộ máy Công an thời chiến. Theo quyết định này, Phòng Chính trị tại Nha Công an phát triển thành Ty Chính trị (sau này là Tổng cục An ninh). Ty Chính trị chỉ đạo nghiệp vụ ở Bắc Bộ và Trung Bộ; địa bàn Nam Bộ do Sở Công an Nam Bộ chỉ đạo. Ngày 05/4/1948, Bộ Nội vụ ra Nghị định số 219-NV/NĐ về “Tổ chức Nha Công an Việt Nam”. Theo đó, hệ thống ngành dọc của lực lượng Trinh sát chính trị gồm: ở Nha Công an Việt Nam có Ty Chính trị thực hiện công tác an ninh; ở các Sở Công an có Phòng Chính trị; ở Ty Công an tỉnh có Ban Chính trị; ở Công an quận có bộ phận Trinh sát chính trị. Ngày 16/02/1953, Chủ tịch Hồ Chí Minh ký Sắc lệnh số 141/SL, đổi tên Nha Công an Việt Nam thành Thứ Bộ Công an. Theo sắc lệnh, Thứ Bộ Công an có 07 đầu mối trực thuộc, trong đó Vụ Bảo vệ chính trị thực hiện công tác an ninh. Triển khai Sắc lệnh số 141/SL, ngày 13/5/1953, Thứ Bộ Công an ra Nghị định số 74-NgĐ quy định tổ chức từ Thứ Bộ đến các khu, sở, ty công an. Theo đó, ở Thứ Bộ Công an có Vụ Bảo vệ chính trị, gồm: Bộ phận Văn thư, Phòng Điều tra nghiên cứu, Phòng Trinh sát, Phòng Trinh sát địch hậu; ở liên khu có Phòng Bảo vệ chính trị; ở tỉnh có Ban Bảo vệ chính trị. Cuối năm 1954, Bộ Công an ra Chỉ thị số 373/CT-CA quy định bổ sung nhiệm vụ và cơ cấu tổ chức ở các vụ, cục thuộc Bộ. Vụ Bảo vệ chính trị gồm 5 đầu mối: Phòng Trinh sát địch hậu đổi thành Phòng Phái khiển; Phòng Trinh sát được chia thành 03 phòng (Phòng Trinh sát ngoại quốc, Phòng Trinh sát nội địa, Phòng Trinh sát ngoại tuyến) và Phòng Bảo vệ cơ quan nội chính, văn xã."
+                       "text":  "Trong giai đoạn này, Chủ tịch Hồ Chí Minh ký Sắc lệnh số 23/SL, ngày 21/2/1946, hợp nhất các Sở Cảnh sát và các Sở Liêm phóng toàn quốc thành “Việt Nam Công an vụ”. Ngày 18/4/1946, thực hiện Sắc lệnh số 23/SL, Bộ Nội vụ ban hành Nghị định số 121-NV/NĐ về tổ chức Việt Nam Công an vụ, gồm ba cấp: Công an Việt Nam, Công an kỳ, Công an tỉnh. Ở Trung ương gọi là Nha Công an Việt Nam; ở ba miền Bắc, Trung, Nam gọi là Sở Công an; ở tỉnh gọi là Ty Công an. Theo đó, hệ thống ngành dọc của lực lượng Chính trị (An ninh nhân dân) gồm: tại Nha Công an và Sở Công an kỳ có Phòng Chính trị; tại Ty Công an tỉnh có Ban Chính trị. Ngày 29/01/1947, Nha Công an ra Quyết định số A00092 về tổ chức và chương trình hoạt động của bộ máy Công an thời chiến. Theo quyết định này, Phòng Chính trị tại Nha Công an phát triển thành Ty Chính trị (sau này là Tổng cục An ninh). Ty Chính trị chỉ đạo nghiệp vụ ở Bắc Bộ và Trung Bộ; địa bàn Nam Bộ do Sở Công an Nam Bộ chỉ đạo. Ngày 05/4/1948, Bộ Nội vụ ra Nghị định số 219-NV/NĐ về “Tổ chức Nha Công an Việt Nam”. Theo đó, hệ thống ngành dọc của lực lượng Trinh sát chính trị gồm: ở Nha Công an Việt Nam có Ty Chính trị thực hiện công tác an ninh; ở các Sở Công an có Phòng Chính trị; ở Ty Công an tỉnh có Ban Chính trị; ở Công an quận có bộ phận Trinh sát chính trị. Ngày 16/02/1953, Chủ tịch Hồ Chí Minh ký Sắc lệnh số 141/SL, đổi tên Nha Công an Việt Nam thành Thứ Bộ Công an. Theo sắc lệnh, Thứ Bộ Công an có 07 đầu mối trực thuộc, trong đó Vụ Bảo vệ chính trị thực hiện công tác an ninh. Triển khai Sắc lệnh số 141/SL, ngày 13/5/1953, Thứ Bộ Công an ra Nghị định số 74-NgĐ quy định tổ chức từ Thứ Bộ đến các khu, sở, ty công an. Theo đó, ở Thứ Bộ Công an có Vụ Bảo vệ chính trị, gồm: Bộ phận Văn thư, Phòng Điều tra nghiên cứu, Phòng Trinh sát, Phòng Trinh sát địch hậu; ở liên khu có Phòng Bảo vệ chính trị; ở tỉnh có Ban Bảo vệ chính trị. Cuối năm 1954, Bộ Công an ra Chỉ thị số 373/CT-CA quy định bổ sung nhiệm vụ và cơ cấu tổ chức ở các vụ, cục thuộc Bộ. Vụ Bảo vệ chính trị gồm 5 đầu mối: Phòng Trinh sát địch hậu đổi thành Phòng Phái khiển; Phòng Trinh sát được chia thành 03 phòng (Phòng Trinh sát ngoại quốc, Phòng Trinh sát nội địa, Phòng Trinh sát ngoại tuyến) và Phòng Bảo vệ cơ quan nội chính, văn xã."
                    },
                    {
                        "type":  "paragraph",
@@ -1094,13 +986,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-55.png",
                        "width":  1065,
                        "height":  622,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Nguồn: Báo Dân trí.",
+                       "caption":  "Nguồn: Báo Dân trí.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Nguồn: Báo Dân tríNguồn: Báo Dân tríNgày 06/12/1953, Trung ương Đảng quyết định mở chiến dịch Điện Biên Phủ. Lực lượng An ninh tham gia bảo vệ các cuộc hành quân, trú quân của bộ đội, dân công, bảo vệ kho tàng, bảo vệ lực lượng vũ trang. Cùng với công tác bảo vệ, lực lượng An ninh nhân dân ở nhiều nơi đã bắt hầu hết các toán gián điệp biệt kích do địch tung xuống để điều tra phá hoại kho tàng, cầu cống, nơi xung yếu trên các tuyến đường giao thông quan trọng từ Thanh Hóa, Nam Định, Ninh Bình, Hà Nam, Hòa Bình lên Điện Biên Phủ. Đặc biệt, lực lượng phản gián đã phát hiện và lập chuyên án (bí số TN25) đấu tranh với toán gián điệp Pháp ở Thái Nguyên do tên Bôca điều khiển."
+                       "text":  "Ngày 06/12/1953, Trung ương Đảng quyết định mở chiến dịch Điện Biên Phủ. Lực lượng An ninh tham gia bảo vệ các cuộc hành quân, trú quân của bộ đội, dân công, bảo vệ kho tàng, bảo vệ lực lượng vũ trang. Cùng với công tác bảo vệ, lực lượng An ninh nhân dân ở nhiều nơi đã bắt hầu hết các toán gián điệp biệt kích do địch tung xuống để điều tra phá hoại kho tàng, cầu cống, nơi xung yếu trên các tuyến đường giao thông quan trọng từ Thanh Hóa, Nam Định, Ninh Bình, Hà Nam, Hòa Bình lên Điện Biên Phủ. Đặc biệt, lực lượng phản gián đã phát hiện và lập chuyên án (bí số TN25) đấu tranh với toán gián điệp Pháp ở Thái Nguyên do tên Bôca điều khiển."
                    },
                    {
                        "type":  "paragraph",
@@ -1115,13 +1007,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-56.jpg",
                        "width":  1280,
                        "height":  720,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Chuyên án TN25 và cuộc đấu trí hơn 2.000 ngày. Nguồn: Ảnh tư liệu.",
+                       "caption":  "Chuyên án TN25 và cuộc đấu trí hơn 2.000 ngày. Nguồn: Ảnh tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Chuyên án TN25 và cuộc đấu trí hơn 2.000 ngày. Nguồn: Ảnh tư liệu"
                    },
                    {
                        "type":  "paragraph",
@@ -1136,13 +1024,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-57.jpg",
                        "width":  660,
                        "height":  860,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Thiếu tướng Nguyễn Quang Phòng, nguyên Tổng cục phó Tổng cục An ninh nhân dân.",
+                       "caption":  "Thiếu tướng Nguyễn Quang Phòng, nguyên Tổng cục phó Tổng cục An ninh nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Sau khi nghe ngóng tình hình, nhóm gián điệp này đã thuê một người dân địa phương là bà Lê Thị Hài đưa đường đến Ba Giăng, Đại Từ làm ăn để ngụy trang hoạt động. Thời gian này, lực lượng Công an nhân dân đã trưởng thành về mọi mặt, công tác nghiệp vụ được triển khai đồng bộ. Qua nguồn tin của quần chúng kết hợp với công tác trinh sát, lực lượng Công an đã phát hiện nhóm buôn bán khả nghi. Sau khi xác minh, điều tra, lực lượng Công an có đủ cơ sở để chứng minh hoạt động gián điệp của nhóm này. Thiếu tướng Nguyễn Quang Phòng, nguyên Tổng cục phó Tổng cục An ninh nhân dân.Thiếu tướng Nguyễn Quang Phòng, nguyên Tổng cục phó Tổng cục An ninh nhân dân."
+                       "text":  "Sau khi nghe ngóng tình hình, nhóm gián điệp này đã thuê một người dân địa phương là bà Lê Thị Hài đưa đường đến Ba Giăng, Đại Từ làm ăn để ngụy trang hoạt động. Thời gian này, lực lượng Công an nhân dân đã trưởng thành về mọi mặt, công tác nghiệp vụ được triển khai đồng bộ. Qua nguồn tin của quần chúng kết hợp với công tác trinh sát, lực lượng Công an đã phát hiện nhóm buôn bán khả nghi. Sau khi xác minh, điều tra, lực lượng Công an có đủ cơ sở để chứng minh hoạt động gián điệp của nhóm này."
                    },
                    {
                        "type":  "paragraph",
@@ -1208,27 +1096,27 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Ngay trong thời kỳ kháng chiến chống thực dân Pháp, lực lượng An ninh đã phát hiện và nắm được âm mưu của cơ quan GCMA tung gián điệp vào các tỉnh vùng núi phía Bắc để kích động đồng bào dân tộc nổi phỉ, xây dựng các khu an toàn chờ cơ hội quay trở lại. Do triển khai tốt công tác nắm tình hình và phối hợp đồng bộ các lực lượng nên chỉ trong sáu năm ta đã tiến hành trấn áp dứt điểm các hang ổ phỉ ở các tỉnh phía Bắc Trung Bộ và phía Bắc. Chỉ tính từ tháng 7/1954 đến tháng 4/1956, tại vùng núi phía đông sông Thao ta đã bắt và diệt 483 tên GCMA, gọi hàng 4.336 tên phỉ, thu 3.796 khẩu súng. Từ năm 1955 đến năm 1959, lực lượng An ninh đã phối hợp chặt chẽ với Quân đội nhân dân và chính quyền các địa phương lần lượt giải quyết dứt điểm nạn nổi phỉ ở các tỉnh vùng núi phía Tây Bắc, Đông Bắc. Một số trinh sát được giao nhiệm vụ xâm nhập vào bộ chỉ huy đầu não của tổ chức phỉ, đã mưu trí điều được hàng chục tên tướng phỉ ra ngoài để lực lượng đón lõng bắt gọn, góp phần nhanh chóng làm tan rã tổ chức phỉ, giảm thiểu thiệt hại cho lực lượng ta. Năm 1960, hang ổ phỉ cuối cùng tại Đồng Văn bị xóa sổ, tình hình an ninh ở các tỉnh vùng núi được ổn định. Giải quyết dứt điểm nạn nổi phỉ không chỉ bảo đảm cho đồng bào các dân tộc phát triển sản xuất, cải thiện đời sống vật chất và tinh thần, mà còn tạo ra địa bàn an ninh thuận lợi để lực lượng An ninh xây dựng thế trận, đón đánh bọn gián điệp Mỹ - ngụy xâm nhập sau này."
                    },
                    {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-59.jpg",
-                       "width":  350,
-                       "height":  227,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
                        "type":  "paragraph",
                        "text":  "Nhằm chủ động bóc gỡ mạng lưới gián điệp do Pháp, Mỹ cài lại, Vụ Bảo vệ chính trị chỉ đạo Công an các tỉnh, đặc biệt là các tỉnh nằm trong khu vực chuyển quân tập kết tăng cường công tác trinh sát, công tác khai thác hồ sơ để nắm vững vụ việc và con người có nghi vấn chính trị. Qua đó phát hiện nhiều đối tượng là ngụy quân, ngụy quyền, đảng viên phản động nhận làm việc cho các cơ quan gián điệp Pháp và Mỹ. Kết hợp với việc tiếp tục sử dụng 3 nữ điệp viên trong Chuyên án TN25, lực lượng An ninh nắm được một số mạng lưới cài cắm của chúng. Từ năm 1954 đến năm 1965, đã tiến hành đấu tranh 15 chuyên án gián điệp, bắt gần 100 tên, khai quật hàng chục kho vũ khí bí mật trong nhà dân, trong nghĩa địa, làm phương tiện hoạt động lâu dài của đội quân ngầm, có kho vũ khí đủ trang bị cho cả 01 trung đoàn. Điển hình là Chuyên án C30, được xác định là một chiến dịch phản gián hoàn hảo của lực lượng An ninh Việt Nam trong trận đầu đọ sức với cơ quan tình báo Mỹ. Chuyên án C30, một vụ án kinh điển trong đấu tranh chống gián điệp của lực lượng An ninh - Công an Việt Nam đã thể hiện quyết tâm ấy: Dám đánh Mỹ và đánh thắng giặc Mỹ ngay trong lòng miền Bắc đang xây dựng chủ nghĩa xã hội."
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "xac-lap-chuyen-an-c30",
                        "text":  "XÁC LẬP CHUYÊN ÁN C30"
                    },
                    {
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-59.jpg",
+                       "width":  350,
+                       "height":  227,
+                       "alt":  "Trần Minh Châu gặp đồng bọn. Ảnh do trinh sát chụp.",
+                       "caption":  "Trần Minh Châu gặp đồng bọn. Ảnh do trinh sát chụp.",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                   },
+                   {
                        "type":  "paragraph",
-                       "text":  "Trần Minh Châu gặp đồng bọn. Ảnh do trinh sát chụp.Trần Minh Châu gặp đồng bọn. Ảnh do trinh sát chụp.Cụ Ấm Di ở phố Lê Lợi (nay là Bà Triệu), Hà Nội, có anh con rể tên Nguyễn Đình Long. Tay này kẻng trai, nhưng hay huênh hoang và có thái độ ăn chơi phung phí. Vào khoảng tháng 8-1954, một hôm Long rỉ tai cho cả nhà biết: Anh ta sắp sửa được đi học tình báo ở nước ngoài. Nguồn tin này nhanh chóng được cụ Ấm Di báo cho Công an ta. Lực lượng Bảo vệ chính trị - Công an Hà Nội khẩn trương điều tra về Long, các mối quan hệ của hắn, lập hồ sơ theo dõi và có đủ cơ sở kết luận: Tên Long và một số phần tử Đại Việt đang có hoạt động phản cách mạng dưới sự chỉ đạo của cơ quan tình báo nước ngoài, cụ thể là đế quốc Mỹ. Thật “trùng khớp”, vào khoảng tháng 2-1955, khi tên Long “đi học” trở về thì cũng là lúc Công an Hải Phòng thấy Phạm Rật Đức, trú tại 47 - Phố Gas au một thời gian vắng bóng bỗng xuất hiện. Trước đó, Đức cũng bảo với mọi người là đi học ở nước ngoài. Khai thác hồ sơ và thẩm tra tin báo của cơ sở, Công an Hải Phòng phát hiện Đức và một số tên có quan hệ với hắn như Long, Lẫm, Bùi Văn Tiềm đã bị cơ quan tình báo nước ngoài tuyển dụng làm gián điệp."
+                       "text":  "Cụ Ấm Di ở phố Lê Lợi (nay là Bà Triệu), Hà Nội, có anh con rể tên Nguyễn Đình Long. Tay này kẻng trai, nhưng hay huênh hoang và có thái độ ăn chơi phung phí. Vào khoảng tháng 8-1954, một hôm Long rỉ tai cho cả nhà biết: Anh ta sắp sửa được đi học tình báo ở nước ngoài. Nguồn tin này nhanh chóng được cụ Ấm Di báo cho Công an ta. Lực lượng Bảo vệ chính trị - Công an Hà Nội khẩn trương điều tra về Long, các mối quan hệ của hắn, lập hồ sơ theo dõi và có đủ cơ sở kết luận: Tên Long và một số phần tử Đại Việt đang có hoạt động phản cách mạng dưới sự chỉ đạo của cơ quan tình báo nước ngoài, cụ thể là đế quốc Mỹ. Thật “trùng khớp”, vào khoảng tháng 2-1955, khi tên Long “đi học” trở về thì cũng là lúc Công an Hải Phòng thấy Phạm Rật Đức, trú tại 47 - Phố Gas au một thời gian vắng bóng bỗng xuất hiện. Trước đó, Đức cũng bảo với mọi người là đi học ở nước ngoài. Khai thác hồ sơ và thẩm tra tin báo của cơ sở, Công an Hải Phòng phát hiện Đức và một số tên có quan hệ với hắn như Long, Lẫm, Bùi Văn Tiềm đã bị cơ quan tình báo nước ngoài tuyển dụng làm gián điệp."
                    },
                    {
                        "type":  "image",
@@ -1304,15 +1192,6 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tình huống đó làm Cập và tên Long nghi ngờ, bí mật xuống Hải Phòng kiểm tra. Để xóa lộ, Ban chuyên án đã sử dụng ông Hào công khai tranh luận với Cập, làm cho Cập tin việc khám xét là do cơ quan thuế vụ tình cờ phát hiện, còn Xuyến và Tiềm bị bắt là do dính đến hàng cấm, nếu không có gì to tát thể nào cũng được thả. Với lý do thuyết phục đó, khi Xuyến được trả tự do, Cập vẫn tin dùng và giao cho Xuyến giữ liên lạc V.T.Đ với Sài Gòn"
                    },
                    {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-61.jpg",
-                       "width":  350,
-                       "height":  230,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
                        "type":  "paragraph",
                        "text":  "Có thể thấy gần 4 năm đấu tranh chuyên án C30, Ban chuyên án đã liên tục triển khai những chiến thuật đánh địch dài ngày, áp dụng các biện pháp nghiệp vụ sắc bén và có tính tổng hợp trên địa bàn rộng lớn ở nhiều tỉnh của miền Bắc, trải dài tới Trung tâm chỉ huy của địch tại Sài Gòn. Cùng một lúc chúng ta đấu tranh với hơn 30 đối tượng là số đã được huấn luyện và các đầu mối chúng móc nối. Việc vô hiệu hóa hoàn toàn hoạt động của ổ gián điệp này, đấu tranh thắng lợi chuyên án C30, tất cả đã được thực hiện bởi một chiến dịch phản gián hoàn hảo."
                    },
@@ -1321,8 +1200,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Ngày 11-11-1958, Vụ Bảo vệ chính trị ra lệnh đồng loạt phá án. Công an Hà Nội, Hải Phòng, Nam Định đã bắt tổng số 12 đối tượng, khai quật 8 kho vũ khí, thu giữ 171 súng các loại (tiểu liên giảm thanh, các-bin, Thomson, súng lục, súng ám sát), 5 hòm với hàng tram viên mìn (hình dáng tựa than kíp-lê), mìn điện và dây cháy nổ, hàng nghìn chông 4 cạnh, 8 bộ điện đài, 4 la bàn, 4 ống nhóm, hàng nghìn viên đạn."
                    },
                    {
-                       "type":  "paragraph",
-                       "text":  "Phiên tòa xử vụ án C30. Ảnh tư liệu"
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-61.jpg",
+                       "width":  350,
+                       "height":  230,
+                       "alt":  "Phiên tòa xử vụ án C30. Ảnh tư liệu",
+                       "caption":  "Phiên tòa xử vụ án C30. Ảnh tư liệu.",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
@@ -1500,13 +1384,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-63.jpg",
                        "width":  1000,
                        "height":  707,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Hình ảnh của đối tượng Lê Quốc Túy và Mai Văn Hạnh.",
+                       "caption":  "Hình ảnh của đối tượng Lê Quốc Túy và Mai Văn Hạnh.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Hình ảnh của đối tượng Lê Quốc Túy và Mai Văn Hạnh."
                    },
                    {
                        "type":  "paragraph",
@@ -1555,21 +1435,21 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-66.png",
                        "width":  857,
                        "height":  399,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Bộ trưởng Bộ Nội vụ Trần Quốc Hoàn chủ trì cuộc họp với lãnh đạo Công an các tỉnh Tây Nguyên triển khai kế hoạch đấu tranh truy quét lực lượng FULRO ở Tây Nguyên và nam Khu V cũ, năm 1978. Ảnh: Tư liệu/Bộ Công an.",
+                       "caption":  "Bộ trưởng Bộ Nội vụ Trần Quốc Hoàn chủ trì cuộc họp với lãnh đạo Công an các tỉnh Tây Nguyên triển khai kế hoạch đấu tranh truy quét lực lượng FULRO ở Tây Nguyên và nam Khu V cũ, năm 1978. Ảnh: Tư liệu/Bộ Công an.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Bộ trưởng Bộ Nội vụ Trần Quốc Hoàn chủ trì cuộc họp với lãnh đạo Công an các tỉnh Tây Nguyên triển khai kế hoạch đấu tranh truy quét lực lượng FULRO ở Tây Nguyên và nam Khu V cũ, năm 1978. Ảnh: Tư liệu/Bộ Công anBộ trưởng Bộ Nội vụ Trần Quốc Hoàn chủ trì cuộc họp với lãnh đạo Công an các tỉnh Tây Nguyên triển khai kế hoạch đấu tranh truy quét lực lượng FULRO ở Tây Nguyên và nam Khu V cũ, năm 1978. Ảnh: Tư liệu/Bộ Công anThực hiện Chỉ thị số 04-CT/TW, ngày 02/02/1977 của Ban Bí thư Trung ương Đảng về “Giải quyết vấn đề FULRO”, lực lượng An ninh làm nòng cốt đã tham mưu, đề xuất các cấp ủy đảng ban hành chủ trương, biện pháp giải quyết, trong đó kết hợp công tác truy quét với thực hiện chính sách của Đảng về dân tộc, tôn giáo, coi trọng tập quán địa phương, chăm lo cải thiện đời sống nhân dân; đồng thời phát động phong trào quần chúng bảo vệ an ninh Tổ quốc sâu rộng ở các tỉnh Tây Nguyên và nam Khu V cũ; tranh thủ các già làng, trưởng bản, trí thức có uy tín kêu gọi FULRO trở về làm ăn lương thiện; tổ chức đấu tranh chuyên án, phối hợp với các lực lượng truy quét các toán, nhóm vũ trang, tiêu diệt số cầm đầu, ngoan cố, chống đối, làm tan rã chính quyền bất hợp pháp của FULRO, bảo vệ nhân dân và chính quyền cơ sở."
+                       "text":  "Thực hiện Chỉ thị số 04-CT/TW, ngày 02/02/1977 của Ban Bí thư Trung ương Đảng về “Giải quyết vấn đề FULRO”, lực lượng An ninh làm nòng cốt đã tham mưu, đề xuất các cấp ủy đảng ban hành chủ trương, biện pháp giải quyết, trong đó kết hợp công tác truy quét với thực hiện chính sách của Đảng về dân tộc, tôn giáo, coi trọng tập quán địa phương, chăm lo cải thiện đời sống nhân dân; đồng thời phát động phong trào quần chúng bảo vệ an ninh Tổ quốc sâu rộng ở các tỉnh Tây Nguyên và nam Khu V cũ; tranh thủ các già làng, trưởng bản, trí thức có uy tín kêu gọi FULRO trở về làm ăn lương thiện; tổ chức đấu tranh chuyên án, phối hợp với các lực lượng truy quét các toán, nhóm vũ trang, tiêu diệt số cầm đầu, ngoan cố, chống đối, làm tan rã chính quyền bất hợp pháp của FULRO, bảo vệ nhân dân và chính quyền cơ sở."
                    },
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-67.jpg",
                        "width":  900,
                        "height":  613,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Các trinh sát An ninh Công an tỉnh Gia Lai bàn phương án đấu tranh truy bắt FULRO (ảnh chụp năm 1984).",
+                       "caption":  "Các trinh sát An ninh Công an tỉnh Gia Lai bàn phương án đấu tranh truy bắt FULRO (ảnh chụp năm 1984).",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
@@ -1578,7 +1458,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Các trinh sát An ninh Công an tỉnh Gia Lai bàn phương án đấu tranh truy bắt FULRO (ảnh chụp năm 1984).Các trinh sát An ninh Công an tỉnh Gia Lai bàn phương án đấu tranh truy bắt FULRO (ảnh chụp năm 1984).Quán triệt phương châm “chủ động phòng ngừa và liên tục tấn công”, “bóp chết tổ chức ngay từ trong trứng”, kết hợp chính sách trấn áp phù hợp để cô lập, phân hóa, không để nảy sinh phản động, từ năm 1985 - 1986, Công an các địa phương triệt phá các tổ chức phản động, như “Lực lượng phục quốc nội biên Việt Nam” do Trương Văn Lân cầm đầu, tổ chức phản động “Mặt trận cách mạng chân chính Việt Nam tỉnh Thanh Hóa” do Lương Mạnh Hòa cầm đầu."
+                       "text":  "Quán triệt phương châm “chủ động phòng ngừa và liên tục tấn công”, “bóp chết tổ chức ngay từ trong trứng”, kết hợp chính sách trấn áp phù hợp để cô lập, phân hóa, không để nảy sinh phản động, từ năm 1985 - 1986, Công an các địa phương triệt phá các tổ chức phản động, như “Lực lượng phục quốc nội biên Việt Nam” do Trương Văn Lân cầm đầu, tổ chức phản động “Mặt trận cách mạng chân chính Việt Nam tỉnh Thanh Hóa” do Lương Mạnh Hòa cầm đầu."
                    },
                    {
                        "type":  "heading",
@@ -1591,13 +1471,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-68.jpg",
                        "width":  1123,
                        "height":  771,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Khối nam sĩ quan An ninh nhân dân tại Lễ kỷ niệm 70 năm Chiến thắng Điện Biên Phủ. Nguồn: Báo Nhân dân.",
+                       "caption":  "Khối nam sĩ quan An ninh nhân dân tại Lễ kỷ niệm 70 năm Chiến thắng Điện Biên Phủ. Nguồn: Báo Nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Khối nam sĩ quan An ninh nhân dân tại Lễ kỷ niệm 70 năm Chiến thắng Điện Biên Phủ. Nguồn: Báo Nhân dânKhối nam sĩ quan An ninh nhân dân tại Lễ kỷ niệm 70 năm Chiến thắng Điện Biên Phủ. Nguồn: Báo Nhân dânThập niên 90 của thế kỷ XX, hệ thống các nước xã hội chủ nghĩa lâm vào tình trạng khủng hoảng trầm trọng; Liên Xô và một số nước xã hội chủ nghĩa khác lần lượt tan rã. Trong bối cảnh đó, Đảng Cộng sản Việt Nam vẫn kiên định con đường cách mạng theo chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh. Đại hội lần thứ VI của Đảng (tháng 12/1986) đã đề ra đường lối đổi mới toàn diện nhằm đưa đất nước thoát khỏi tình trạng khủng hoảng, tiếp tục phát triển đi lên. Chính vì thế, các thế lực thù địch coi Việt Nam là thành trì của chủ nghĩa xã hội và ráo riết tiến hành chiến lược “diễn biến hòa bình” nhằm xóa bỏ tư tưởng cộng sản, xóa bỏ chế độ xã hội chủ nghĩa ở nước ta. Chúng ráo riết tấn công trên mọi lĩnh vực, một trong những hướng tấn công chủ yếu là tuyên truyền đa nguyên, đa đảng, gây bạo loạn làm mất ổn định chính trị; lợi dụng các vấn đề dân tộc, tôn giáo, dân chủ, nhân quyền, thành lập các tổ chức chính trị đối lập và kích động biểu tình để phá hoại sự nghiệp xây dựng và bảo vệ Tổ quốc của nhân dân ta."
+                       "text":  "Thập niên 90 của thế kỷ XX, hệ thống các nước xã hội chủ nghĩa lâm vào tình trạng khủng hoảng trầm trọng; Liên Xô và một số nước xã hội chủ nghĩa khác lần lượt tan rã. Trong bối cảnh đó, Đảng Cộng sản Việt Nam vẫn kiên định con đường cách mạng theo chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh. Đại hội lần thứ VI của Đảng (tháng 12/1986) đã đề ra đường lối đổi mới toàn diện nhằm đưa đất nước thoát khỏi tình trạng khủng hoảng, tiếp tục phát triển đi lên. Chính vì thế, các thế lực thù địch coi Việt Nam là thành trì của chủ nghĩa xã hội và ráo riết tiến hành chiến lược “diễn biến hòa bình” nhằm xóa bỏ tư tưởng cộng sản, xóa bỏ chế độ xã hội chủ nghĩa ở nước ta. Chúng ráo riết tấn công trên mọi lĩnh vực, một trong những hướng tấn công chủ yếu là tuyên truyền đa nguyên, đa đảng, gây bạo loạn làm mất ổn định chính trị; lợi dụng các vấn đề dân tộc, tôn giáo, dân chủ, nhân quyền, thành lập các tổ chức chính trị đối lập và kích động biểu tình để phá hoại sự nghiệp xây dựng và bảo vệ Tổ quốc của nhân dân ta."
                    },
                    {
                        "type":  "paragraph",
@@ -1664,13 +1544,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-69.png",
                        "width":  700,
                        "height":  504,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Bộ trưởng Tô Lâm (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) phát biểu tại Hội nghị tổng kết công tác đấu tranh chống gián điệp. Nguồn: Báo Công an nhân dân.",
+                       "caption":  "Bộ trưởng Tô Lâm (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) phát biểu tại Hội nghị tổng kết công tác đấu tranh chống gián điệp. Nguồn: Báo Công an nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Bộ trưởng Tô Lâm (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) phát biểu tại Hội nghị tổng kết công tác đấu tranh chống gián điệp. Nguồn: Báo Công an nhân dân."
                    },
                    {
                        "type":  "paragraph",
@@ -1681,13 +1557,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-70.png",
                        "width":  840,
                        "height":  525,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Tổng Bí thư Tô Lâm phát biểu tại buổi buổi thăm và gặp mặt các cán bộ chiến sĩ Cục An ninh chính trị nội bộ, Bộ Công an nhân kỷ niệm 80 năm Ngày truyền thống Công an nhân dân. Ảnh: Bộ Công an.",
+                       "caption":  "Tổng Bí thư Tô Lâm phát biểu tại buổi buổi thăm và gặp mặt các cán bộ chiến sĩ Cục An ninh chính trị nội bộ, Bộ Công an nhân kỷ niệm 80 năm Ngày truyền thống Công an nhân dân. Ảnh: Bộ Công an.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Một số kết quả trên lĩnh vực an ninh chính trị nội bộ, an ninh văn hóa, tư tưởng, công tác bảo vệ chính trị nội bộ tập trung đấu tranh phòng, chống tác động chuyển hóa nội bộ của các thế lực thủ địch. Từ năm 1998 đến nay, xác định đấu tranh, chống suy thoái về đạo đức, lối sống “tự diễn biến”, “tự chuyển hóa” trong nội bộ là vấn đề mang tính quyết định, lực lượng An ninh đã kịp thời phát hiện, đấu tranh làm thất bại nhiều âm mưu, hoạt ộng phá hoại, thâmTổng Bí thư Tô Lâm phát biểu tại buổi buổi thăm và gặp mặt các cán bộ chiến sĩ Cục An ninh chính trị nội bộ, Bộ Công an nhân kỷ niệm 80 năm Ngày truyền thống Công an nhân dân. Ảnh: Bộ Công anTổng Bí thư Tô Lâm phát biểu tại buổi buổi thăm và gặp mặt các cán bộ chiến sĩ Cục An ninh chính trị nội bộ, Bộ Công an nhân kỷ niệm 80 năm Ngày truyền thống Công an nhân dân. Ảnh: Bộ Công an nhập nội gián, tác động chuyển hóa nội bộ của các thế lực thù địch, phản động, tạo thế chủ động chiến lược trong phòng ngừa, bảo vệ an ninh nội bộ. Tổ chức xác minh nhân sự phục vụ công tác quy hoạch Bộ Chính trị, Ban Bí thư, Ban Chấp hành Trung ương khóa XII, XIII, XIV; luân chuyển, điều động và bổ nhiệm lãnh đạo cấp cao của Đảng, Nhà nước. Kịp thời kiến nghị giải pháp, biện pháp phòng ngừa, ngăn chặn, xử lý các vụ việc, cá nhân có dấu hiệu, hành vi xâm phạm an ninh quốc gia, an ninh chính trị nội bộ, lộ lọt bí mật nhà nước; đặc biệt là âm mưu, ý đồ tác động, chuyển hóa nội bộ, xây dựng ngọn cờ, tập hợp lực lượng chính trị đối lập của các thế lực thù địch. Triển khai đồng bộ các biện pháp, đấu tranh mạnh với số đối tượng có biểu hiện “tự diễn biến”, “tự chuyển hóa”, tham nhũng, tiêu cực và các nhóm đối tượng trong nước tạo lập hệ thống kênh truyền thông mạng xã hội chống Đảng, Nhà nước. Qua công tác đấu tranh, lực lượng An ninh đã phát hiện một số cán bộ trong diện Trung ương quản lý có thân nhân liên quan đến các tổ chức phản động lưu vong, quan hệ phức tạp với nước ngoài, che giấu lý lịch để làm việc trong các cơ quan thiết yếu, cơ mật và số có vấn đề chính trị tham gia nhân sự cấp ủy các cấp, tham gia ứng cử đại biểu Quốc hội, đại biểu Hội đồng nhân dân. Phát hiện, xác minh làm rõ và chuyển cơ quan điều tra khởi tố hàng chục vụ án hình sự “làm giả con dấu, tài liệu của cơ quan, tổ chức; sử dụng con dấu hoặc tài liệu giả của cơ quan, tổ chức”, khởi tố hàng trăm đối tượng có liên quan để điều tra theo quy định của pháp luật."
+                       "text":  "Một số kết quả trên lĩnh vực an ninh chính trị nội bộ, an ninh văn hóa, tư tưởng, công tác bảo vệ chính trị nội bộ tập trung đấu tranh phòng, chống tác động chuyển hóa nội bộ của các thế lực thủ địch. Từ năm 1998 đến nay, xác định đấu tranh, chống suy thoái về đạo đức, lối sống “tự diễn biến”, “tự chuyển hóa” trong nội bộ là vấn đề mang tính quyết định, lực lượng An ninh đã kịp thời phát hiện, đấu tranh làm thất bại nhiều âm mưu, hoạt ộng phá hoại, thâm nhập nội gián, tác động chuyển hóa nội bộ của các thế lực thù địch, phản động, tạo thế chủ động chiến lược trong phòng ngừa, bảo vệ an ninh nội bộ. Tổ chức xác minh nhân sự phục vụ công tác quy hoạch Bộ Chính trị, Ban Bí thư, Ban Chấp hành Trung ương khóa XII, XIII, XIV; luân chuyển, điều động và bổ nhiệm lãnh đạo cấp cao của Đảng, Nhà nước. Kịp thời kiến nghị giải pháp, biện pháp phòng ngừa, ngăn chặn, xử lý các vụ việc, cá nhân có dấu hiệu, hành vi xâm phạm an ninh quốc gia, an ninh chính trị nội bộ, lộ lọt bí mật nhà nước; đặc biệt là âm mưu, ý đồ tác động, chuyển hóa nội bộ, xây dựng ngọn cờ, tập hợp lực lượng chính trị đối lập của các thế lực thù địch. Triển khai đồng bộ các biện pháp, đấu tranh mạnh với số đối tượng có biểu hiện “tự diễn biến”, “tự chuyển hóa”, tham nhũng, tiêu cực và các nhóm đối tượng trong nước tạo lập hệ thống kênh truyền thông mạng xã hội chống Đảng, Nhà nước. Qua công tác đấu tranh, lực lượng An ninh đã phát hiện một số cán bộ trong diện Trung ương quản lý có thân nhân liên quan đến các tổ chức phản động lưu vong, quan hệ phức tạp với nước ngoài, che giấu lý lịch để làm việc trong các cơ quan thiết yếu, cơ mật và số có vấn đề chính trị tham gia nhân sự cấp ủy các cấp, tham gia ứng cử đại biểu Quốc hội, đại biểu Hội đồng nhân dân. Phát hiện, xác minh làm rõ và chuyển cơ quan điều tra khởi tố hàng chục vụ án hình sự “làm giả con dấu, tài liệu của cơ quan, tổ chức; sử dụng con dấu hoặc tài liệu giả của cơ quan, tổ chức”, khởi tố hàng trăm đối tượng có liên quan để điều tra theo quy định của pháp luật."
                    },
                    {
                        "type":  "paragraph",
@@ -1710,13 +1586,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-71.jpg",
                        "width":  800,
                        "height":  533,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Bộ trưởng Tô Lâm (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) phát biểu tại buổi làm việc với Đảng ủy Cục An ninh kinh tế. Nguồn: Báo Công an nhân dân.",
+                       "caption":  "Bộ trưởng Tô Lâm (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) phát biểu tại buổi làm việc với Đảng ủy Cục An ninh kinh tế. Nguồn: Báo Công an nhân dân.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Bộ trưởng Tô Lâm (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) phát biểu tại buổi làm việc với Đảng ủy Cục An ninh kinh tế. Nguồn: Báo Công an nhân dân"
                    },
                    {
                        "type":  "paragraph",
@@ -1781,13 +1653,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-74.jpg",
                        "width":  1000,
                        "height":  666,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Sáng 20/02/2025, tại Hà Nội, Văn phòng Thường trực Bộ Công an về gìn giữ hòa bình Liên Hợp Quốc tổ chức Hội nghị triển khai công tác năm 2025. Thiếu tướng Nguyễn Sỹ Quang, Chánh Văn phòng Thường trực Bộ Công an về GGHB LHQ chủ trì Hội nghị.",
+                       "caption":  "Sáng 20/02/2025, tại Hà Nội, Văn phòng Thường trực Bộ Công an về gìn giữ hòa bình Liên Hợp Quốc tổ chức Hội nghị triển khai công tác năm 2025. Thiếu tướng Nguyễn Sỹ Quang, Chánh Văn phòng Thường trực Bộ Công an về GGHB LHQ chủ trì Hội nghị.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Sáng 20/02/2025, tại Hà Nội, Văn phòng Thường trực Bộ Công an về gìn giữ hòa bình Liên Hợp Quốc tổ chức Hội nghị triển khai công tác năm 2025. Thiếu tướng Nguyễn Sỹ Quang, Chánh Văn phòng Thường trực Bộ Công an về GGHB LHQ chủ trì Hội nghị."
                    },
                    {
                        "type":  "heading",
@@ -1806,13 +1674,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-75.png",
                        "width":  670,
                        "height":  977,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Báo cáo số 01/BVCT ngày 20/01/1981 của Ty Công an Kiên Giang về danh sách 23 gián điệp biệt kích xâm nhập vào Việt Nam, ngày 06/01/1981.",
+                       "caption":  "Báo cáo số 01/BVCT ngày 20/01/1981 của Ty Công an Kiên Giang về danh sách 23 gián điệp biệt kích xâm nhập vào Việt Nam, ngày 06/01/1981.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Kế hoạch CM12 là một chiến dịch phản gián của lực lượng An ninh Việt Nam. Chiến dịch này kéo dài từ năm 1981 đến năm 1988 nhằm làm thất bại kế hoạch của tổ chức “Mặt trận thống nhất các lực lượng yêu nước giải phóng miền Nam Việt Nam” do Lê Quốc Túy và Mai Văn Hạnh cầm đầu (Mục tiêu chiến lược tổ chức khi mới thành lập là “giải phóng miền Nam Việt Nam” và sau này khi thấy “đủ lực lượng” mục tiêu là “giải phóng Việt Nam”, chúng đổi tên là “Mặt trận thống nhất các lực lượng yêu nước giải phóng Việt Nam”). Tổ chức này cùng với sự hỗ trợ của tình báo Thái Lan và Trung Quốc, bí mật đưa gián điệp biệt kích, vũ khí từ nước ngoài vào, liên kết với các tổ chức chống chính quyền trong nội địa, tiến hành gây bạo loạn cướp chính quyền từng vùng để đi đến bạo loạn cướp chính quyền trên cả nước. Báo cáo số 01/BVCT ngày 20/01/1981 của Ty Công an Kiên Giang về danh sách 23 gián điệp biệt kích xâm nhập vào Việt Nam, ngày 06/01/1981Báo cáo số 01/BVCT ngày 20/01/1981 của Ty Công an Kiên Giang về danh sách 23 gián điệp biệt kích xâm nhập vào Việt Nam, ngày 06/01/1981Tháng 10 năm 1980, Lê Quốc Túy nhất quyết tung toán “Minh Vương 1” về nước bằng đường bộ qua đất Campuchia xâm nhập về chống phá nước ta, nhận được tin về việc có một toán gián điệp biệt kích nguời Việt lưu vong xâm nhập Việt Nam qua đường Campuchia. Lãnh dạo bộ nội vụ đã chỉ đạo cho Công an tỉnh An Giang, Đồng Tháp, Kiên Giang yêu cầu thực hiện nghiêm túc chỉ thị của Bộ trưởng, triển khai phương án truy tìm gián điệp biệt kích. Thực hiện ý kiến chỉ đạo của Lãnh đạo, đoàn cán bộ Công an tỉnh An Giang đã sang Campuchia phối hợp các chuyên gia an ninh Campuchia trực tiếp xét hỏi đối tượng."
+                       "text":  "Kế hoạch CM12 là một chiến dịch phản gián của lực lượng An ninh Việt Nam. Chiến dịch này kéo dài từ năm 1981 đến năm 1988 nhằm làm thất bại kế hoạch của tổ chức “Mặt trận thống nhất các lực lượng yêu nước giải phóng miền Nam Việt Nam” do Lê Quốc Túy và Mai Văn Hạnh cầm đầu (Mục tiêu chiến lược tổ chức khi mới thành lập là “giải phóng miền Nam Việt Nam” và sau này khi thấy “đủ lực lượng” mục tiêu là “giải phóng Việt Nam”, chúng đổi tên là “Mặt trận thống nhất các lực lượng yêu nước giải phóng Việt Nam”). Tổ chức này cùng với sự hỗ trợ của tình báo Thái Lan và Trung Quốc, bí mật đưa gián điệp biệt kích, vũ khí từ nước ngoài vào, liên kết với các tổ chức chống chính quyền trong nội địa, tiến hành gây bạo loạn cướp chính quyền từng vùng để đi đến bạo loạn cướp chính quyền trên cả nước. Tháng 10 năm 1980, Lê Quốc Túy nhất quyết tung toán “Minh Vương 1” về nước bằng đường bộ qua đất Campuchia xâm nhập về chống phá nước ta, nhận được tin về việc có một toán gián điệp biệt kích nguời Việt lưu vong xâm nhập Việt Nam qua đường Campuchia. Lãnh dạo bộ nội vụ đã chỉ đạo cho Công an tỉnh An Giang, Đồng Tháp, Kiên Giang yêu cầu thực hiện nghiêm túc chỉ thị của Bộ trưởng, triển khai phương án truy tìm gián điệp biệt kích. Thực hiện ý kiến chỉ đạo của Lãnh đạo, đoàn cán bộ Công an tỉnh An Giang đã sang Campuchia phối hợp các chuyên gia an ninh Campuchia trực tiếp xét hỏi đối tượng."
                    },
                    {
                        "type":  "paragraph",
@@ -1863,13 +1731,13 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-76.png",
                        "width":  1105,
                        "height":  709,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đồng chí Phạm Hùng, Phó Chủ tịch Hội đồng Bộ trưởng kiêm Bộ trưởng Bộ Nội vụ gặp mặt các đồng chí trong Ban Chỉ đạo KH.CM12. Nguồn: Ảnh tư liệu.",
+                       "caption":  "Đồng chí Phạm Hùng, Phó Chủ tịch Hội đồng Bộ trưởng kiêm Bộ trưởng Bộ Nội vụ gặp mặt các đồng chí trong Ban Chỉ đạo KH.CM12. Nguồn: Ảnh tư liệu.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Đồng chí Phạm Hùng, Phó Chủ tịch Hội đồng Bộ trưởng kiêm Bộ trưởng Bộ Nội vụ gặp mặt các đồng chí trong Ban Chỉ đạo KH.CM12.Nguồn: Ảnh tư liệuĐồng chí Phạm Hùng, Phó Chủ tịch Hội đồng Bộ trưởng kiêm Bộ trưởng Bộ Nội vụ gặp mặt các đồng chí trong Ban Chỉ đạo KH.CM12.Nguồn: Ảnh tư liệuĐể thực hiện 3 nhiệm vụ trên, Bộ Nội vụ tiến hành kế hoạch lấy tên là Kế hoạch CM12. Đồng chí Bộ trưởng Phạm Hùng chỉ đạo: không gọi chuyên án, gọi là Kế hoạch CM12, viết tắt là “KH.CM12”. KH.CM12 là một đơn vị đặc biệt, hoạt động mang tính độc lập không trực thuộc một đơn vị nghiệp vụ hay một ty Công an nào; chọn lựa, huy động cán bộ từ nhiều lực lượng nghiệp vụ của các Vụ, Cục và Công an các tỉnh miền Nam. “KH.CM12” được triển khai trên địa bàn rộng lớn từ Minh Hải, Kiên Giang, Hậu Giang đến TP. Hồ Chí Minh, Đồng Nai, Tây Ninh và các tỉnh miền Trung cho đến nước ngoài. Trong quá trình đấu tranh, yêu cầu phát triển đến đâu lực lượng được đáp ứng đến đó. KH.CM12 đặt dưới sự chỉ đạo trực tiếp của Bộ trưởng Phạm Hùng và Thứ trưởng Cao Đăng Chiếm. Mọi hoạt động của các lực lượng tham gia KH.CM12 đều theo một chương trình thống nhất dưới sự chỉ huy, chỉ đạo trực tiếp, tập trung của một ban chỉ đạo gồm các đồng chí lãnh đạo cao cấp, có năng lực, giàu kinh nghiệm. Các chuyên án, các đầu mối có liên quan đến KH.CM12 đều phải phục tùng, phục vụ cho KH.CM12, như: chuyên án TK09 đấu tranh với bọn cầm đầu phản động trong một tổ chức tôn giáo; chuyên án TQ42 đấu tranh với tổ chức phản động “Mặt trận quốc gia Việt Nam” do Lê Quốc Quân cầm đầu; chuyên án H82 đấu tranh với Huỳnh Vĩnh Sanh, Chủ tịch “Mặt trận” phụ trách quốc nội của địch; chuyên án PK07 đấu tranh với tổ chức phản động tại địa bàn Phú Khánh."
+                       "text":  "Để thực hiện 3 nhiệm vụ trên, Bộ Nội vụ tiến hành kế hoạch lấy tên là Kế hoạch CM12. Đồng chí Bộ trưởng Phạm Hùng chỉ đạo: không gọi chuyên án, gọi là Kế hoạch CM12, viết tắt là “KH.CM12”. KH.CM12 là một đơn vị đặc biệt, hoạt động mang tính độc lập không trực thuộc một đơn vị nghiệp vụ hay một ty Công an nào; chọn lựa, huy động cán bộ từ nhiều lực lượng nghiệp vụ của các Vụ, Cục và Công an các tỉnh miền Nam. “KH.CM12” được triển khai trên địa bàn rộng lớn từ Minh Hải, Kiên Giang, Hậu Giang đến TP. Hồ Chí Minh, Đồng Nai, Tây Ninh và các tỉnh miền Trung cho đến nước ngoài. Trong quá trình đấu tranh, yêu cầu phát triển đến đâu lực lượng được đáp ứng đến đó. KH.CM12 đặt dưới sự chỉ đạo trực tiếp của Bộ trưởng Phạm Hùng và Thứ trưởng Cao Đăng Chiếm. Mọi hoạt động của các lực lượng tham gia KH.CM12 đều theo một chương trình thống nhất dưới sự chỉ huy, chỉ đạo trực tiếp, tập trung của một ban chỉ đạo gồm các đồng chí lãnh đạo cao cấp, có năng lực, giàu kinh nghiệm. Các chuyên án, các đầu mối có liên quan đến KH.CM12 đều phải phục tùng, phục vụ cho KH.CM12, như: chuyên án TK09 đấu tranh với bọn cầm đầu phản động trong một tổ chức tôn giáo; chuyên án TQ42 đấu tranh với tổ chức phản động “Mặt trận quốc gia Việt Nam” do Lê Quốc Quân cầm đầu; chuyên án H82 đấu tranh với Huỳnh Vĩnh Sanh, Chủ tịch “Mặt trận” phụ trách quốc nội của địch; chuyên án PK07 đấu tranh với tổ chức phản động tại địa bàn Phú Khánh."
                    },
                    {
                        "type":  "heading",
@@ -2246,13 +2114,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-81.jpg",
                        "width":  1335,
                        "height":  867,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Đại tướng Tô Lâm, Ủy viên Bộ Chính trị, Bộ trưởng Bộ Công an (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) dự Ngày hội Văn hoá, thể thao và du lịch các dân tộc vùng Tây Nguyên lần thứ I, năm 2023. Nguồn: baokontum.com.vn.",
+                       "caption":  "Đại tướng Tô Lâm, Ủy viên Bộ Chính trị, Bộ trưởng Bộ Công an (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) dự Ngày hội Văn hoá, thể thao và du lịch các dân tộc vùng Tây Nguyên lần thứ I, năm 2023. Nguồn: baokontum.com.vn.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Đại tướng Tô Lâm, Ủy viên Bộ Chính trị, Bộ trưởng Bộ Công an (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) dự Ngày hội Văn hoá, thể thao và du lịch các dân tộc vùng Tây Nguyên lần thứ I, năm 2023. Nguồn: baokontum.com.vnĐại tướng Tô Lâm, Ủy viên Bộ Chính trị, Bộ trưởng Bộ Công an (nay là Tổng Bí thư Ban Chấp hành Trung ương Đảng, Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam) dự Ngày hội Văn hoá, thể thao và du lịch các dân tộc vùng Tây Nguyên lần thứ I, năm 2023. Nguồn: baokontum.com.vn"
                    },
                    {
                        "type":  "heading",
@@ -2285,13 +2149,9 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-82.jpg",
                        "width":  882,
                        "height":  576,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Chiến sĩ công an Nhân dân cùng đồng bào gói bánh chưng tại Chương trình “10 nghìn bánh chưng xanh” cho hộ nghèo xuân Giáp Thìn 2024 ở huyện Nậm Pồ, tỉnh Điện Biên. Nguồn: nhandan.vn.",
+                       "caption":  "Chiến sĩ công an Nhân dân cùng đồng bào gói bánh chưng tại Chương trình “10 nghìn bánh chưng xanh” cho hộ nghèo xuân Giáp Thìn 2024 ở huyện Nậm Pồ, tỉnh Điện Biên. Nguồn: nhandan.vn.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "paragraph",
-                       "text":  "Chiến sĩ công an Nhân dân cùng đồng bào gói bánh chưng tại Chương trình “10 nghìn bánh chưng xanh” cho hộ nghèo xuân Giáp Thìn 2024 ở huyện Nậm Pồ, tỉnh Điện Biên. Nguồn: nhandan.vnChiến sĩ công an Nhân dân cùng đồng bào gói bánh chưng tại Chương trình “10 nghìn bánh chưng xanh” cho hộ nghèo xuân Giáp Thìn 2024 ở huyện Nậm Pồ, tỉnh Điện Biên. Nguồn: nhandan.vn"
                    },
                    {
                        "type":  "heading",
@@ -2363,7 +2223,11 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "type":  "heading",
                        "level":  3,
                        "id":  "1-su-ra-doi-thang-9-2021-giua-boi-canh-dich-covid-19-bung-phat-dien-bien",
-                       "text":  "1. Sự ra đời: Tháng 9-2021, giữa bối cảnh dịch COVID-19 bùng phát diễn biến phức tạp, Bộ Công an đã ra mắt ứng dụng định danh điện tử VNeID với hai tính năng chính là khai báo y tế và di chuyển nội địa. Đến nay VNeID đã tích hợp nhiều tiện ích trên các lĩnh vực và được kỳ vọng sẽ trở thành siêu ứng dụng chuyển đổi số quốc gia."
+                       "text":  "1. Sự ra đời"
+                   },
+                   {
+                       "type":  "paragraph",
+                       "text":  "Tháng 9-2021, giữa bối cảnh dịch COVID-19 bùng phát diễn biến phức tạp, Bộ Công an đã ra mắt ứng dụng định danh điện tử VNeID với hai tính năng chính là khai báo y tế và di chuyển nội địa. Đến nay VNeID đã tích hợp nhiều tiện ích trên các lĩnh vực và được kỳ vọng sẽ trở thành siêu ứng dụng chuyển đổi số quốc gia."
                    },
                    {
                        "type":  "image",
@@ -2380,12 +2244,12 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "width":  512,
                        "height":  512,
                        "alt":  "VNeID (viết tắt của từ Vietnam Electronic Identification) do Trung tâm dữ liệu quốc gia về dân cư (Cục Cảnh sát quản lý hành chính về trật tự xã hội - C06, Bộ Công an) phát triển.",
-                       "caption":  "VNeID (viết tắt của từ Vietnam Electronic Identification) do Trung tâm dữ liệu quốc gia về dân cư (Cục Cảnh sát quản lý hành chính về trật tự xã hội - C06, Bộ Công an) phát triển.",
+                       "caption":  null,
                        "note":  null
                    },
                    {
                        "type":  "paragraph",
-                       "text":  "Đây là một ứng dụng trên thiết bị di động. VNeID được xây dựng trên nền tảng cơ sở dữ liệu về định danh, dân cư và xác thực điện tử, kết nối với các cơ quan hành chính nhà nước và các tổ chức xã hội."
+                       "text":  "VNeID (viết tắt của từ Vietnam Electronic Identification) do Trung tâm dữ liệu quốc gia về dân cư (Cục Cảnh sát quản lý hành chính về trật tự xã hội - C06, Bộ Công an) phát triển. Đây là một ứng dụng trên thiết bị di động. VNeID được xây dựng trên nền tảng cơ sở dữ liệu về định danh, dân cư và xác thực điện tử, kết nối với các cơ quan hành chính nhà nước và các tổ chức xã hội."
                    },
                    {
                        "type":  "paragraph",
@@ -2414,7 +2278,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "dap-ung-yeu-cau-cua-mot-xa-hoi-so-hanh-chinh-so",
                        "text":  "Đáp ứng yêu cầu của một xã hội số, hành chính số"
                    },
@@ -2426,11 +2290,15 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "type":  "heading",
                        "level":  3,
                        "id":  "2-vai-tro-tien-ich-su-dung-vneid-cung-dong-nghia-voi-viec-cong-dan-dang",
-                       "text":  "2. Vai trò, tiện ích: Sử dụng VNeID cũng đồng nghĩa với việc công dân đang chủ động tham gia vào hệ sinh thái số của quốc gia, từng bước rút ngắn khoảng cách giữa người dân và chính quyền số, thúc đẩy các giao dịch không giấy tờ, không tiếp xúc, không tốn thời gian."
+                       "text":  "2. Vai trò, tiện ích"
+                   },
+                                      {
+                       "type":  "paragraph",
+                       "text":  "Sử dụng VNeID cũng đồng nghĩa với việc công dân đang chủ động tham gia vào hệ sinh thái số của quốc gia, từng bước rút ngắn khoảng cách giữa người dân và chính quyền số, thúc đẩy các giao dịch không giấy tờ, không tiếp xúc, không tốn thời gian."
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "don-gian-hoa-thu-tuc-hanh-chinh-mot-trong-nhung-loi-ich-ro-ret-nhat",
                        "text":  "Đơn giản hóa thủ tục hành chính - một trong những lợi ích rõ rệt nhất"
                    },
@@ -2444,7 +2312,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "gia-tri-phap-ly-ro-rang-dam-bao-tinh-chinh-thong",
                        "text":  "Giá trị pháp lý rõ ràng, đảm bảo tính chính thống"
                    },
@@ -2458,7 +2326,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "an-toan-bao-mat-cao-niem-tin-trong-su-dung",
                        "text":  "An toàn, bảo mật cao - niềm tin trong sử dụng"
                    },
@@ -2472,7 +2340,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "tich-hop-du-lieu-lien-nganh-tao-nen-tang-cho-xa-hoi-lien-thong",
                        "text":  "Tích hợp dữ liệu liên ngành - tạo nền tảng cho xã hội liên thông"
                    },
@@ -2486,7 +2354,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "huong-toi-cong-dan-so-xa-hoi-khong-dung-giay-to",
                        "text":  "Hướng tới công dân số, xã hội không dùng giấy tờ"
                    },
@@ -2507,13 +2375,15 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-86.jpg",
                        "width":  700,
                        "height":  427,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "alt":  "Một số tính năng nổi bậc của ứng dụng VNeID",
+                       "caption":  "Một số tính năng nổi bậc của ứng dụng VNeID.",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
-                       "type":  "paragraph",
-                       "text":  "Một số tính năng nổi bậc của ứng dụng VNeIDMột số tính năng nổi bậc của ứng dụng VNeID(1) Tích hợp các loại giấy tờ cá nhân từ bản giấy sang dữ liệu điện tử"
+                       "type":  "heading",
+                       "level":  4,
+                       "id":  "tinh-nang-1",
+                       "text":  "(1) Tích hợp các loại giấy tờ cá nhân từ bản giấy sang dữ liệu điện tử"
                    },
                    {
                        "type":  "paragraph",
@@ -2534,7 +2404,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "2-khai-bao-y-te-qua-ung-dung-vneid",
                        "text":  "(2) Khai báo y tế qua ứng dụng VNeID"
                    },
@@ -2544,7 +2414,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "3-dang-ky-thuong-tru-tam-tru-tam-vang-o-bat-ky-dau",
                        "text":  "(3) Đăng ký thường trú, tạm trú, tạm vắng ở bất kỳ đâu"
                    },
@@ -2554,7 +2424,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "4-ung-dung-vneid-ho-tro-giao-dich-truc-tuyen",
                        "text":  "(4) Ứng dụng VNeID hỗ trợ giao dịch trực tuyến"
                    },
@@ -2564,7 +2434,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "5-to-giac-toi-pham-qua-ung-dung-vneid",
                        "text":  "(5) Tố giác tội phạm qua ứng dụng VNeID"
                    },
@@ -2596,7 +2466,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "mot-la-khang-dinh-vai-tro-la-kenh-gop-y-chinh-thong-bao-dam-tinh-phap-ly",
                        "text":  "Một là, khẳng định vai trò là kênh góp ý chính thống, bảo đảm tính pháp lý và minh bạch"
                    },
@@ -2606,7 +2476,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "hai-la-mo-rong-quyen-tham-gia-chinh-tri-cua-nguoi-dan-thuc-hanh-dan-chu",
                        "text":  "Hai là, mở rộng quyền tham gia chính trị của người dân - Thực hành dân chủ điện tử"
                    },
@@ -2620,7 +2490,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "ba-la-thuc-day-hieu-qua-quan-ly-nha-nuoc-va-tang-cuong-ket-noi-giua-chin",
                        "text":  "Ba là, thúc đẩy hiệu quả quản lý nhà nước và tăng cường kết nối giữa chính quyền và nhân dân"
                    },
@@ -2634,7 +2504,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                    },
                    {
                        "type":  "heading",
-                       "level":  3,
+                       "level":  4,
                        "id":  "bon-la-gop-phan-hien-thuc-hoa-chinh-phu-so-quoc-hoi-so-va-cong-dan-so",
                        "text":  "Bốn là, góp phần hiện thực hóa Chính phủ số, Quốc hội số và công dân số"
                    },
@@ -2662,16 +2532,11 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "type":  "heading",
                        "level":  3,
                        "id":  "3-de-xuat-trong-thoi-gian-toi-tu-viec-nghien-cuu-tien-ich-vneid-ve-phan",
-                       "text":  "3. Đề xuất trong thời gian tới: Từ việc nghiên cứu Tiện ích VNeID về phản ánh ANTT, Nhóm tác giả đề xuất bổ sung, phát triển thêm 8 TÍNH NĂNG về phản ánh ANTT nhằm nâng cao hiệu quả của tiện ích này trong phong trào “Toàn dân bảo vệ an ninh Tổ quốc” để có thể mang lại hiệu quả hơn và giúp người dân thuận tiện hơn phản ánh ANTT."
+                       "text":  "3. Đề xuất trong thời gian tới"
                    },
-                   {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-90.png",
-                       "width":  1023,
-                       "height":  552,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                    {
+                       "type":  "paragraph",
+                       "text":  "Từ việc nghiên cứu Tiện ích VNeID về phản ánh ANTT, Nhóm tác giả đề xuất bổ sung, phát triển thêm 8 TÍNH NĂNG về phản ánh ANTT nhằm nâng cao hiệu quả của tiện ích này trong phong trào “Toàn dân bảo vệ an ninh Tổ quốc” để có thể mang lại hiệu quả hơn và giúp người dân thuận tiện hơn phản ánh ANTT."
                    },
                    {
                        "type":  "heading",
@@ -2679,14 +2544,14 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "id":  "tinh-nang-1-tai-tien-ich-kien-nghi-phan-anh-ve-an-ninh-trat-tu-bo-sung-m",
                        "text":  "Tính năng 1. Tại tiện ích kiến nghị, phản ánh về an ninh, trật tự, bổ sung mục video hướng dẫn tạo yêu cầu"
                    },
-                   {
+                    {
                        "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-91.png",
-                       "width":  1848,
-                       "height":  1103,
-                       "alt":  "Bổ sung thêm mục “Video hướng dẫn tạo yêu cầu”",
-                       "caption":  "Bổ sung thêm mục “Video hướng dẫn tạo yêu cầu”",
-                       "note":  null
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-90.png",
+                       "width":  1023,
+                       "height":  552,
+                       "alt":  "Bổ sung thêm mục “Video hướng dẫn tạo yêu cầu.",
+                       "caption":  "Bổ sung thêm mục “Video hướng dẫn tạo yêu cầu.",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
                    {
                        "type":  "paragraph",
@@ -2699,17 +2564,17 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tính năng 2. Tại mục Thông tin người kiến nghị thay mục ẩn danh bằng yêu cầu không công khai thông tin cá nhân."
                    },
                    {
-                       "type":  "paragraph",
-                       "text":  "Thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”Thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”Nhằm ngăn chặn hành vi phá rối, báo tin sai sự thật hoặc những hành vi tiêu cực khác nhằm mục đích gây khó khăn cho cơ quan chức năng, nhóm tác giả kiến nghị cần thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”. Việc thay đổi này sẽ đảm bảo cho thông tin cá nhân của các cá nhân, tổ chức báo tin được cơ quan chức năng bảo mật tuyệt đối, tránh được sự trả thù, gây rối của những cá nhân, tổ chức bị kiến nghị, phản ánh. Bên cạnh đó cơ quan chức năng cũng sẽ xác định được thông tin cá nhân của các cá nhân, tổ chức báo tin, từ đó sẽ có biện pháp xử lý phù hợp đối với những cá nhân, tổ chức cố tính báo tin sai sự thật nhằm mục đích gây rối, gây khó khăn cho cơ quan chức năng."
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-91.png",
+                       "width":  1848,
+                       "height":  1103,
+                       "alt":  "Thay đổi mục “Ẩn danh””",
+                       "caption":  "Thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”",
+                       "note":  null
                    },
                    {
-                       "type":  "image",
-                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-92.png",
-                       "width":  1400,
-                       "height":  788,
-                       "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
-                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                       "type":  "paragraph",
+                       "text":  "Thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”Thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”Nhằm ngăn chặn hành vi phá rối, báo tin sai sự thật hoặc những hành vi tiêu cực khác nhằm mục đích gây khó khăn cho cơ quan chức năng, nhóm tác giả kiến nghị cần thay đổi mục “Ẩn danh” thành “Yêu cầu không công khai thông tin cá nhân”. Việc thay đổi này sẽ đảm bảo cho thông tin cá nhân của các cá nhân, tổ chức báo tin được cơ quan chức năng bảo mật tuyệt đối, tránh được sự trả thù, gây rối của những cá nhân, tổ chức bị kiến nghị, phản ánh. Bên cạnh đó cơ quan chức năng cũng sẽ xác định được thông tin cá nhân của các cá nhân, tổ chức báo tin, từ đó sẽ có biện pháp xử lý phù hợp đối với những cá nhân, tổ chức cố tính báo tin sai sự thật nhằm mục đích gây rối, gây khó khăn cho cơ quan chức năng."
                    },
                    {
                        "type":  "heading",
@@ -2718,8 +2583,17 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tính năng 3. Tại nội dung “Hành vi” trong mục “Thông tin vụ việc” bổ sung tính năng ghi âm phản ánh về an ninh, trật tự."
                    },
                    {
+                       "type":  "image",
+                       "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-92.png",
+                       "width":  1400,
+                       "height":  788,
+                       "alt":  "Bổ sung tính năng ghi âm",
+                       "caption":  "Bổ sung tính năng ghi âm.",
+                       "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
+                   },
+                   {
                        "type":  "paragraph",
-                       "text":  "Bổ sung tính năng ghi âmBổ sung tính năng ghi âmTrong nội dung “Hành vi” hầu hết là các tội trong Bộ Luật hình sự hiện hành và việc người dân xác định chính xác đó là tội nào là rất khó khăn đối với những người chưa am hiểu về luật và việc tìm kiếm “Hành vi” đúng với diễn biến khách quan của diễn biến sự việc ngoài thực tế là rất khó khăn và mất thời gian từ đó sẽ làm giảm hiệu quả trong giải quyết của cơ quan chức năng đối với những vụ việc cấp bách cần phải giải quyết ngay. Vì vậy việc Bổ sung tính năng ghi âm sẽ giúp người dân mô tả đầy đủ, nhanh chóng các tình tiết của vụ việc và những vấn đề có liên quan khác giúp cơ quan chức năng nhận định được tính huống cần phải giải quyết từ đó sẽ thuận lợi trong triển khai lực lượng, phương tiện, biện pháp"
+                       "text":  "Trong nội dung “Hành vi” hầu hết là các tội trong Bộ Luật hình sự hiện hành và việc người dân xác định chính xác đó là tội nào là rất khó khăn đối với những người chưa am hiểu về luật và việc tìm kiếm “Hành vi” đúng với diễn biến khách quan của diễn biến sự việc ngoài thực tế là rất khó khăn và mất thời gian từ đó sẽ làm giảm hiệu quả trong giải quyết của cơ quan chức năng đối với những vụ việc cấp bách cần phải giải quyết ngay. Vì vậy việc Bổ sung tính năng ghi âm sẽ giúp người dân mô tả đầy đủ, nhanh chóng các tình tiết của vụ việc và những vấn đề có liên quan khác giúp cơ quan chức năng nhận định được tính huống cần phải giải quyết từ đó sẽ thuận lợi trong triển khai lực lượng, phương tiện, biện pháp"
                    },
                    {
                        "type":  "heading",
@@ -2747,12 +2621,16 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tính năng 5. Tại mục tang vật, tài liệu liên quan (hình ảnh) bổ sung tính năng gửi video vụ việc về an ninh, trật tự."
                    },
                    {
+                       "type":  "paragraph",
+                       "text":  "Ngoài việc gửi hình ảnh cần bổ sung thêm mục gửi video để chủ thể kiến nghị, phản ánh gửi video nội dung, tang vật, tài liệu có liên quan việc này sẽ giúp cơ quan chức năng nắm bắt được chính xác, đầy đủ diễn biến của vụ việc"
+                   },
+                   {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-94.png",
                        "width":  1961,
                        "height":  1103,
-                       "alt":  "Ngoài việc gửi hình ảnh cần bổ sung thêm mục gửi video để chủ thể kiến nghị, phản ánh gửi video nội dung, tang vật, tài liệu có liên quan việc này sẽ giúp cơ quan chức năng nắm bắt được chính xác, đầy đủ diễn biến của vụ việc",
-                       "caption":  "Ngoài việc gửi hình ảnh cần bổ sung thêm mục gửi video để chủ thể kiến nghị, phản ánh gửi video nội dung, tang vật, tài liệu có liên quan việc này sẽ giúp cơ quan chức năng nắm bắt được chính xác, đầy đủ diễn biến của vụ việc",
+                       "alt":  "",
+                       "caption":  "",
                        "note":  null
                    },
                    {
@@ -2765,29 +2643,91 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "type":  "paragraph",
                        "text":  "Cần bổ sung quy định khen thưởng đối với những kiế n nghị, phản ánh đúng sự thật và nhanh nhất góp phần đảm bảo an ninh, trật tự trên địa bàn, việc này sẽ khích lệ người dân, tổ chức trong kiến nghị, phản ánh về an ninh, trật tự. Căn cứ vào Quyết định 04/2019/QĐ-TTg ngày 22/1/2019 của Thủ tướng Chính phủ về việc thành lập, quản lý và sử dụng Quỹ phòng, chống tội phạm Nhóm tác giả đề xuất các hình thức và mức khen thưởng cụ thể như sau:"
                    },
-                   {
-                       "type":  "list",
-                       "ordered":  false,
-                       "items":  [
-                                     "Tặng Bằng khen, Giấy khen.",
-                                     "Tặng Giấy khen của UBND và Công an Xã đối với những kiến nghị, phản ánh về tội phạm ít nghiêm trọng",
-                                     "Tặng Bằng khen của UBND tỉnh và Giấy khen của Công an Tỉnh đối với những kiến nghị, phản ánh về tội phạm nghiêm trọng",
-                                     "Tặng Bằng khen của Bộ Công an đối với những kiến nghị, phản ánh về tội phạm rất nghiêm trọng",
-                                     "Tặng Bằng khen của Thủ tướng đối với những kiến nghị, phản ánh về tội phạm đặc biệt nghiêm trọng.",
-                                     "Tặng tiền thưởng",
-                                     "Đối với cá nhân",
-                                     "Tặng 5 triệu đồng đối với những kiến nghị, phản ánh về tội phạm đặc biệt nghiêm trọng",
-                                     "Tặng 4 triệu đồng đối với những kiến nghị, phản ánh về tội phạm rất nghiêm trọng",
-                                     "Tặng 3 triệu đồng đối với những kiến nghị, phản ánh về tội phạm nghiêm trọng",
-                                     "Tặng 2 triệu đồng đối với những kiến nghị, phản ánh về tội phạm ít nghiêm trọng"
-                                 ]
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "doi-voi-tap-the",
-                       "text":  "Đối với Tập thể"
-                   },
+
+                    {
+                        "type": "paragraph",
+                        "text": "- Tặng Bằng khen, Giấy khen."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Tặng Giấy khen của UBND và Công an Xã đối với những kiến nghị, phản ánh về tội phạm ít nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Tặng Bằng khen của UBND tỉnh và Giấy khen của Công an Tỉnh đối với những kiến nghị, phản ánh về tội phạm nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Tặng Bằng khen của Bộ Công an đối với những kiến nghị, phản ánh về tội phạm rất nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Tặng Bằng khen của Thủ tướng đối với những kiến nghị, phản ánh về tội phạm đặc biệt nghiêm trọng."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "- Tặng tiền thưởng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Đối với cá nhân"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 5 triệu đồng đối với những kiến nghị, phản ánh về tội phạm đặc biệt nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 4 triệu đồng đối với những kiến nghị, phản ánh về tội phạm rất nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 3 triệu đồng đối với những kiến nghị, phản ánh về tội phạm nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 2 triệu đồng đối với những kiến nghị, phản ánh về tội phạm ít nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Đối với Tập thể"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 20 triệu đồng đối với những kiến nghị, phản ánh về tội phạm đặc biệt nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 15 triệu đồng đối với những kiến nghị, phản ánh về tội phạm rất nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 10 triệu đồng đối với những kiến nghị, phản ánh về tội phạm nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "* Tặng 5 triệu đồng đối với những kiến nghị, phản ánh về tội phạm ít nghiêm trọng"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "- Tặng danh hiệu “Công dân gương mẫu”. Đối với những cá nhân, tổ chức đạt được các danh hiệu Công dân gương mẫu để ưu tiên trong giải quyết các hoạt động hành chính."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Hạng vàng: Đối với những cá nhân, tổ chức có 5 kiến nghị, phản ánh về an ninh trật tự"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Hạng bạc: Đối với những cá nhân, tổ chức có 4 kiến nghị, phản ánh về an ninh trật tự"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "+ Hạng đồng: Đối với những cá nhân, tổ chức có 3 kiến nghị, phản ánh về an ninh trật tự"
+                    },
+
+
+
+                  
                    {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-95.png",
@@ -2797,20 +2737,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "caption":  null,
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
                    },
-                   {
-                       "type":  "list",
-                       "ordered":  false,
-                       "items":  [
-                                     "Tặng 20 triệu đồng đối với những kiến nghị, phản ánh về tội phạm đặc biệt nghiêm trọng",
-                                     "Tặng 15 triệu đồng đối với những kiến nghị, phản ánh về tội phạm rất nghiêm trọng",
-                                     "Tặng 10 triệu đồng đối với những kiến nghị, phản ánh về tội phạm nghiêm trọng",
-                                     "Tặng 5 triệu đồng đối với những kiến nghị, phản ánh về tội phạm ít nghiêm trọng",
-                                     "Tặng danh hiệu “Công dân gương mẫu”. Đối với những các nhân, tổ chức đạt được các danh hiệu Công dân gương mẫu để ưu tiên trong giải quyết các hoạt động hành chính.",
-                                     "Hạng vàng: Đối với những cá nhân, tổ chức có 5 kiến nghị, phản ánh về an ninh trật tự",
-                                     "Hạng bạc: Đối với những cá nhân, tổ chức có 4 kiến nghị, phản ánh về an ninh trật tự",
-                                     "Hạng đồng: Đối với những cá nhân, tổ chức có 3 kiến nghị, phản ánh về an ninh trật tự"
-                                 ]
-                   },
+                  
                    {
                        "type":  "heading",
                        "level":  4,
@@ -2818,9 +2745,7 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tính năng 7. Bổ sung tính năng “Tiến độ giải quyết yêu cầu kiến nghị, phản ánh về an ninh, trật tự” (Đã tiếp nhận =\u003e Đang xử lý =\u003e Hoàn tất)."
                    },
                    {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "nham-tao-dieu-kien-cho-chu-the-kien-nghi-phan-anh-theo-doi-duoc-qua-trin",
+                       "type":  "paragraph",
                        "text":  "Nhằm tạo điều kiện cho chủ thể kiến nghị, phản ánh theo dõi được quá trình, tiến độ giải quyết của cơ quan chức năng."
                    },
                    {
@@ -2839,12 +2764,16 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "text":  "Tính năng 8. Bổ sung tính năng Thông báo của cơ quan chức năng với cá nhân, tổ chức kiến nghị, phản ánh về an ninh, trật tự (Mức điểm cộng, tiền thưởng, giấy khen, những vấn đề cần chú ý,…)"
                    },
                    {
+                       "type":  "paragraph",
+                       "text":  "Việc bổ sung này giúp cho cá nhân, tổ chức gửi kiến nghị, phản ảnh nắm được mức khen thưởng và những vấn đề cần chú ý, cải thiện trong những lần gửi kiến nghị, phản ánh sau."
+                   },
+                   {
                        "type":  "image",
                        "src":  "/images/chuyen-de-80-nam-annd/chuyen-de-97.png",
                        "width":  2357,
                        "height":  1326,
-                       "alt":  "Việc bổ sung này giúp cho cá nhân, tổ chức gửi kiến nghị, phản ảnh nắm được mức khen thưởng và những vấn đề cần chú ý, cải thiện trong những lần gửi kiến nghị, phản ánh sau.",
-                       "caption":  "Việc bổ sung này giúp cho cá nhân, tổ chức gửi kiến nghị, phản ảnh nắm được mức khen thưởng và những vấn đề cần chú ý, cải thiện trong những lần gửi kiến nghị, phản ánh sau.",
+                       "alt":  "",
+                       "caption":  "",
                        "note":  null
                    },
                    {
@@ -2875,14 +2804,8 @@ export const chuyenDe80NamAnndArticle: ArticleData = {
                        "width":  787,
                        "height":  473,
                        "alt":  "Ảnh trong chuyên đề 80 năm An ninh nhân dân",
-                       "caption":  null,
+                       "caption":  "Khối nam Sỹ quan An ninh nhân dân",
                        "note":  "DOCX đặt ảnh cùng đoạn hoặc không có caption tách biệt; kiểm tra lại vị trí/caption nếu cần."
-                   },
-                   {
-                       "type":  "heading",
-                       "level":  3,
-                       "id":  "khoi-nam-sy-quan-an-ninh-nhan-dan",
-                       "text":  "Khối nam Sỹ quan An ninh nhân dân"
                    }
                ]
 };

@@ -67,6 +67,11 @@ export default async function AchievementDetailPage({
     (block) =>
       block.type === "image" && block.src === achievement.coverImage,
   );
+  const coverBlock =
+    firstCoverBlockIndex >= 0 &&
+    achievement.content[firstCoverBlockIndex].type === "image"
+      ? achievement.content[firstCoverBlockIndex]
+      : null;
   const bodyBlocks = achievement.content.filter(
     (_, index) => index !== firstCoverBlockIndex,
   );
@@ -75,7 +80,7 @@ export default async function AchievementDetailPage({
     <main>
       <ReadingProgressBar />
 
-      <section className="relative isolate overflow-hidden bg-red-950 px-4 py-12 text-white sm:px-6 lg:px-8 lg:py-16">
+      <section className="relative isolate flex min-h-[calc(100svh-56px)] items-center overflow-hidden bg-red-950 px-4 py-12 text-white sm:px-6 lg:min-h-[calc(100svh-64px)] lg:px-8 lg:py-16">
         {achievement.coverImage ? (
           <Image
             src={achievement.coverImage}
@@ -97,11 +102,11 @@ export default async function AchievementDetailPage({
         )}
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(69,10,10,0.94),rgba(127,29,29,0.84)_52%,rgba(69,10,10,0.76))]" />
 
-        <div className="relative mx-auto max-w-5xl">
+        <div className="relative mx-auto w-full max-w-5xl min-w-0">
           <ScrollReveal>
             <nav
               aria-label="Breadcrumb"
-              className="flex flex-wrap items-center gap-2 text-sm font-bold text-yellow-100"
+              className="flex min-w-0 flex-wrap items-center gap-2 text-sm font-bold leading-6 text-yellow-100"
             >
               <Link href="/" className="transition hover:text-white">
                 Trang chủ
@@ -118,7 +123,9 @@ export default async function AchievementDetailPage({
               <span aria-hidden="true" className="text-yellow-300">
                 /
               </span>
-              <span className="max-w-full truncate">{achievement.title}</span>
+              <span className="min-w-0 max-w-full break-words">
+                {achievement.title}
+              </span>
             </nav>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -130,26 +137,23 @@ export default async function AchievementDetailPage({
               </span>
             </div>
 
-            <h1 className="mt-6 font-serif text-4xl font-black leading-tight text-yellow-100 md:text-6xl">
+            <h1 className="mt-6 max-w-full break-words font-serif text-3xl font-black leading-tight text-yellow-100 [overflow-wrap:anywhere] sm:text-4xl md:text-5xl lg:text-6xl">
               {achievement.title}
             </h1>
-            <p className="mt-6 max-w-4xl text-lg font-semibold leading-8 text-red-50">
-              {achievement.summary}
-            </p>
           </ScrollReveal>
         </div>
       </section>
 
-      <section className="bg-[#fff8e7] px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <section className="bg-[#fff8e7] px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pb-16 lg:pt-10">
         <div className="mx-auto max-w-[900px]">
-          <ScrollReveal>
+          {/* <ScrollReveal>
             <Link
               href="/chien-cong-noi-bat"
               className="inline-flex min-h-11 items-center rounded-md border border-red-200 bg-white px-4 py-2 text-sm font-black text-red-800 shadow-sm transition hover:border-red-800 hover:bg-red-800 hover:text-white"
             >
               Quay lại Các chiến công nổi bật
             </Link>
-          </ScrollReveal>
+          </ScrollReveal> */}
 
           {achievement.coverImage ? (
             <ScrollReveal className="mt-8">
@@ -165,9 +169,9 @@ export default async function AchievementDetailPage({
                     priority
                   />
                 </div>
-                {achievement.images[0]?.caption ? (
+                {coverBlock?.caption ?? achievement.images[0]?.caption ? (
                   <figcaption className="mt-3 text-center text-sm leading-6 text-zinc-600">
-                    {achievement.images[0].caption}
+                    {coverBlock?.caption ?? achievement.images[0]?.caption}
                   </figcaption>
                 ) : null}
               </figure>

@@ -40,7 +40,7 @@ export default function AchievementsPage() {
               <p className="mt-6 max-w-3xl text-lg font-semibold leading-8 text-red-50 md:text-xl">
                 Tổng hợp những chiến công, thành tích tiêu biểu gắn với chặng
                 đường xây dựng, chiến đấu và trưởng thành của lực lượng An
-                ninh nhân dân Việt Nam.
+                ninh nhân dân Việt Nam, được chia thành 03 giai đoạn.
               </p>
             </div>
           </ScrollReveal>

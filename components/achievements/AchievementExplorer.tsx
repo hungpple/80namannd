@@ -127,23 +127,13 @@ export function AchievementExplorer({
         </label>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="relative h-0" aria-hidden="true">
         {periods.map((period) => (
-          <a
+          <span
+            key={period.anchor}
             id={period.anchor}
-            key={period.key}
-            href={`#${period.anchor}`}
-            onClick={(event) => {
-              event.preventDefault();
-              setActivePeriod(period.key);
-            }}
-            className="rounded-lg border border-yellow-200 bg-yellow-50/80 p-5 text-red-950 shadow-sm transition hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50"
-          >
-            <p className="text-sm font-black">{getPeriodLabel(period.key)}</p>
-            <p className="mt-2 text-sm font-semibold leading-6 text-zinc-700">
-              {period.title}
-            </p>
-          </a>
+            className="absolute -top-24"
+          />
         ))}
       </div>
 

@@ -147,7 +147,7 @@ const authorRows: AuthorImage[][] = [
       src: "/images/ve-chung-toi/tac-gia-5.png",
       alt: "Tác giả 5",
       style: {
-        transform: "translateY(3.25%)",
+        transform: "translateY(-3.25%)",
       },
     },
   ],

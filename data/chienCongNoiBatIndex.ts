@@ -93,7 +93,7 @@ export const featuredAchievementCards = [
     "period": "1945-1954",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN RA ĐỜI, BẢO VỆ CHÍNH QUYỀN CÁCH MẠNG VÀ KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP XÂM LƯỢC",
     "periodAnchor": "giai-doan-1945-1954",
-    "summary": "CHIẾN CÔNG 6. VỤ ÁN ÔN NHƯ HẦU VÀ MỐC SON CỦA LỰC LƯỢNG AN NINH NHÂN DÂN",
+    "summary": "Đồng chí Nguyễn Bá Hùng và Đội Trinh sát đặc biệt đến khám số 7 phố Ôn Như Hầu bắt Phan Kích Nam và bọn Quốc dân đảng.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-06/cover.jpg",
     "imageCount": 2
   },
@@ -115,7 +115,7 @@ export const featuredAchievementCards = [
     "period": "1945-1954",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN RA ĐỜI, BẢO VỆ CHÍNH QUYỀN CÁCH MẠNG VÀ KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP XÂM LƯỢC",
     "periodAnchor": "giai-doan-1945-1954",
-    "summary": "THỰC DÂN PHÁP XÂM LƯỢC Chiến công này thể hiện rõ vai trò nòng cốt của lực lượng Công an cơ sở trong bảo vệ an ninh, trật tự tại địa bàn nông thôn trong những năm đầu kháng chiến chống thực dân Pháp. Trước các cuộc càn quét, lùng sục của địch nhằm phá hoại cơ sở cách mạng, Công an xã Tam Hưng đã chủ động tổ chức lực lượng canh gác, xây dựng hệ thống cảnh giới, phối hợp chặt chẽ với quần chúng Nhân dân để phát hiện, ngăn chặn và đối phó hiệu quả với các hoạt động xâm nhập.",
+    "summary": "Chiến công này thể hiện rõ vai trò nòng cốt của lực lượng Công an cơ sở trong bảo vệ an ninh, trật tự tại địa bàn nông thôn trong những năm đầu kháng chiến chống thực dân Pháp. Trước các cuộc càn quét, lùng sục của địch nhằm phá hoại cơ sở cách mạng, Công an xã Tam Hưng đã chủ động tổ chức lực lượng canh gác, xây dựng hệ thống cảnh giới, phối hợp chặt chẽ với quần chúng Nhân dân để phát hiện, ngăn chặn và đối phó hiệu quả với các hoạt động xâm nhập.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-08/cover.jpg",
     "imageCount": 1
   },
@@ -161,7 +161,7 @@ export const featuredAchievementCards = [
     "periodAnchor": "giai-doan-1945-1954",
     "summary": "Chiến công này thể hiện sự mưu trí, táo bạo và khả năng tổ chức, chỉ huy hiệu quả của lực lượng An ninh trong lòng địch. Dưới sự chỉ huy của Trịnh Khắc Phương, trận đánh đã loại bỏ một tên đầu sỏ mật thám nguy hiểm, góp phần làm suy yếu hệ thống tình báo, đàn áp của địch tại Nam Kỳ.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-12/cover.jpg",
-    "imageCount": 2
+    "imageCount": 1
   },
   {
     "id": 13,
@@ -171,8 +171,8 @@ export const featuredAchievementCards = [
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN RA ĐỜI, BẢO VỆ CHÍNH QUYỀN CÁCH MẠNG VÀ KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP XÂM LƯỢC",
     "periodAnchor": "giai-doan-1945-1954",
     "summary": "Chiến công thể hiện rõ bản lĩnh, sự mưu trí và tinh thần dũng cảm của cán bộ, chiến sĩ công an khi hoạt động bí mật trong vùng địch kiểm soát. Thông qua hình thức “xã hội hóa” vỏ bọc, lực lượng đã thâm nhập sâu vào nội địa địch, nắm tình hình, xây dựng cơ sở và hỗ trợ hiệu quả cho phong trào cách mạng.",
-    "coverImage": null,
-    "imageCount": 0
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-13/image-01.jpg",
+    "imageCount": 1
   },
   {
     "id": 14,
@@ -225,7 +225,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 18. LỰC LƯỢNG AN NINH TỈNH QUẢNG BÌNH BẮT GIỮ CÁC ĐỐI TƯỢNG CẦM ĐẦU TỔ CHỨC PHẢN CÁCH MẠNG “VIỆT HƯNG PHỤC QUỐC ĐẢNG” TẠI VĨNH LỘC, QUẢNG TRẠCH (NĂM 1958)",
+    "summary": "Chiến công này thể hiện sự chủ động, kiên quyết của lực lượng An ninh trong đấu tranh làm thất bại âm mưu của các tổ chức phản cách mạng hoạt động bí mật. Tại Quảng Bình, lực lượng An ninh đã phát hiện, thu giữ tang vật và bắt giữ các đối tượng cầm đầu, qua đó bóc gỡ toàn bộ tổ chức “Việt Hưng phục quốc đảng” trên địa bàn. Kết quả này góp phần giữ vững ổn định chính trị, bảo vệ chính quyền cơ sở và củng cố niềm tin của Nhân dân trong giai đoạn xây dựng chủ nghĩa xã hội ở miền Bắc.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-18/cover.jpg",
     "imageCount": 1
   },
@@ -236,7 +236,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện sự chủ động, kiên quyết của lực lượng An ninh trong đấu tranh làm thất bại âm mưu của các tổ chức phản cách mạng hoạt động bí mật. Tại Quảng Bình, lực lượng An ninh đã phát hiện, thu giữ tang vật và bắt giữ các đối tượng cầm đầu, qua đó bóc gỡ toàn bộ tổ chức “Việt Hưng phục quốc đảng” trên địa bàn.",
+    "summary": "Chiến công thể hiện sự phối hợp chặt chẽ giữa lực lượng An ninh nhân dân và Quân đội nhân dân Việt Nam trong đấu tranh trấn áp các toán phỉ, phản động hoạt động ở địa bàn miền núi. Thông qua các biện pháp nghiệp vụ kết hợp quân sự, các lực lượng đã bóc gỡ, triệt phá nhiều ổ nhóm, làm thất bại âm mưu lợi dụng địa bàn hiểm trở để chống phá sau chiến tranh.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-19/cover.jpg",
     "imageCount": 1
   },
@@ -269,7 +269,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 22. LỰC LƯỢNG AN NINH PHỐI HỢP NHÂN DÂN TỈNH HÒA BÌNH VÂY BẮT GIÁN ĐIỆP BIỆT KÍCH",
+    "summary": "Chiến công này thể hiện sức mạnh của thế trận an ninh nhân dân trong đấu tranh chống chiến tranh gián điệp. Tại Hòa Bình, lực lượng An ninh đã chủ động phối hợp với quần chúng phát hiện, bao vây và bắt giữ các toán gián điệp biệt kích xâm nhập. Kết quả không chỉ góp phần vô hiệu hóa hoạt động phá hoại của địch mà còn khẳng định hiệu quả của phương châm dựa vào dân, giữ vững an ninh, trật tự trên địa bàn.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-22/cover.jpg",
     "imageCount": 1
   },
@@ -280,7 +280,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện sức mạnh của thế trận an ninh nhân dân trong đấu tranh chống chiến tranh gián điệp. Tại Hòa Bình, lực lượng An ninh đã chủ động phối hợp với quần chúng phát hiện, bao vây và bắt giữ các toán gián điệp biệt kích xâm nhập.",
+    "summary": "Chiến công này thể hiện sự sắc bén, kiên trì của lực lượng An ninh trong đấu tranh chống gián điệp biệt kích. Tại Sơn La, lực lượng An ninh đã tổ chức truy bắt thành công Lò Văn Péng - đối tượng giữ vai trò truyền tin quan trọng trong toán Castor.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-23/cover.jpg",
     "imageCount": 1
   },
@@ -302,7 +302,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 25. LỰC LƯỢNG AN NINH PHỐI HỢP BẢO VỆ AN TOÀN CÁC ĐOÀN TÀU VẬN TẢI QUÂN SỰ CHI VIỆN VŨ KHÍ CHO CHIẾN TRƯỜNG MIỀN NAM",
+    "summary": "Chiến công này thể hiện vai trò quan trọng của lực lượng An ninh trong bảo vệ tuyến vận tải chiến lược, bảo đảm bí mật, an toàn cho hoạt động chi viện. Trong điều kiện địch tăng cường đánh phá, trinh sát và phá hoại, lực lượng An ninh đã chủ động phối hợp với các lực lượng chức năng triển khai nhiều biện pháp nghiệp vụ, giữ vững an ninh trên các tuyến đường sắt",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-25/cover.jpg",
     "imageCount": 1
   },
@@ -313,7 +313,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện vai trò quan trọng của lực lượng An ninh trong bảo vệ tuyến vận tải chiến lược, bảo đảm bí mật, an toàn cho hoạt động chi viện. Trong điều kiện địch tăng cường đánh phá, trinh sát và phá hoại, lực lượng An ninh đã chủ động phối hợp với các lực lượng chức năng triển khai nhiều biện pháp nghiệp vụ, giữ vững an ninh trên các tuyến đường sắt, kịp thời phát hiện và ngăn chặn nguy cơ.",
+    "summary": "Chiến công này thể hiện hiệu quả của công tác dân vận và đấu tranh chính trị trong lòng địch. Tại địa bàn Khu IX, lực lượng An ninh đã bám dân, tuyên truyền, tổ chức quần chúng đứng lên đòi giải tán các trại tập trung và hệ thống “ấp chiến lược”, làm thất bại âm mưu dồn dân, kiểm soát của đối phương.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-26/cover.jpg",
     "imageCount": 1
   },
@@ -335,9 +335,9 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 28. LỰC LƯỢNG AN NINH VŨ TRANG TỔ CHỨC PHÒNG NGỪA, TUẦN TRA VÀ ĐÁNH ĐUỔI GIÁN ĐIỆP BIỆT KÍCH XÂM NHẬP KHU VÀNH ĐAI CĂN CỨ TRUNG ƯƠNG CỤC",
-    "coverImage": null,
-    "imageCount": 0
+    "summary": "Chiến công này thể hiện tinh thần cảnh giác cao độ và năng lực tổ chức bảo vệ căn cứ đầu não của cách mạng. Lực lượng An ninh vũ trang đã chủ động triển khai tuần tra, kiểm soát, kịp thời phát hiện và đánh đuổi các toán gián điệp biệt kích xâm nhập vào khu vành đai Trung ương Cục miền Nam.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-28/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 29,
@@ -346,7 +346,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này thể hiện tinh thần cảnh giác cao độ và năng lực tổ chức bảo vệ căn cứ đầu não của cách mạng. Lực lượng An ninh vũ trang đã chủ động triển khai tuần tra, kiểm soát, kịp thời phát hiện và đánh đuổi các toán gián điệp biệt kích xâm nhập vào khu vành đai Trung ương Cục miền Nam.",
+    "summary": "Chiến công này gắn với Tổng tiến công và nổi dậy Tết Mậu Thân 1968, thể hiện sự phối hợp chặt chẽ giữa lực lượng An ninh vũ trang với các lực lượng vũ trang trong tiến công vào đô thị. Tại Vĩnh Long, lực lượng An ninh đã tham gia đánh địch, hỗ trợ dẫn đường, bảo vệ mục tiêu và giữ vững địa bàn sau tiến công.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-29/cover.jpg",
     "imageCount": 1
   },
@@ -357,8 +357,8 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này gắn với Tổng tiến công và nổi dậy Tết Mậu Thân 1968, thể hiện sự phối hợp chặt chẽ giữa lực lượng An ninh vũ trang với các lực lượng vũ trang trong tiến công vào đô thị. Tại Vĩnh Long, lực lượng An ninh đã tham gia đánh địch, hỗ trợ dẫn đường, bảo vệ mục tiêu và giữ vững địa bàn sau tiến công.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-30/cover.jpg",
+    "summary": "Chiến công này thể hiện tinh thần tiến công, táo bạo và khả năng tác chiến linh hoạt của lực lượng An ninh vũ trang trong điều kiện chiến trường ác liệt. Bằng việc tổ chức lực lượng chặt chẽ, lựa chọn thời cơ phù hợp, các đơn vị đã bất ngờ tiến công, đánh chiếm căn cứ của địch, gây thiệt hại và làm rối loạn hệ thống phòng thủ.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-30/image-01.jpg",
     "imageCount": 2
   },
   {
@@ -368,7 +368,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 31. KHAI THÁC TIN TÌNH BÁO TRINH SÁT KỸ THUẬT, CHỈ ĐẠO ĐÁNH TAN SƯ ĐOÀN 9 NGỤY, LÀM THẤT BẠI ÂM MƯU THAM GIA CUỘC HÀNH QUÂN JUNCTION CITY (NĂM 1967)",
+    "summary": "Chiến công này thể hiện vai trò đặc biệt quan trọng của công tác trinh sát kỹ thuật trong bảo đảm thắng lợi trên chiến trường. Từ nguồn tin tình báo chính xác, Trung ương Cục miền Nam đã kịp thời chỉ đạo các lực lượng vũ trang tổ chức tiến công",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-31/cover.jpg",
     "imageCount": 1
   },
@@ -379,7 +379,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này thể hiện vai trò đặc biệt quan trọng của công tác trinh sát kỹ thuật trong bảo đảm thắng lợi trên chiến trường. Từ nguồn tin tình báo chính xác, Trung ương Cục miền Nam đã kịp thời chỉ đạo các lực lượng vũ trang tổ chức tiến công, đánh tan Sư đoàn 9 ngụy ngay khi mới hình thành.",
+    "summary": "Chiến công này thể hiện vai trò quan trọng của lực lượng An ninh trong công tác đảm bảo an ninh đối ngoại và đấu tranh trên mặt trận thông tin, tuyên truyền. Trong điều kiện chiến tranh ác liệt, việc bảo đảm an toàn cho nhà báo quốc tế vào thăm vùng giải phóng không chỉ đòi hỏi sự chặt chẽ, bí mật mà còn thể hiện tính chuyên nghiệp, trách nhiệm cao của lực lượng An ninh.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-32/cover.jpg",
     "imageCount": 1
   },
@@ -390,7 +390,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện vai trò quan trọng của lực lượng An ninh trong công tác đảm bảo an ninh đối ngoại và đấu tranh trên mặt trận thông tin, tuyên truyền. Trong điều kiện chiến tranh ác liệt, việc bảo đảm an toàn cho nhà báo quốc tế vào thăm vùng giải phóng không chỉ đòi hỏi sự chặt chẽ, bí mật mà còn thể hiện tính chuyên nghiệp, trách nhiệm cao của lực lượng An ninh.",
+    "summary": "Chiến công này thể hiện tinh thần cảnh giác và hiệu quả của công tác an ninh trong vùng giải phóng. Tại khu vực Lộc Ninh, lực lượng An ninh đã kịp thời phát hiện, tổ chức vây bắt các toán biệt kích, thám báo xâm nhập, qua đó vô hiệu hóa âm mưu thu thập tin tức, phá hoại của địch.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-33/cover.jpg",
     "imageCount": 1
   },
@@ -401,7 +401,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này thể hiện tinh thần cảnh giác và hiệu quả của công tác an ninh trong vùng giải phóng. Tại khu vực Lộc Ninh, lực lượng An ninh đã kịp thời phát hiện, tổ chức vây bắt các toán biệt kích, thám báo xâm nhập, qua đó vô hiệu hóa âm mưu thu thập tin tức, phá hoại của địch.",
+    "summary": "Chiến công này thể hiện sự táo bạo, mưu trí và khả năng tác chiến ngay trong lòng đô thị của lực lượng An ninh vũ trang. Trong điều kiện địch kiểm soát chặt chẽ, việc tổ chức đánh trúng mục tiêu giữa ban ngày đã gây chấn động lớn, làm suy giảm uy thế của chính quyền đối phương và tạo tác động mạnh về tâm lý.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-34/cover.jpg",
     "imageCount": 1
   },
@@ -423,7 +423,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 36. LỰC LƯỢNG TRINH SÁT VŨ TRANG AN NINH T4 ĐÁNH HỎNG XE Ô TÔ CỦA NGUYỄN VĂN KIỂM - THIẾU TƯỚNG TƯ LỆNH BIỆT BỘ PHỦ TỔNG THỐNG NGỤY (NGÀY 1-2-1969)",
+    "summary": "Chiến công này thể hiện sự táo bạo, chính xác trong hoạt động tác chiến của lực lượng trinh sát vũ trang ngay trong lòng đô thị. Việc đánh trúng mục tiêu là phương tiện của một tướng lĩnh cao cấp không chỉ gây thiệt hại trực tiếp mà còn tác động mạnh đến tâm lý, làm suy giảm uy thế của đối phương.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-36/cover.jpg",
     "imageCount": 1
   },
@@ -434,7 +434,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này thể hiện sự táo bạo, chính xác trong hoạt động tác chiến của lực lượng trinh sát vũ trang ngay trong lòng đô thị. Việc đánh trúng mục tiêu là phương tiện của một tướng lĩnh cao cấp không chỉ gây thiệt hại trực tiếp mà còn tác động mạnh đến tâm lý, làm suy giảm uy thế của đối phương.",
+    "summary": "Chiến công này thể hiện tinh thần khẩn trương, quyết tâm cao của lực lượng An ninh T4 trong giai đoạn quyết định của cuộc kháng chiến. Trên đường hành quân về Sài Gòn, cán bộ, chiến sĩ đã sẵn sàng thực hiện nhiệm vụ tiếp quản, bảo vệ mục tiêu trọng yếu và giữ gìn an ninh trật tự khi chiến dịch diễn ra.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-37/cover.jpg",
     "imageCount": 1
   },
@@ -445,9 +445,9 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "CHIẾN CÔNG 38. LỰC LƯỢNG AN NINH ĐÀ NẴNG THU HỒI TÀI LIỆU CỦA ĐỊCH SAU GIẢI PHÓNG THÀNH PHỐ",
-    "coverImage": null,
-    "imageCount": 0
+    "summary": "Chiến công này diễn ra ngay sau khi Đà Nẵng được giải phóng, thể hiện sự nhanh nhạy, kịp thời của lực lượng An ninh trong tiếp quản địa bàn.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-38/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 39,
@@ -456,8 +456,8 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này diễn ra ngay sau khi Đà Nẵng được giải phóng, thể hiện sự nhanh nhạy, kịp thời của lực lượng An ninh trong tiếp quản địa bàn. Việc thu hồi, bảo quản và khai thác khối lượng lớn tài liệu của địch không chỉ giúp phục vụ công tác điều tra, truy quét tàn dư mà còn góp phần ổn định tình hình, giữ vững an ninh trật tự.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-39/cover.jpg",
+    "summary": "Chiến công này thể hiện vai trò chủ động, chặt chẽ của lực lượng An ninh trong giai đoạn tiếp quản và ổn định tình hình sau chiến tranh. Thông qua phối hợp với Ủy ban Quân quản, lực lượng An ninh đã tổ chức cho các đối tượng từng cộng tác với địch ra trình diện, tiến hành phân loại, quản lý và đưa vào diện cải tạo theo quy định.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-39/cover.png",
     "imageCount": 1
   },
   {
@@ -467,7 +467,7 @@ export const featuredAchievementCards = [
     "period": "1954-1975",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ MIỀN BẮC XÃ HỘI CHỦ NGHĨA, ĐẤU TRANH GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC",
     "periodAnchor": "giai-doan-1954-1975",
-    "summary": "Chiến công này thể hiện vai trò chủ động, chặt chẽ của lực lượng An ninh trong giai đoạn tiếp quản và ổn định tình hình sau chiến tranh. Thông qua phối hợp với Ủy ban Quân quản, lực lượng An ninh đã tổ chức cho các đối tượng từng cộng tác với địch ra trình diện, tiến hành phân loại, quản lý và đưa vào diện cải tạo theo quy định.",
+    "summary": "Chiến công này thể hiện vai trò chỉ đạo, tổ chức kịp thời của lực lượng An ninh trong giai đoạn hậu chiến. Thông qua việc hướng dẫn Ban An ninh các địa phương triển khai đồng bộ các biện pháp thu gom, quản lý vũ khí, vật liệu nổ còn sót lại, đã góp phần loại trừ nguy cơ mất an toàn, ngăn chặn việc sử dụng trái phép.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-40/cover.png",
     "imageCount": 2
   },
@@ -478,9 +478,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA (1975 ĐẾN NAY)",
-    "coverImage": null,
-    "imageCount": 0
+    "summary": "Chiến công này thể hiện hiệu quả của công tác an ninh trong phát hiện, điều tra và xử lý các đối tượng nội gián, phản bội Tổ quốc. Việc đưa vụ án ra xét xử công khai tại Thừa Thiên Huế đã góp phần răn đe, giáo dục, củng cố niềm tin của Nhân dân vào pháp luật và chính quyền.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-41/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 42,
@@ -489,9 +489,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện hiệu quả của công tác an ninh trong phát hiện, điều tra và xử lý các đối tượng nội gián, phản bội Tổ quốc. Việc đưa vụ án ra xét xử công khai tại Thừa Thiên Huế đã góp phần răn đe, giáo dục, củng cố niềm tin của Nhân dân vào pháp luật và chính quyền.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-42/cover.jpg",
-    "imageCount": 2
+    "summary": "Chiến công này thể hiện sự kiên quyết của lực lượng An ninh trong đấu tranh với các tổ chức phản động chống phá chính quyền sau giải phóng. Việc đưa các đối tượng cầm đầu ra xét xử tại Thành phố Hồ Chí Minh với những bản án nghiêm khắc đã góp phần răn đe, làm tan rã tổ chức “Dân quân phục quốc”, ngăn chặn nguy cơ gây mất ổn định.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-42/image-01.jpg",
+    "imageCount": 1
   },
   {
     "id": 43,
@@ -500,9 +500,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự kiên quyết của lực lượng An ninh trong đấu tranh với các tổ chức phản động chống phá chính quyền sau giải phóng. Việc đưa các đối tượng cầm đầu ra xét xử tại Thành phố Hồ Chí Minh với những bản án nghiêm khắc đã góp phần răn đe, làm tan rã tổ chức “Dân quân phục quốc”, ngăn chặn nguy cơ gây mất ổn định.",
-    "coverImage": null,
-    "imageCount": 0
+    "summary": "Chiến công này thể hiện sự chủ động, kịp thời của lực lượng An ninh trong nắm tình hình, phát hiện và ngăn chặn từ sớm các tổ chức phản động manh nha hình thành. Việc bắt giữ Ngô Đức Tùng cùng các đối tượng liên quan tại Kon Tum đã kịp thời làm tan rã tổ chức ngay từ khi mới nhen nhóm, không để phát triển thành lực lượng chống phá.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-43/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 44,
@@ -511,7 +511,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 44. LỰC LƯỢNG AN NINH KHÁM XÉT, BÓC GỠ HOẠT ĐỘNG GIÁN ĐIỆP CỦA RICHARD WHITE, THU GIỮ PHƯƠNG TIỆN VÀ TÀI LIỆU TÌNH BÁO",
+    "summary": "Chiến công này thể hiện sự sắc bén, chuyên nghiệp của lực lượng An ninh trong công tác phát hiện, đấu tranh với hoạt động gián điệp. Việc khám xét nơi ở của Richard White và thu giữ nhiều phương tiện, tài liệu tình báo đã góp phần làm rõ phương thức, thủ đoạn hoạt động, đồng thời ngăn chặn kịp thời nguy cơ lộ lọt bí mật.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-44/cover.jpg",
     "imageCount": 1
   },
@@ -522,9 +522,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự sắc bén, chuyên nghiệp của lực lượng An ninh trong công tác phát hiện, đấu tranh với hoạt động gián điệp. Việc khám xét nơi ở của Richard White và thu giữ nhiều phương tiện, tài liệu tình báo đã góp phần làm rõ phương thức, thủ đoạn hoạt động, đồng thời ngăn chặn kịp thời nguy cơ lộ lọt bí mật.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-45/cover.jpg",
-    "imageCount": 2
+    "summary": "Chiến công này thể hiện sự kiên quyết, bền bỉ của lực lượng An ninh trong việc truy quét, làm rõ và xử lý các tổ chức phản động hoạt động chống phá lâu dài. Việc tổ chức xét xử công khai các đối tượng cầm đầu đã góp phần răn đe, giáo dục, làm tan rã hoàn toàn tổ chức “Dân quân phục quốc”.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-45/image-01.jpg",
+    "imageCount": 1
   },
   {
     "id": 46,
@@ -588,7 +588,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 51. LỰC LƯỢNG AN NINH BẮT GIỮ CÁC ĐỐI TƯỢNG THÁM BÁO XÂM NHẬP TẠI MA LY PHO, SÌN HỒ, LAI CHÂU (NGÀY 4/4/1981)",
+    "summary": "Chiến công này thể hiện sự cảnh giác, chủ động của lực lượng An ninh trong đấu tranh chống xâm nhập từ bên ngoài. Tại khu vực Ma Ly Pho, huyện Sìn Hồ, Lai Châu, lực lượng An ninh đã kịp thời phát hiện và bắt giữ các đối tượng thám báo",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-51/cover.jpg",
     "imageCount": 1
   },
@@ -599,7 +599,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện sự cảnh giác, chủ động của lực lượng An ninh trong đấu tranh chống xâm nhập từ bên ngoài. Tại khu vực Ma Ly Pho, huyện Sìn Hồ, Lai Châu, lực lượng An ninh đã kịp thời phát hiện và bắt giữ các đối tượng thám báo gồm Hà Ứng Trường, Trần Minh Tài và Hoàng Kim Vĩnh.",
+    "summary": "Chiến công này thể hiện sự nhanh nhạy, chủ động của lực lượng An ninh trong công tác tiếp quản và khai thác tài liệu sau các giai đoạn chiến sự. Việc kịp thời thu hồi, bảo quản và nghiên cứu khối hồ sơ, tài liệu do địch để lại đã giúp phục vụ hiệu quả công tác công an.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-52/cover.jpg",
     "imageCount": 1
   },
@@ -621,7 +621,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 54. CÔNG AN TỈNH BÌNH THUẬN GẶP GỠ, GIÁO DỤC, CẢM HÓA CỐT CÁN FULRO TRỞ VỀ VỚI CÁCH MẠNG",
+    "summary": "Chiến công này thể hiện hiệu quả của công tác vận động quần chúng, giáo dục, cảm hóa trong đấu tranh với các tổ chức phản động. Tại Bình Thuận, lực lượng công an đã chủ động tiếp cận, gặp gỡ và giáo dục những đối tượng cốt cán của FULRO sau khi họ từ bỏ hoạt động chống phá.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-54/cover.jpg",
     "imageCount": 1
   },
@@ -632,9 +632,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện hiệu quả của công tác vận động quần chúng, giáo dục, cảm hóa trong đấu tranh với các tổ chức phản động. Tại Bình Thuận, lực lượng công an đã chủ động tiếp cận, gặp gỡ và giáo dục những đối tượng cốt cán của FULRO sau khi họ từ bỏ hoạt động chống phá.",
-    "coverImage": null,
-    "imageCount": 0
+    "summary": "Chiến công này thể hiện sự cảnh giác, kịp thời và hiệu quả của lực lượng An ninh trong đấu tranh chống xâm nhập. Khi đối tượng Bùi Văn Lam Sơn vừa thâm nhập vào địa bàn xã Khánh Hải, lực lượng An ninh đã nhanh chóng phát hiện, tổ chức vây bắt ngay tại khu vực mép nước, với sự tham gia trực tiếp của Hồ Viết Lắm.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-55/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 56,
@@ -643,9 +643,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự cảnh giác, kịp thời và hiệu quả của lực lượng An ninh trong đấu tranh chống xâm nhập. Khi đối tượng Bùi Văn Lam Sơn vừa thâm nhập vào địa bàn xã Khánh Hải, lực lượng An ninh đã nhanh chóng phát hiện, tổ chức vây bắt ngay tại khu vực mép nước, với sự tham gia trực tiếp của Hồ Viết Lắm.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-56/cover.jpg",
-    "imageCount": 2
+    "summary": "Chiến công này thể hiện sự chủ động, sắc bén của lực lượng An ninh trong đấu tranh chống xâm nhập từ bên ngoài. Tại khu vực Hòn Đá Bạc, lực lượng An ninh đã kịp thời phát hiện và tổ chức bắt giữ Trần Văn Bá ngay khi đối tượng vừa chỉ huy chuyến xâm nhập vào địa bàn.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-56/image-01.jpg",
+    "imageCount": 1
   },
   {
     "id": 57,
@@ -687,7 +687,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 60. LỰC LƯỢNG AN NINH THI HÀNH LỆNH TRỤC XUẤT LÊ QUỐC QUÂN TRONG CHUYÊN ÁN HM26, TRƯỚC SỰ CHỨNG KIẾN CỦA ĐẠI DIỆN ĐẠI SỨ QUÁN HOA KỲ",
+    "summary": "Chiến công này thể hiện sự nghiêm minh, đúng pháp luật của cơ quan An ninh Việt Nam trong xử lý các đối tượng liên quan đến tổ chức chống phá. ",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-60/cover.jpg",
     "imageCount": 1
   },
@@ -698,8 +698,8 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự nghiêm minh, đúng pháp luật của cơ quan An ninh Việt Nam trong xử lý các đối tượng liên quan đến tổ chức chống phá. Việc công bố và thi hành lệnh trục xuất đối với Lê Quốc Quân, có sự chứng kiến của đại diện Đại sứ quán Hoa Kỳ tại Việt Nam, không chỉ bảo đảm tính minh bạch mà còn góp phần khẳng định chủ quyền pháp lý, giữ vững an ninh quốc gia và ổn định trật tự xã hội.",
-    "coverImage": null,
+    "summary": "Chiến công này thể hiện sự chủ động, kiên quyết của lực lượng An ninh trong đấu tranh trực diện với các đối tượng có hoạt động xâm phạm an ninh quốc gia. Tại Hà Nội, cơ quan an ninh đã tiến hành điều tra, đấu tranh làm rõ hoạt động gián điệp và tuyên truyền phá hoại tư tưởng của đối tượng Miriam trong môi trường học sinh, sinh viên.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-61/cover.jpg",
     "imageCount": 0
   },
   {
@@ -710,7 +710,7 @@ export const featuredAchievementCards = [
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
     "summary": "Chiến công này thể hiện sự chủ động, kiên quyết của lực lượng An ninh trong đấu tranh ngăn chặn hoạt động xâm nhập từ bên ngoài. Trên tuyến biên giới Việt Nam - Campuchia, lực lượng An ninh đã tổ chức đón lõng, kiểm soát, kịp thời thu giữ toàn bộ tài liệu phản động và phương tiện hoạt động của các tổ chức chống phá khi tìm cách đưa vào nội địa.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-62/cover.jpg",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-62/image-01.jpg",
     "imageCount": 2
   },
   {
@@ -765,8 +765,8 @@ export const featuredAchievementCards = [
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
     "summary": "Nguồn: Ảnh tư liệu Chiến công này thể hiện sự phối hợp hiệu quả giữa các đơn vị nghiệp vụ trong đấu tranh với tội phạm có tổ chức. Thông qua triển khai đồng bộ các biện pháp nghiệp vụ, lực lượng an ninh đã bắt giữ, khám xét các đối tượng làm giả văn bằng, chứng chỉ, thu giữ nhiều tang vật liên quan.",
-    "coverImage": null,
-    "imageCount": 0
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-67/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 68,
@@ -776,8 +776,8 @@ export const featuredAchievementCards = [
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
     "summary": "Chiến công này thể hiện sự quyết liệt, hiệu quả của lực lượng An ninh trong đấu tranh với tội phạm công nghệ cao quy mô lớn. Tại Phú Thọ, cơ quan an ninh đã điều tra, làm rõ vai trò chủ mưu của Nguyễn Văn Dương trong đường dây đánh bạc trực tuyến với quy mô đặc biệt nghiêm trọng.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-68/cover.jpg",
-    "imageCount": 2
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-68/image-01.png",
+    "imageCount": 1
   },
   {
     "id": 69,
@@ -797,7 +797,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 70. CỤC A05 TRIỆT PHÁ Ổ NHÓM GẦN 400 ĐỐI TƯỢNG SỬ DỤNG CÔNG NGHỆ CAO HOẠT ĐỘNG PHẠM TỘI TẠI KHU ĐÔ THỊ OUR CITY, HẢI PHÒNG (NĂM 2019)",
+    "summary": "Chiến công này thể hiện sự quyết liệt, chuyên nghiệp của lực lượng An ninh trong đấu tranh với tội phạm công nghệ cao có yếu tố nước ngoài. Tại Hải Phòng, lực lượng chức năng đã phát hiện, đột kích và triệt phá ổ nhóm quy mô lớn hoạt động tại khu đô thị Our City",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-70/cover.jpg",
     "imageCount": 1
   },
@@ -808,7 +808,7 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự quyết liệt, chuyên nghiệp của lực lượng An ninh trong đấu tranh với tội phạm công nghệ cao có yếu tố nước ngoài. Tại Hải Phòng, lực lượng chức năng đã phát hiện, đột kích và triệt phá ổ nhóm quy mô lớn hoạt động tại khu đô thị Our City, bắt giữ gần 400 đối tượng, thu giữ nhiều thiết bị phục vụ hành vi phạm tội.",
+    "summary": "Chiến công này thể hiện sự chủ động, kiên quyết của lực lượng An ninh trong đấu tranh với các hành vi xâm phạm an ninh quốc gia trên không gian thông tin. Tại Lâm Đồng, cơ quan an ninh đã thi hành lệnh bắt giữ Nguyễn Đức Quốc Vượng, làm rõ hành vi tuyên truyền chống Nhà nước.",
     "coverImage": "/images/chien-cong-noi-bat/chien-cong-71/cover.jpg",
     "imageCount": 1
   },
@@ -819,9 +819,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 72. CƠ QUAN AN NINH CÔNG AN TỈNH AN GIANG KHÁM XÉT, THU GIỮ TANG VẬT TẠI NƠI Ở CỦA NGUYỄN VĂN PHƯỚC VỀ HÀNH VI CHỐNG PHÁ NHÀ NƯỚC (NGÀY 20-4-2019)",
-    "coverImage": null,
-    "imageCount": 0
+    "summary": "Chiến công này thể hiện sự chủ động, kịp thời của lực lượng An ninh trong phát hiện, đấu tranh với các hành vi xâm phạm an ninh quốc gia. Tại An Giang, cơ quan an ninh đã tiến hành khám xét, thu giữ nhiều tang vật liên quan, qua đó làm rõ hành vi vi phạm của Nguyễn Văn Phước.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-72/cover.jpg",
+    "imageCount": 1
   },
   {
     "id": 73,
@@ -830,9 +830,9 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự chủ động, kịp thời của lực lượng An ninh trong phát hiện, đấu tranh với các hành vi xâm phạm an ninh quốc gia. Tại An Giang, cơ quan an ninh đã tiến hành khám xét, thu giữ nhiều tang vật liên quan, qua đó làm rõ hành vi vi phạm của Nguyễn Văn Phước.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-73/cover.jpg",
-    "imageCount": 2
+    "summary": "Chiến công này thể hiện hiệu quả của công tác dân vận, giáo dục, cảm hóa trong xử lý các vấn đề phức tạp liên quan đến tôn giáo. Tại Gia Lai, lực lượng an ninh đã tổ chức cho các đối tượng hoạt động liên quan Tin lành Đề-ga kiểm điểm, nhận thức rõ sai phạm, từ đó ổn định tình hình tại cơ sở.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-73/image-01.jpg",
+    "imageCount": 1
   },
   {
     "id": 74,
@@ -841,8 +841,8 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "CHIẾN CÔNG 74. CÔNG AN TỈNH HÀ TĨNH TRIỆT PHÁ ĐƯỜNG DÂY LỪA ĐẢO CHIẾM ĐOẠT HƠN 100 TỶ ĐỒNG TRÊN KHÔNG GIAN MẠNG (NĂM 2023)",
-    "coverImage": null,
+    "summary": "Chiến công này thể hiện sự quyết liệt, hiệu quả của lực lượng An ninh trong đấu tranh với tội phạm công nghệ cao. Tại Hà Tĩnh, lực lượng công an đã khám phá chuyên án, triệt phá đường dây lừa đảo qua mạng quy mô lớn, khởi tố nhiều đối tượng, thu giữ nhiều tang vật.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-74/cover.jpg",
     "imageCount": 0
   },
   {
@@ -852,8 +852,8 @@ export const featuredAchievementCards = [
     "period": "1975-nay",
     "periodTitle": "LỰC LƯỢNG AN NINH NHÂN DÂN TRONG SỰ NGHIỆP XÂY DỰNG VÀ BẢO VỆ TỔ QUỐC VIỆT NAM XÃ HỘI CHỦ NGHĨA",
     "periodAnchor": "giai-doan-1975-nay",
-    "summary": "Chiến công này thể hiện sự quyết liệt, hiệu quả của lực lượng An ninh trong đấu tranh với tội phạm công nghệ cao. Tại Hà Tĩnh, lực lượng công an đã khám phá chuyên án, triệt phá đường dây lừa đảo qua mạng quy mô lớn, khởi tố nhiều đối tượng, thu giữ nhiều tang vật.",
-    "coverImage": "/images/chien-cong-noi-bat/chien-cong-75/cover.jpg",
+    "summary": "Chiến công này thể hiện sự quyết liệt, hiệp đồng chặt chẽ của lực lượng An ninh trong đấu tranh với tội phạm công nghệ cao. Tại Phú Yên, lực lượng chức năng đã triệt phá đường dây cá độ bóng đá qua mạng hoạt động tinh vi, với số tiền giao dịch từ tháng 5 đến 7-2024 lên tới khoảng 1.000 tỷ đồng.",
+    "coverImage": "/images/chien-cong-noi-bat/chien-cong-75/image-01.jpg",
     "imageCount": 2
   },
   {
