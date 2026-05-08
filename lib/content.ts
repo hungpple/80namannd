@@ -131,10 +131,10 @@ export const achievements: AchievementItem[] = [
 ];
 
 export const quickQuestions = [
-  "Tóm tắt các giai đoạn lịch sử chính",
-  "Giới thiệu một chiến công tiêu biểu",
-  "Website này có thể dùng để tuyên truyền như thế nào?",
-  "Gợi ý nội dung thay thế cho trang chủ",
+  "Tóm tắt ý nghĩa ngày truyền thống 12/7/1946",
+  "Các giai đoạn phát triển chính của lực lượng An ninh nhân dân là gì?",
+  "Kể một số chiến công tiêu biểu của lực lượng An ninh nhân dân",
+  "Lực lượng An ninh nhân dân đã đóng góp gì trong bảo vệ Tổ quốc?",
 ];
 
 export const aboutHighlights = [
