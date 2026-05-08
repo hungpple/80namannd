@@ -36,8 +36,7 @@ type RagIndex = {
   stats: RagIndexStats;
 };
 
-const DEFAULT_DOCUMENTS_DIR =
-  "D:\\JSONFolder\\Master of Software Engineering\\Study\\80namANND\\rag-documents";
+const DEFAULT_DOCUMENTS_DIR = path.join(process.cwd(), "resources");
 const MAX_CHUNK_CHARS = 1000;
 const MIN_CHUNK_CHARS = 220;
 const OVERLAP_CHARS = 120;

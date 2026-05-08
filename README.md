@@ -43,16 +43,16 @@ Mở [http://localhost:3000](http://localhost:3000) trên trình duyệt.
 
 ### Cấu hình RAG chatbot
 
-Chatbot mặc định đọc tài liệu Word `.docx` từ:
+Chatbot mặc định đọc tài liệu Word `.docx` từ thư mục `resources` ở root project:
 
 ```text
-D:\JSONFolder\Master of Software Engineering\Study\80namANND\rag-documents
+resources
 ```
 
 Các biến môi trường có thể dùng khi cần đổi cấu hình:
 
 ```bash
-RAG_DOCUMENTS_DIR="D:\JSONFolder\Master of Software Engineering\Study\80namANND\rag-documents"
+RAG_DOCUMENTS_DIR="D:\JSONFolder\Master of Software Engineering\Study\80namANND\80-nam-annd\resources"
 OLLAMA_BASE_URL="http://127.0.0.1:11434"
 OLLAMA_MODEL="qwen2.5:7b"
 RAG_TOP_K="10"
