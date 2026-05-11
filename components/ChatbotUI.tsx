@@ -122,8 +122,8 @@ const markdownComponents: Components = {
   },
   table({ children }) {
     return (
-      <div className="my-3 overflow-x-auto rounded-md border border-red-100">
-        <table className="min-w-full border-collapse text-left text-xs">
+      <div className="my-3 max-w-full overflow-x-auto rounded-md border border-red-100">
+        <table className="min-w-[760px] border-collapse text-left text-xs">
           {children}
         </table>
       </div>
@@ -392,7 +392,7 @@ export function ChatbotUI() {
 
     await new Promise<void>((resolve) => {
       let visibleLength = 0;
-      const charsPerTick = fullContent.length > 1800 ? 8 : 5;
+      const charsPerTick = getTypingCharsPerTick(fullContent.length);
 
       function tick() {
         visibleLength = Math.min(
@@ -879,6 +879,22 @@ function getRelatedSuggestions(content: string) {
 
 function dedupeQuestions(questions: readonly string[]) {
   return Array.from(new Set(questions));
+}
+
+function getTypingCharsPerTick(contentLength: number) {
+  if (contentLength > 12000) {
+    return 90;
+  }
+
+  if (contentLength > 4000) {
+    return 32;
+  }
+
+  if (contentLength > 1800) {
+    return 8;
+  }
+
+  return 5;
 }
 
 function normalizeForSuggestions(value: string) {

@@ -335,6 +335,61 @@ Lưu ý: Navbar hiện không dùng trực tiếp `navItems`, mà có `headerNav
 
 Một số file khi đọc bằng PowerShell hiển thị tiếng Việt bị mojibake trong output (`Truyá»n...`). Trong code thực tế có thể vẫn là UTF-8. Nếu sửa text tiếng Việt, dùng `apply_patch` để đảm bảo nội dung đúng.
 
+## RAG/chatbot production pipeline
+
+RAG backend nằm trong `lib/rag/`.
+
+Pipeline hiện tại:
+
+```txt
+DOCX resources
+-> extract text
+-> chunking
+-> BM25 sparse index
+-> Ollama embedding index
+-> persisted vector artifacts in .rag-index/
+-> query processing + deterministic expansion
+-> query embedding
+-> vector search
+-> BM25 search
+-> RRF hybrid fusion
+-> local reranking or external rerank endpoint
+-> Qwen/Ollama answer generation
+```
+
+Các file chính:
+
+- `lib/rag/retriever.ts`: ingest, BM25, vector search, RRF, reranking.
+- `lib/rag/embeddings.ts`: gọi Ollama `/api/embed`, fallback `/api/embeddings`.
+- `.rag-index/vectors.json`: vector index fallback của TypeScript runtime.
+- `.rag-index/chunks.json`: metadata/content của chunk.
+- `.rag-index/manifest.json`: version/hash tài liệu, chunk config, embedding model.
+- `.rag-index/embedding-cache.json`: cache embedding theo batch để resume nếu ingest bị ngắt.
+- `scripts/build-faiss-index.py`: tạo `.rag-index/faiss.index` từ `vectors.json`.
+- `scripts/faiss-search-service.py`: HTTP service `/search` để Next.js query FAISS.
+- `requirements-rag.txt`: Python deps cho môi trường FAISS service.
+
+Biến môi trường hữu ích:
+
+```txt
+RAG_EMBEDDINGS_ENABLED=true
+RAG_REQUIRE_EMBEDDINGS=true
+RAG_INDEX_DIR=.rag-index
+RAG_FIRST_STAGE_TOP_K=40
+RAG_VECTOR_TOP_K=40
+RAG_RRF_K=60
+RAG_EMBEDDING_BATCH_SIZE=4
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+OLLAMA_EMBEDDING_MODEL=bge-m3:latest
+RAG_FAISS_SEARCH_ENDPOINT=http://127.0.0.1:8001/search
+RAG_RERANK_ENDPOINT=
+```
+
+FAISS note:
+
+- Next.js runtime hiện có local cosine vector search để không phụ thuộc native package.
+- Muốn dùng FAISS thật trong production: chạy ingest để sinh `.rag-index/vectors.json`, chạy `npm.cmd run rag:install` nếu chưa có `.venv`, chạy `npm.cmd run rag:build-faiss`, chạy `npm.cmd run rag:serve-faiss`, rồi đặt `RAG_FAISS_SEARCH_ENDPOINT=http://127.0.0.1:8001/search`.
+
 ## Verification
 
 Các lệnh đã nhiều lần pass:

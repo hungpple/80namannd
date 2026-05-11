@@ -1,4 +1,5 @@
 import { answerWithRag } from "@/lib/rag/chat";
+import { logRag, logRagError, previewText } from "@/lib/rag/logger";
 import { getRagIndex } from "@/lib/rag/retriever";
 import type { ChatHistoryItem } from "@/lib/rag/ollama";
 
@@ -12,6 +13,7 @@ type ChatbotRequestBody = {
 
 export async function GET() {
   try {
+    logRag("INGEST", "Chatbot index status requested.");
     const index = await getRagIndex();
 
     return jsonResponse({
@@ -19,6 +21,8 @@ export async function GET() {
       stats: index.stats,
     });
   } catch (error) {
+    logRagError("INGEST", "Chatbot index status request failed.", error);
+
     return jsonResponse(
       {
         ok: false,
@@ -33,11 +37,22 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const requestStartedAt = Date.now();
+
   try {
     const body = (await request.json()) as ChatbotRequestBody;
     const message = typeof body.message === "string" ? body.message.trim() : "";
 
     if (!message) {
+      logRag(
+        "QUERY",
+        "Rejected empty chatbot API query.",
+        {
+          durationMs: Date.now() - requestStartedAt,
+        },
+        { level: "warn" }
+      );
+
       return jsonResponse(
         { error: "Vui lòng nhập câu hỏi trước khi gửi." },
         { status: 400 }
@@ -45,10 +60,26 @@ export async function POST(request: Request) {
     }
 
     const history = parseHistory(body.history);
+    logRag("QUERY", "Accepted chatbot API query.", {
+      messageChars: message.length,
+      messagePreview: previewText(message),
+      historyMessages: history.length,
+    });
+
     const result = await answerWithRag(message, history);
+
+    logRag("QUERY", "Chatbot API request completed.", {
+      durationMs: Date.now() - requestStartedAt,
+      sourceCount: result.sources.length,
+      warning: result.warning ?? null,
+    });
 
     return jsonResponse(result);
   } catch (error) {
+    logRagError("QUERY", "Chatbot API request failed.", error, {
+      durationMs: Date.now() - requestStartedAt,
+    });
+
     return jsonResponse(
       {
         error:

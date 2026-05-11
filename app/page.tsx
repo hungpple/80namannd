@@ -57,7 +57,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-red-950/70 via-red-950/10 to-transparent" />
             <div className="relative flex h-full min-h-inherit flex-col justify-end p-6 text-white">
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-yellow-100">
-                Module AI
+                Trợ lý AI
               </p>
               <p className="mt-2 max-w-xs text-xl font-bold leading-7">
                 Không gian hỏi đáp hiện đại
